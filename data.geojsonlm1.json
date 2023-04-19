@@ -1,0 +1,38 @@
+{
+    "type": "FeatureCollection",
+    "generator": "smartcity",
+    "copyright": "Smartcity",
+    "timestamp": "2021-05-27T09:28:58Z",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Building name": "Landmark 1",
+                "height": 10,
+                "idb": "7"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+
+                        [
+                            106.72094419909168, 10.794412628541213,
+                            10
+                        ],
+                        [
+                            106.72090690404407, 10.794386555270862,
+                            10
+                        ],
+                        [
+                            106.72097074201811, 10.794375993409306,
+                            20
+                        ]
+                    ]
+                ]
+            },
+            "id": "pp7"
+        }
+    ]
+}
+

@@ -87,19 +87,56 @@ var gis = {
     return (gis.toDeg(Math.atan2(dLong, dPhi)) + 360.0) % 360.0;
   },
   toDeg: function (n) { return n * 180 / Math.PI; },
-  toRad: function (n) { return n * Math.PI / 180; }
+  toRad: function (n) { return n * Math.PI / 180; },
+
+
+  // vẽ hình tròn
+  getCircleCoordinates: function (center, radius) {
+    var coordinates = [];
+    var numPoints = 32;
+
+    for (var i = 0; i < numPoints; i++) {
+      var angle = (i / numPoints) * Math.PI * 2;
+      var x = center[0] + radius * Math.cos(angle);
+      var y = center[1] + radius * Math.sin(angle);
+      coordinates.push([x, y]);
+    }
+
+    return coordinates;
+  },
+  // dịch chuyển 1 lúc nhiều điểm với 
+  createCoords: function (coords, bearing, distance) {
+    var newCoords = [];
+
+    // Tính toán các tọa độ mới
+    for (var i = 0; i < coords.length; i++) {
+      var coord = coords[i];
+      var newCoord = gis.createCoord(coord, bearing, distance);
+      newCoords.push(newCoord);
+      bearing = gis.getBearing(coord, newCoord);
+    }
+
+    return newCoords;
+  }
+
 };
 
 var start = [
   107.579341,
   16.467700
 ];
-var end = [ 
+var end = [
   107.579292,
   16.467761
 ];
 var bearing = gis.getBearing(start, end);
-var point = [ 107.57946100754326, 16.46778500534316,]
+var point = [107.57946100754326, 16.46778500534316,]
 var new_coord = gis.createCoord(point, bearing, 0.5);
 console.log(bearing)
 console.log(new_coord)
+
+// check result
+var center = [10, 10];
+var radius = 5;
+var circleCoords = getCircleCoordinates(center, radius);
+console.log(circleCoords);

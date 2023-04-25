@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-	<title>Smartcity - Building Map</title>
+	<title>Ngọ Môn Huế 3D</title>
 
 	<style>
 		html,
@@ -52,13 +52,33 @@
 				url: "./data/floor/floor1.geojson.json"
 			});
 
+			const geojsonLayer1 = new GeoJSONLayer({
+				url: "./data/floor/floor.right.wall.geojson.json"
+			});
+
 			geojsonLayer.renderer = {
 				type: "simple",
 				symbol: {
 					type: "polygon-3d",
 					symbolLayers: [
 						{
-							type: "extrude",
+							type: "fill",
+							size: 0,
+							material: {
+								color: "#FF0000"
+							},
+						}
+					]
+				}
+			};
+
+			geojsonLayer1.renderer = {
+				type: "simple",
+				symbol: {
+					type: "polygon-3d",
+					symbolLayers: [
+						{
+							type: "fill",
 							size: 0,
 							material: {
 								color: "#FF0000"
@@ -70,14 +90,14 @@
 
 			const map = new Map({
 				basemap: "topo-vector",
-				layers: [geojsonLayer] //end layers
+				layers: [geojsonLayer, geojsonLayer1] //end layers
 			});
 
 			const view = new SceneView({
 				container: "viewDiv",
 				map: map,
 				camera: {
-					position: [107.579967804, 16.465982247, 500],
+					position: [107.579189931, 16.467688731, 500],
 					heading: 0,
 					tilt: 0
 				}

@@ -90,10 +90,16 @@ var gis = {
   toRad: function (n) { return n * Math.PI / 180; }
 };
 
-var start = [107.579341, 16.467700];
-var end = [107.579461, 16.467785];
+var start = [
+  107.579341,
+  16.467700
+];
+var end = [ 
+  107.579292,
+  16.467761
+];
 var bearing = gis.getBearing(start, end);
-var point = [ 107.579461, 16.467785]
-var new_coord = gis.createCoord(point, bearing, 0.001);
+var point = [ 107.57946100754326, 16.46778500534316,]
+var new_coord = gis.createCoord(point, bearing, 0.5);
 console.log(bearing)
 console.log(new_coord)

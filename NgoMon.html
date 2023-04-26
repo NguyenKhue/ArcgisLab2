@@ -88,6 +88,32 @@
 				}
 			};
 
+			// var graphicsLayer = new GraphicsLayer();
+
+			// const json_options = {
+			// 	query: {
+			// 		f: "json"
+			// 	},
+			// 	responseType: "json"
+			// };
+			// var createGraphic = function (data) {
+			// 	return new Graphic({
+			// 		geometry: data,
+			// 		symbol: data.symbol,
+			// 		attributes: data,
+			// 		popupTemplate: data.popupTemplate
+			// 	});
+			// };
+			// // request json
+			// esriRequest('./data.json', json_options).then(function (response) {
+			// 	console.log(response);
+			// 	response.data.forEach(function (data) {
+			// 		graphicsLayer.add(createGraphic(data));
+			// 	});
+
+
+			// });
+
 			const map = new Map({
 				basemap: "topo-vector",
 				layers: [geojsonLayer, geojsonLayer1] //end layers

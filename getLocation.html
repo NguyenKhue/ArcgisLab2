@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css" />
     <script src="https://js.arcgis.com/4.26/"></script>
     <script>
-        
+
         function saveTextToClipboard(text) {
             const textarea = document.createElement('textarea');
             textarea.value = text;
@@ -76,7 +76,7 @@
             "esri/layers/GeoJSONLayer",
             "esri/layers/SceneLayer", "esri/layers/GraphicsLayer", "esri/Graphic", "esri/request"
         ], function (Map, SceneView, GeoJSONLayer, SceneLayer,
-                     GraphicsLayer, Graphic, esriRequest) {
+            GraphicsLayer, Graphic, esriRequest) {
             // Set up a locator url using the world geocoding service
             const locatorUrl = "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer";
 
@@ -91,7 +91,7 @@
                 container: "viewDiv",
                 map: map,
                 camera: {
-                    position: [107.5790422, 16.4677263, 300],
+                    position: [106.71962348492775, 10.79520088294171, 300],
                     heading: 0,
                     tilt: 75
                 }

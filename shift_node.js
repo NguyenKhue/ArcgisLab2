@@ -1,10 +1,10 @@
 var gis = {
   /**
-  * All coordinates expected EPSG:4326
-  * @param {Array} start Expected [lon, lat]
-  * @param {Array} end Expected [lon, lat]
-  * @return {number} Distance - meter.
-  */
+   * All coordinates expected EPSG:4326
+   * @param {Array} start Expected [lon, lat]
+   * @param {Array} end Expected [lon, lat]
+   * @return {number} Distance - meter.
+   */
   calculateDistance: function (start, end) {
     var lat1 = parseFloat(start[1]),
       lon1 = parseFloat(start[0]),
@@ -15,51 +15,57 @@ var gis = {
   },
 
   /**
-  * All coordinates expected EPSG:4326
-  * @param {number} lat1 Start Latitude
-  * @param {number} lon1 Start Longitude
-  * @param {number} lat2 End Latitude
-  * @param {number} lon2 End Longitude
-  * @return {number} Distance - meters.
-  */
+   * All coordinates expected EPSG:4326
+   * @param {number} lat1 Start Latitude
+   * @param {number} lon1 Start Longitude
+   * @param {number} lat2 End Latitude
+   * @param {number} lon2 End Longitude
+   * @return {number} Distance - meters.
+   */
   sphericalCosinus: function (lat1, lon1, lat2, lon2) {
     var radius = 6371e3; // meters
     var dLon = gis.toRad(lon2 - lon1),
       lat1 = gis.toRad(lat1),
       lat2 = gis.toRad(lat2),
-      distance = Math.acos(Math.sin(lat1) * Math.sin(lat2) +
-        Math.cos(lat1) * Math.cos(lat2) * Math.cos(dLon)) * radius;
+      distance =
+        Math.acos(
+          Math.sin(lat1) * Math.sin(lat2) +
+            Math.cos(lat1) * Math.cos(lat2) * Math.cos(dLon)
+        ) * radius;
 
     return distance;
   },
 
   /**
-  * @param {Array} coord Expected [lon, lat] EPSG:4326
-  * @param {number} bearing Bearing in degrees
-  * @param {number} distance Distance in meters
-  * @return {Array} Lon-lat coordinate.
-  */
+   * @param {Array} coord Expected [lon, lat] EPSG:4326
+   * @param {number} bearing Bearing in degrees
+   * @param {number} distance Distance in meters
+   * @return {Array} Lon-lat coordinate.
+   */
   createCoord: function (coord, bearing, distance) {
     /** http://www.movable-type.co.uk/scripts/latlong.html
-    * φ is latitude, λ is longitude, 
-    * θ is the bearing (clockwise from north), 
-    * δ is the angular distance d/R; 
-    * d being the distance travelled, R the earth’s radius*
-    **/
-    var
-      radius = 6371e3, // meters
+     * φ is latitude, λ is longitude,
+     * θ is the bearing (clockwise from north),
+     * δ is the angular distance d/R;
+     * d being the distance travelled, R the earth’s radius*
+     **/
+    var radius = 6371e3, // meters
       δ = Number(distance) / radius, // angular distance in radians
       θ = gis.toRad(Number(bearing));
-    φ1 = gis.toRad(coord[1]),
-      λ1 = gis.toRad(coord[0]);
+    (φ1 = gis.toRad(coord[1])), (λ1 = gis.toRad(coord[0]));
 
-    var φ2 = Math.asin(Math.sin(φ1) * Math.cos(δ) +
-      Math.cos(φ1) * Math.sin(δ) * Math.cos(θ));
+    var φ2 = Math.asin(
+      Math.sin(φ1) * Math.cos(δ) + Math.cos(φ1) * Math.sin(δ) * Math.cos(θ)
+    );
 
-    var λ2 = λ1 + Math.atan2(Math.sin(θ) * Math.sin(δ) * Math.cos(φ1),
-      Math.cos(δ) - Math.sin(φ1) * Math.sin(φ2));
+    var λ2 =
+      λ1 +
+      Math.atan2(
+        Math.sin(θ) * Math.sin(δ) * Math.cos(φ1),
+        Math.cos(δ) - Math.sin(φ1) * Math.sin(φ2)
+      );
     // normalise to -180..+180°
-    λ2 = (λ2 + 3 * Math.PI) % (2 * Math.PI) - Math.PI;
+    λ2 = ((λ2 + 3 * Math.PI) % (2 * Math.PI)) - Math.PI;
 
     return [gis.toDeg(λ2), gis.toDeg(φ2)];
   },
@@ -70,25 +76,29 @@ var gis = {
    * @return {number} Bearing in degrees.
    */
   getBearing: function (start, end) {
-    var
-      startLat = gis.toRad(start[1]),
+    var startLat = gis.toRad(start[1]),
       startLong = gis.toRad(start[0]),
       endLat = gis.toRad(end[1]),
       endLong = gis.toRad(end[0]),
       dLong = endLong - startLong;
 
-    var dPhi = Math.log(Math.tan(endLat / 2.0 + Math.PI / 4.0) /
-      Math.tan(startLat / 2.0 + Math.PI / 4.0));
+    var dPhi = Math.log(
+      Math.tan(endLat / 2.0 + Math.PI / 4.0) /
+        Math.tan(startLat / 2.0 + Math.PI / 4.0)
+    );
 
     if (Math.abs(dLong) > Math.PI) {
-      dLong = (dLong > 0.0) ? -(2.0 * Math.PI - dLong) : (2.0 * Math.PI + dLong);
+      dLong = dLong > 0.0 ? -(2.0 * Math.PI - dLong) : 2.0 * Math.PI + dLong;
     }
 
     return (gis.toDeg(Math.atan2(dLong, dPhi)) + 360.0) % 360.0;
   },
-  toDeg: function (n) { return n * 180 / Math.PI; },
-  toRad: function (n) { return n * Math.PI / 180; },
-
+  toDeg: function (n) {
+    return (n * 180) / Math.PI;
+  },
+  toRad: function (n) {
+    return (n * Math.PI) / 180;
+  },
 
   // vẽ hình tròn
   getCircleCoordinates: function (center, radius) {
@@ -104,7 +114,21 @@ var gis = {
 
     return coordinates;
   },
-  // dịch chuyển 1 lúc nhiều điểm với 
+
+  //   getCircleCoordinates: function (center, radiusInMeters, numPoints) {
+  //     var radiusInRadians = radiusInMeters / 6371000; // chuyển sang đơn vị radians
+  //     var coords = [];
+  //     for (var i = 0; i < numPoints; i++) {
+  //       var theta = Math.PI * (i / (numPoints / 2));
+  //       var x = radiusInRadians * Math.cos(theta);
+  //       var y = radiusInRadians * Math.sin(theta);
+  //       var lng = parseFloat(center[0]) + x / Math.cos(parseFloat(center[0]));
+  //       var lat = parseFloat(center[1]) + y;
+  //       coords.push([lng, lat]);
+  //     }
+  //     return coords;
+  //   },
+  // dịch chuyển 1 lúc nhiều điểm với
   createCoords: function (coords, bearing, distance) {
     var newCoords = [];
 
@@ -117,26 +141,55 @@ var gis = {
     }
 
     return newCoords;
-  }
-
+  },
 };
 
-var start = [
-  107.579341,
-  16.467700
-];
-var end = [
-  107.579292,
-  16.467761
-];
+var start = [106.71970882, 10.795437047];
+var end = [106.71984990958984, 10.795495488221626];
 var bearing = gis.getBearing(start, end);
-var point = [107.57946100754326, 16.46778500534316,]
-var new_coord = gis.createCoord(point, bearing, 0.5);
-console.log(bearing)
-console.log(new_coord)
+var point = [107.57946100754326, 16.46778500534316];
+var new_coord = gis.createCoord(point, bearing, 10);
 
+var arr = [
+  [106.71986153427159, 10.795437047],
+  [106.71985859990968, 10.795466840076422],
+  [106.71984990958984, 10.795495488221626],
+  [106.71983579727619, 10.795521890503457],
+  [106.71981680529703, 10.795545032297031],
+  [106.71979366350345, 10.7955640242762],
+  [106.71976726122162, 10.795578136589851],
+  [106.71973861307642, 10.795586826909691],
+  [106.71970882, 10.795589761271598],
+  [106.71967902692357, 10.795586826909691],
+  [106.71965037877837, 10.795578136589851],
+  [106.71962397649654, 10.7955640242762],
+  [106.71960083470296, 10.795545032297031],
+  [106.7195818427238, 10.795521890503457],
+  [106.71956773041015, 10.795495488221626],
+  [106.7195590400903, 10.795466840076422],
+  [106.7195561057284, 10.795437047],
+  [106.7195590400903, 10.795407253923578],
+  [106.71956773041015, 10.795378605778374],
+  [106.7195818427238, 10.795352203496543],
+  [106.71960083470296, 10.795329061702969],
+  [106.71962397649654, 10.7953100697238],
+  [106.71965037877837, 10.795295957410149],
+  [106.71967902692357, 10.795287267090309],
+  [106.71970882, 10.795284332728402],
+  [106.71973861307642, 10.795287267090309],
+  [106.71976726122162, 10.795295957410149],
+  [106.71979366350345, 10.7953100697238],
+  [106.71981680529703, 10.795329061702969],
+  [106.71983579727619, 10.795352203496543],
+  [106.71984990958984, 10.795378605778374],
+  [106.71985859990968, 10.795407253923578],
+];
+var new_coords = gis.createCoords(arr, bearing, 17);
+console.log(new_coords);
 // check result
-var center = [10, 10];
-var radius = 5;
-var circleCoords = getCircleCoordinates(center, radius);
-console.log(circleCoords);
+var initialRadius = 17;
+var radius = 6371e3; // meters
+var circleRadius = Number(initialRadius) / 111319;
+var center = [106.71970882, 10.795437047];
+var circleCoords = gis.getCircleCoordinates(center, circleRadius);
+// console.log("circle", circleCoords);

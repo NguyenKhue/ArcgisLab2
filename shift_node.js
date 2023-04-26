@@ -101,7 +101,7 @@ var gis = {
   },
 
   // vẽ hình tròn
-  getCircleCoordinates: function (center, radius) {
+  getCircleCoordinates: function (center, radius, hight) {
     var coordinates = [];
     var numPoints = 32;
 
@@ -109,7 +109,7 @@ var gis = {
       var angle = (i / numPoints) * Math.PI * 2;
       var x = center[0] + radius * Math.cos(angle);
       var y = center[1] + radius * Math.sin(angle);
-      coordinates.push([x, y]);
+      coordinates.push([x, y,hight]);
     }
 
     return coordinates;
@@ -185,11 +185,11 @@ var arr = [
   [106.71985859990968, 10.795407253923578],
 ];
 var new_coords = gis.createCoords(arr, bearing, 17);
-console.log(new_coords);
+//console.log(new_coords);
 // check result
 var initialRadius = 17;
 var radius = 6371e3; // meters
 var circleRadius = Number(initialRadius) / 111319;
 var center = [106.71970882, 10.795437047];
-var circleCoords = gis.getCircleCoordinates(center, circleRadius);
-// console.log("circle", circleCoords);
+var circleCoords = gis.getCircleCoordinates(center, circleRadius,10);
+console.log("circle", circleCoords);

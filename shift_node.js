@@ -142,6 +142,22 @@ var gis = {
 
     return newCoords;
   },
+
+  // tạo đường cong
+   getParabolicCurveCoordinates: function(startPoint, endPoint, controlPoint, numPoints) {
+    var coordinates = [];
+    
+    for (var i = 0; i <= numPoints; i++) {
+      var t = i / numPoints;
+      var x = Math.pow(1 - t, 2) * startPoint[0] + 2 * (1 - t) * t * controlPoint[0] + Math.pow(t, 2) * endPoint[0];
+      var y = Math.pow(1 - t, 2) * startPoint[1] + 2 * (1 - t) * t * controlPoint[1] + Math.pow(t, 2) * endPoint[1];
+      coordinates.push([x, y]);
+    }
+    
+    return coordinates;
+  }
+  
+  
 };
 
 var start = [106.71970882, 10.795437047];
@@ -192,4 +208,11 @@ var radius = 6371e3; // meters
 var circleRadius = Number(initialRadius) / 111319;
 var center = [106.71970882, 10.795437047];
 var circleCoords = gis.getCircleCoordinates(center, circleRadius,10);
-console.log("circle", circleCoords);
+// console.log("circle", circleCoords);
+
+var st = [106.721010762, 10.794179897]
+var en = [106.721209552, 10.794318368]
+var controlPoint = [106.721176602, 10.794182706]
+var step = 50;
+var Curve = gis.getParabolicCurveCoordinates(st, en, controlPoint ,step)
+console.log("Curve", Curve);

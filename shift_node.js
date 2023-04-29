@@ -144,7 +144,12 @@ var gis = {
   },
 
   // tạo đường cong
-   getParabolicCurveCoordinates: function(startPoint, endPoint, controlPoint, numPoints) {
+   getParabolicCurveCoordinates: function(startPoint, endPoint, height, numPoints,option) {
+
+    var bearing = gis.getBearing(startPoint, endPoint);
+    var point = gis.getMidPoint(startPoint,endPoint)
+    var controlPoint = gis.createCoord(point, (bearing + option), height);
+    
     var coordinates = [];
     
     for (var i = 0; i <= numPoints; i++) {
@@ -155,8 +160,20 @@ var gis = {
     }
     
     return coordinates;
-  }
+  },
   
+
+   // Hàm chuyển đổi độ sang radian
+ toRadians: function(degrees) {
+  return degrees * (Math.PI / 180);
+},
+
+// lấy trung điểm
+ getMidPoint: function(coord1, coord2) {
+  var midX = (coord1[0] + coord2[0]) / 2;
+  var midY = (coord1[1] + coord2[1]) / 2;
+  return [midX, midY];
+},
   
 };
 
@@ -205,7 +222,7 @@ var new_coords = gis.createCoords(arr, bearing, 17);
 // check result
 var initialRadius = 17;
 var radius = 6371e3; // meters
-var circleRadius = Number(initialRadius) / 111319;
+var circleRadius = gis.toRadians(initialRadius);
 var center = [106.71970882, 10.795437047];
 var circleCoords = gis.getCircleCoordinates(center, circleRadius,10);
 // console.log("circle", circleCoords);
@@ -214,5 +231,7 @@ var st = [106.721010762, 10.794179897]
 var en = [106.721209552, 10.794318368]
 var controlPoint = [106.721176602, 10.794182706]
 var step = 50;
-var Curve = gis.getParabolicCurveCoordinates(st, en, controlPoint ,step)
+
+// số cuooisd nhập -90 hoặc 90 nha
+var Curve = gis.getParabolicCurveCoordinates(st, en, 50 ,step,-90)
 console.log("Curve", Curve);

@@ -30,7 +30,7 @@ var gis = {
       distance =
         Math.acos(
           Math.sin(lat1) * Math.sin(lat2) +
-            Math.cos(lat1) * Math.cos(lat2) * Math.cos(dLon)
+          Math.cos(lat1) * Math.cos(lat2) * Math.cos(dLon)
         ) * radius;
 
     return distance;
@@ -84,7 +84,7 @@ var gis = {
 
     var dPhi = Math.log(
       Math.tan(endLat / 2.0 + Math.PI / 4.0) /
-        Math.tan(startLat / 2.0 + Math.PI / 4.0)
+      Math.tan(startLat / 2.0 + Math.PI / 4.0)
     );
 
     if (Math.abs(dLong) > Math.PI) {
@@ -101,33 +101,30 @@ var gis = {
   },
 
   // vẽ hình tròn
-  getCircleCoordinates: function (center, radius, hight) {
+  getCircleCoordinates: function (center, radiusMet, hight) {
     var coordinates = [];
-    var numPoints = 32;
 
-    for (var i = 0; i < numPoints; i++) {
-      var angle = (i / numPoints) * Math.PI * 2;
-      var x = center[0] + radius * Math.cos(angle);
-      var y = center[1] + radius * Math.sin(angle);
-      coordinates.push([x, y,hight]);
+    var end = [106.71984990958984, 10.795495488221626];
+    var bearing = gis.getBearing(center, end);
+    var point = gis.createCoord(center, bearing, radiusMet);
+
+    // tính bán kính
+    var radius = Math.sqrt(Math.pow(point[0] - center[0], 2) + Math.pow(point[1] - center[1], 2));
+
+    // số điểm
+    var numberOfPoints = 32;
+
+    for (var angle = 0; angle <= 360; angle += 360 / numberOfPoints) {
+      var radians = angle * (Math.PI / 180);
+      var x = center[0] + radius * Math.cos(radians);
+      var y = center[1] + radius * Math.sin(radians);
+      coordinates.push([x, y, hight]);
     }
 
     return coordinates;
   },
 
-  //   getCircleCoordinates: function (center, radiusInMeters, numPoints) {
-  //     var radiusInRadians = radiusInMeters / 6371000; // chuyển sang đơn vị radians
-  //     var coords = [];
-  //     for (var i = 0; i < numPoints; i++) {
-  //       var theta = Math.PI * (i / (numPoints / 2));
-  //       var x = radiusInRadians * Math.cos(theta);
-  //       var y = radiusInRadians * Math.sin(theta);
-  //       var lng = parseFloat(center[0]) + x / Math.cos(parseFloat(center[0]));
-  //       var lat = parseFloat(center[1]) + y;
-  //       coords.push([lng, lat]);
-  //     }
-  //     return coords;
-  //   },
+
   // dịch chuyển 1 lúc nhiều điểm với
   createCoords: function (coords, bearing, distance) {
     var newCoords = [];
@@ -144,37 +141,66 @@ var gis = {
   },
 
   // tạo đường cong
-   getParabolicCurveCoordinates: function(startPoint, endPoint, height, numPoints,option) {
+  getParabolicCurveCoordinates: function (startPoint, endPoint, height, numPoints, option) {
 
     var bearing = gis.getBearing(startPoint, endPoint);
-    var point = gis.getMidPoint(startPoint,endPoint)
+    var point = gis.getMidPoint(startPoint, endPoint)
     var controlPoint = gis.createCoord(point, (bearing + option), height);
-    
+
     var coordinates = [];
-    
+
     for (var i = 0; i <= numPoints; i++) {
       var t = i / numPoints;
       var x = Math.pow(1 - t, 2) * startPoint[0] + 2 * (1 - t) * t * controlPoint[0] + Math.pow(t, 2) * endPoint[0];
       var y = Math.pow(1 - t, 2) * startPoint[1] + 2 * (1 - t) * t * controlPoint[1] + Math.pow(t, 2) * endPoint[1];
       coordinates.push([x, y]);
     }
-    
+
+    return coordinates;
+  },
+
+
+  
+  // vẽ hình cổng
+
+   calculate3DParabolicCurve: function(startPoint, endPoint, height, numPoints) {
+    var coordinates = [];
+  
+    var startX = startPoint[0];
+    var startY = startPoint[1];
+    var startZ = startPoint[2];
+    var endX = endPoint[0];
+    var endY = endPoint[1];
+    var endZ = endPoint[2];
+    var controlX = (startX + endX) / 2;
+    var controlY = (startY + endY) / 2;
+    var controlZ = startZ + height;
+  
+    for (var i = 0; i <= numPoints; i++) {
+      var t = i / numPoints;
+      var x = (1 - t) * (1 - t) * startX + 2 * (1 - t) * t * controlX + t * t * endX;
+      var y = (1 - t) * (1 - t) * startY + 2 * (1 - t) * t * controlY + t * t * endY;
+      var z = (1 - t) * (1 - t) * startZ + 2 * (1 - t) * t * controlZ + t * t * endZ;
+      coordinates.push([x, y, z]);
+    }
+  
     return coordinates;
   },
   
 
-   // Hàm chuyển đổi độ sang radian
- toRadians: function(degrees) {
-  return degrees * (Math.PI / 180);
-},
 
-// lấy trung điểm
- getMidPoint: function(coord1, coord2) {
-  var midX = (coord1[0] + coord2[0]) / 2;
-  var midY = (coord1[1] + coord2[1]) / 2;
-  return [midX, midY];
-},
-  
+  // Hàm chuyển đổi độ sang radian
+  toRadians: function (degrees) {
+    return degrees * (Math.PI / 180);
+  },
+
+  // lấy trung điểm
+  getMidPoint: function (coord1, coord2) {
+    var midX = (coord1[0] + coord2[0]) / 2;
+    var midY = (coord1[1] + coord2[1]) / 2;
+    return [midX, midY];
+  },
+
 };
 
 var start = [106.71970882, 10.795437047];
@@ -220,18 +246,21 @@ var arr = [
 var new_coords = gis.createCoords(arr, bearing, 17);
 //console.log(new_coords);
 // check result
-var initialRadius = 17;
+var initialRadius = 10;
 var radius = 6371e3; // meters
-var circleRadius = gis.toRadians(initialRadius);
+var circleRadius = Number(initialRadius) / 111319; // chuyển đổi bán kính sang đơn vị radians
+console.log("Curve1", circleRadius);
 var center = [106.71970882, 10.795437047];
-var circleCoords = gis.getCircleCoordinates(center, circleRadius,10);
-// console.log("circle", circleCoords);
+var circleCoords = gis.getCircleCoordinates(center, initialRadius, 10);
+console.log("circle", circleCoords);
 
-var st = [106.721010762, 10.794179897]
-var en = [106.721209552, 10.794318368]
+var st = [106.721010762, 10.794179897,0]
+var en = [106.721209552, 10.794318368,0]
 var controlPoint = [106.721176602, 10.794182706]
 var step = 50;
 
 // số cuooisd nhập -90 hoặc 90 nha
-var Curve = gis.getParabolicCurveCoordinates(st, en, 50 ,step,-90)
-console.log("Curve", Curve);
+var Curve = gis.getParabolicCurveCoordinates(st, en, 50, step, -90)
+var test = gis.calculate3DParabolicCurve(st,en,5,step)
+// console.log("Curve", Curve);
+// console.log("test", test);

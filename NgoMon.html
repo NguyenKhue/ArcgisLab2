@@ -56,6 +56,10 @@
 				url: "./data/floor/floor.right.wall.geojson.json"
 			});
 
+			const geojsonLayer2 = new GeoJSONLayer({
+				url: "./data/floor/floor.geojson.json"
+			});
+
 			geojsonLayer.renderer = {
 				type: "simple",
 				symbol: {
@@ -88,16 +92,39 @@
 				}
 			};
 
+			geojsonLayer2.renderer = {
+				type: "simple",
+				symbol: {
+					type: "line-3d",
+					symbolLayers: [
+						{
+							type: "path",
+							profile: "quad",
+							material: {
+								color: "#FF0000",
+							},
+							width: 1.0,
+							height: 1.0,
+							join: "bevel",
+							cap: "butt",
+							profileRotation: "heading",
+							anchor: "bottom",
+						},
+					],
+				},
+			}
+
 			const map = new Map({
 				basemap: "topo-vector",
-				layers: [geojsonLayer, geojsonLayer1] //end layers
+				layers: [geojsonLayer, geojsonLayer1, geojsonLayer2] //end layers
 			});
 
 			const view = new SceneView({
 				container: "viewDiv",
 				map: map,
 				camera: {
-					position: [107.579189931, 16.467688731, 500],
+					position: [106.721010762,
+                            	10.794179897, 500],
 					heading: 0,
 					tilt: 0
 				}

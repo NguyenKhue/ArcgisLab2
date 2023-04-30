@@ -91,15 +91,17 @@ var gis = {
 };
 
 var start = [
-  107.579341,
-  16.467700
+  107.57946100754326,
+                                16.46778500534316,
 ];
 var end = [ 
-  107.579292,
-  16.467761
+  107.579316,
+  16.467974,
 ];
 var bearing = gis.getBearing(start, end);
 var point = [ 107.57946100754326, 16.46778500534316,]
 var new_coord = gis.createCoord(point, bearing, 0.5);
+var distance = gis.calculateDistance(start, end)
 console.log(bearing)
+console.log(distance)
 console.log(new_coord)

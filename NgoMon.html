@@ -128,6 +128,27 @@
 					tilt: 0
 				}
 			});
+			var graphicsLayer = new GraphicsLayer();
+
+			map.add(graphicsLayer);
+
+			const polyline = {
+				type: "polyline", // autocasts as new Polyline()
+				paths: [[107.57931314144261, 16.467736169255335],
+				[107.57943314897108, 16.467821174596647]]
+			};
+
+			const lineSymbol = {
+				type: "simple-line", // autocasts as SimpleLineSymbol()
+				color: [0, 0, 0],
+				width: 4
+			};
+			const polylineGraphic = new Graphic({
+				geometry: polyline,
+				symbol: lineSymbol
+			});
+
+			graphicsLayer.add(polylineGraphic);
 
 			view.popup.defaultPopupTemplateEnabled = true;
 		});

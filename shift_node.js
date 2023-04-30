@@ -101,7 +101,7 @@ var gis = {
   },
 
   // vẽ hình tròn
-  getCircleCoordinates: function (center, radiusMet, hight) {
+  getCircleCoordinates: function (center, radiusMet, height = 0) {
     var coordinates = [];
 
     var end = [106.71984990958984, 10.795495488221626];
@@ -118,12 +118,11 @@ var gis = {
       var radians = angle * (Math.PI / 180);
       var x = center[0] + radius * Math.cos(radians);
       var y = center[1] + radius * Math.sin(radians);
-      coordinates.push([x, y, hight]);
+      coordinates.push([x, y, height]);
     }
 
     return coordinates;
   },
-
 
   // dịch chuyển 1 lúc nhiều điểm với
   createCoords: function (coords, bearing, distance) {
@@ -203,45 +202,15 @@ var gis = {
 
 };
 
-var start = [106.71970882, 10.795437047];
-var end = [106.71984990958984, 10.795495488221626];
+var start = [107.579341, 16.4677];
+var end = [107.57946100754326, 16.46778500534316];
 var bearing = gis.getBearing(start, end);
 var point = [107.57946100754326, 16.46778500534316];
 var new_coord = gis.createCoord(point, bearing, 10);
 
 var arr = [
-  [106.71986153427159, 10.795437047],
-  [106.71985859990968, 10.795466840076422],
-  [106.71984990958984, 10.795495488221626],
-  [106.71983579727619, 10.795521890503457],
-  [106.71981680529703, 10.795545032297031],
-  [106.71979366350345, 10.7955640242762],
-  [106.71976726122162, 10.795578136589851],
-  [106.71973861307642, 10.795586826909691],
-  [106.71970882, 10.795589761271598],
-  [106.71967902692357, 10.795586826909691],
-  [106.71965037877837, 10.795578136589851],
-  [106.71962397649654, 10.7955640242762],
-  [106.71960083470296, 10.795545032297031],
-  [106.7195818427238, 10.795521890503457],
-  [106.71956773041015, 10.795495488221626],
-  [106.7195590400903, 10.795466840076422],
-  [106.7195561057284, 10.795437047],
-  [106.7195590400903, 10.795407253923578],
-  [106.71956773041015, 10.795378605778374],
-  [106.7195818427238, 10.795352203496543],
-  [106.71960083470296, 10.795329061702969],
-  [106.71962397649654, 10.7953100697238],
-  [106.71965037877837, 10.795295957410149],
-  [106.71967902692357, 10.795287267090309],
-  [106.71970882, 10.795284332728402],
-  [106.71973861307642, 10.795287267090309],
-  [106.71976726122162, 10.795295957410149],
-  [106.71979366350345, 10.7953100697238],
-  [106.71981680529703, 10.795329061702969],
-  [106.71983579727619, 10.795352203496543],
-  [106.71984990958984, 10.795378605778374],
-  [106.71985859990968, 10.795407253923578],
+  [107.579341, 16.4677, 0],
+  [107.57946100754326, 16.46778500534316, 0],
 ];
 var new_coords = gis.createCoords(arr, bearing, 17);
 //console.log(new_coords);
@@ -264,3 +233,122 @@ var Curve = gis.getParabolicCurveCoordinates(st, en, 50, step, -90)
 var test = gis.calculate3DParabolicCurve(st,en,5,step)
 // console.log("Curve", Curve);
 // console.log("test", test);
+var new_coords = gis.createCoords(arr, bearing - 90, 5);
+// console.log(new_coords);
+// check result
+var initialRadius = 17;
+var circleRadius = Number(initialRadius) / 111319;
+var center = [106.721748628, 10.794689836];
+var circleCoords = gis.getCircleCoordinates(center, circleRadius);
+// console.log("circle", circleCoords);
+
+function showNotification() {
+  let toast = document.getElementById("notification_functions");
+  setTimeout(() => {
+    toast.style.opacity = "1";
+  }, 100);
+  setTimeout(() => {
+    toast.style.opacity = "0";
+  }, 2000);
+}
+
+function getCircleCoordinates() {
+  let coordinateInput = document.getElementById("coordinateInput").value;
+  let radiusInput = document.getElementById("radiusInput").value;
+  let coordinateZInput = document.getElementById("coordinateZInput").value;
+
+  let coordinateArray = coordinateInput.split(",");
+  var coordinates = [];
+  var numPoints = 32;
+  var transRadius = Number(radiusInput) / 111319;
+  for (var i = 0; i < numPoints; i++) {
+    var angle = (i / numPoints) * Math.PI * 2;
+    var x =
+      Number(coordinateArray[0].slice(1, coordinateArray[0].length)) +
+      transRadius * Math.cos(angle);
+    var y =
+      Number(coordinateArray[1].slice(0, -1)) + transRadius * Math.sin(angle);
+    coordinates.push([x, y, Number(coordinateZInput)]);
+  }
+  let textToCopy = "[";
+  coordinates.forEach((item) => {
+    textToCopy += "[" + item.join(",") + "],";
+  });
+  textToCopy = textToCopy.slice(0, -1) + "]";
+
+  navigator.clipboard
+    .writeText(textToCopy)
+    .then(() => console.log("Array copied to clipboard"))
+    .catch((error) =>
+      console.error("Error copying array to clipboard:", error)
+    );
+  showNotification();
+}
+
+function getShiftNode() {
+  let coordinateAInput = document
+    .getElementById("coordinateAInput")
+    .value.trim()
+    .slice(1, -1)
+    .split(",");
+  let coordinateBInput = document
+    .getElementById("coordinateBInput")
+    .value.trim()
+    .slice(1, -1)
+    .split(",");
+  let coordinateXInput = document
+    .getElementById("coordinateXInput")
+    .value.trim()
+    .slice(1, -1)
+    .split(",");
+  let angle = Number(document.getElementById("angleInput").value);
+  let distance = Number(document.getElementById("distanceInput").value);
+
+  let start = [Number(coordinateAInput[0]), Number(coordinateAInput[1])];
+  let end = [Number(coordinateBInput[0]), Number(coordinateBInput[1])];
+  let bearing = gis.getBearing(start, end);
+  let point = [];
+  let coordinate = [];
+  console.log(coordinateXInput);
+  for (let i = 0; i < coordinateXInput.length; i = i + 2) {
+    if (coordinateXInput.length > 2) {
+      coordinate = [
+        Number(coordinateXInput[i].trim().slice(1, coordinateXInput[i].length)),
+        Number(coordinateXInput[i + 1].trim().slice(0, -1)),
+      ];
+      console.log(
+        Number(coordinateXInput[i].trim().slice(0, coordinateXInput[i].length))
+      );
+      console.log(Number(coordinateXInput[i + 1].trim().slice(0, -1)));
+      point.push(coordinate);
+    } else {
+      point.push(Number(coordinateXInput[i].trim()));
+      point.push(Number(coordinateXInput[i + 1].trim()));
+    }
+  }
+  let new_coord = 0;
+  if (coordinateXInput.length > 2) {
+    new_coord = gis.createCoords(point, bearing + angle, distance);
+  } else {
+    new_coord = gis.createCoord(point, bearing + angle, distance);
+  }
+  console.log(new_coord);
+
+  let textToCopy = "[";
+  if (coordinateXInput.length > 2) {
+    new_coord.forEach((item) => {
+      textToCopy += "[" + item.join(",") + "],";
+    });
+    textToCopy = textToCopy.slice(0, -1) + "]";
+  } else {
+    textToCopy += new_coord.join(",") + "]";
+  }
+
+  navigator.clipboard
+    .writeText(textToCopy)
+    .then(() => console.log("Array copied to clipboard"))
+    .catch((error) =>
+      console.error("Error copying array to clipboard:", error)
+    );
+  showNotification();
+}

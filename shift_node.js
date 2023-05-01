@@ -140,18 +140,29 @@ var gis = {
   },
 
   // tạo đường cong
-  getParabolicCurveCoordinates: function (startPoint, endPoint, height, numPoints, option) {
-
+  getParabolicCurveCoordinates: function (
+    startPoint,
+    endPoint,
+    height,
+    numPoints,
+    option
+  ) {
     var bearing = gis.getBearing(startPoint, endPoint);
-    var point = gis.getMidPoint(startPoint, endPoint)
-    var controlPoint = gis.createCoord(point, (bearing + option), height);
+    var point = gis.getMidPoint(startPoint, endPoint);
+    var controlPoint = gis.createCoord(point, bearing + option, height);
 
     var coordinates = [];
 
     for (var i = 0; i <= numPoints; i++) {
       var t = i / numPoints;
-      var x = Math.pow(1 - t, 2) * startPoint[0] + 2 * (1 - t) * t * controlPoint[0] + Math.pow(t, 2) * endPoint[0];
-      var y = Math.pow(1 - t, 2) * startPoint[1] + 2 * (1 - t) * t * controlPoint[1] + Math.pow(t, 2) * endPoint[1];
+      var x =
+        Math.pow(1 - t, 2) * startPoint[0] +
+        2 * (1 - t) * t * controlPoint[0] +
+        Math.pow(t, 2) * endPoint[0];
+      var y =
+        Math.pow(1 - t, 2) * startPoint[1] +
+        2 * (1 - t) * t * controlPoint[1] +
+        Math.pow(t, 2) * endPoint[1];
       coordinates.push([x, y]);
     }
 
@@ -352,3 +363,31 @@ function getShiftNode() {
     );
   showNotification();
 }
+
+var start = [107.579341, 16.4677];
+var end = [107.57946100754326, 16.46778500534316];
+var bearing = gis.getBearing(start, end);
+var point = [107.57946100754326, 16.46778500534316];
+var new_coord = gis.createCoord(point, bearing, 10);
+
+var arr = [
+  [107.579341, 16.4677, 0],
+  [107.57946100754326, 16.46778500534316, 0],
+];
+var new_coords = gis.createCoords(arr, bearing - 90, 5);
+// console.log(new_coords);
+// check result
+var initialRadius = 17;
+var circleRadius = Number(initialRadius) / 111319;
+var center = [106.721748628, 10.794689836];
+var circleCoords = gis.getCircleCoordinates(center, circleRadius);
+// console.log("circle", circleCoords);
+
+var st = [106.722097635, 10.794350097];
+var en = [106.72232592160728, 10.794500108138244];
+// var controlPoint = [106.721176602, 10.794182706];
+var step = 50;
+
+// số cuooisd nhập -90 hoặc 90 nha
+var Curve = gis.getParabolicCurveCoordinates(st, en, 50, step, 90);
+console.log("Curve", Curve);

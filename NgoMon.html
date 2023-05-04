@@ -35,8 +35,8 @@
 		}
 	</style>
 
-	<link rel="stylesheet" href="https://js.arcgis.com/4.16/esri/themes/light/main.css" />
-	<script src="https://js.arcgis.com/4.16/"></script>
+	<link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css" />
+	<script src="https://js.arcgis.com/4.26/"></script>
 
 	<script>
 		require([
@@ -59,6 +59,55 @@
 			const geojsonLayer2 = new GeoJSONLayer({
 				url: "./data/floor/floor.geojson.json"
 			});
+
+			const geojsonLayer3 = new GeoJSONLayer({
+				url: "./data/floor/floor.back.geojson.json"
+			});
+
+			const floorEntryGeojsonLayer = new GeoJSONLayer({
+				url: "./data/floor/floor.entry.geojson.json"
+			});
+
+			const floorLeftGeojsonLayer = new GeoJSONLayer({
+				url: "./data/floor/floor.left.geojson.json"
+			});
+
+			const leftWallEntryGeojsonLayer = new GeoJSONLayer({
+				url: "./data/floor/left_entry/left_wall.geojson.json"
+			});
+
+			const rightWallLeftEntryGeojsonLayer = new GeoJSONLayer({
+				url: "./data/floor/left_entry/right_wall.geojson.json"
+			});
+
+			const topWallLeftEntryGeojsonLayer = new GeoJSONLayer({
+				url: "./data/floor/left_entry/top_wall.geojson.json"
+			});
+
+			const leftWallCenterEntryGeojsonLayer = new GeoJSONLayer({
+				url: "./data/floor/center_entry/left_wall.geojson.json"
+			});
+
+			const rightWallCenterEntryGeojsonLayer = new GeoJSONLayer({
+				url: "./data/floor/center_entry/right_wall.geojson.json"
+			});
+
+			const topWallCenterEntryGeojsonLayer = new GeoJSONLayer({
+				url: "./data/floor/center_entry/top_wall.geojson.json"
+			});
+
+			const leftWallRightEntryGeojsonLayer = new GeoJSONLayer({
+				url: "./data/floor/right_entry/left_wall.geojson.json"
+			});
+
+			const rightWallRightEntryGeojsonLayer = new GeoJSONLayer({
+				url: "./data/floor/right_entry/right_wall.geojson.json"
+			});
+
+			const topWallRightEntryGeojsonLayer = new GeoJSONLayer({
+				url: "./data/floor/right_entry/top_wall.geojson.json"
+			});
+
 
 			geojsonLayer.renderer = {
 				type: "simple",
@@ -103,8 +152,8 @@
 							material: {
 								color: "#FF0000",
 							},
-							width: 1.0,
-							height: 1.0,
+							width: 3.0,
+							height: 0.0,
 							join: "bevel",
 							cap: "butt",
 							profileRotation: "heading",
@@ -114,17 +163,217 @@
 				},
 			}
 
+			geojsonLayer3.renderer = {
+				type: "simple",
+				symbol: {
+					type: "polygon-3d",
+					symbolLayers: [
+						{
+							type: "fill",
+							size: 0,
+							material: {
+								color: "#FF0000"
+							},
+						}
+					]
+				}
+			};
+
+			floorEntryGeojsonLayer.renderer = {
+				type: "simple",
+				symbol: {
+					type: "polygon-3d",
+					symbolLayers: [
+						{
+							type: "fill",
+							size: 0,
+							material: {
+								color: "#FF0000"
+							},
+						}
+					]
+				}
+			};
+
+			leftWallEntryGeojsonLayer.renderer = {
+				type: "simple",
+				symbol: {
+					type: "polygon-3d",
+					symbolLayers: [
+						{
+							type: "extrude",
+							size: 3.94,
+							material: {
+								color: "#FF0000"
+							},
+						}
+					]
+				}
+			};
+
+			rightWallLeftEntryGeojsonLayer.renderer = {
+				type: "simple",
+				symbol: {
+					type: "polygon-3d",
+					symbolLayers: [
+						{
+							type: "extrude",
+							size: 3.94,
+							material: {
+								color: "#FF0000"
+							},
+						}
+					]
+				}
+			};
+
+			topWallLeftEntryGeojsonLayer.renderer = {
+				type: "simple",
+				symbol: {
+					type: "polygon-3d",
+					symbolLayers: [
+						{
+							type: "extrude",
+							size: 0.5,
+							material: {
+								color: "#FF0000"
+							},
+						}
+					]
+				}
+			};
+
+			rightWallCenterEntryGeojsonLayer.renderer = {
+				type: "simple",
+				symbol: {
+					type: "polygon-3d",
+					symbolLayers: [
+						{
+							type: "extrude",
+							size: 4.44,
+							material: {
+								color: "#FF0000"
+							},
+						}
+					]
+				}
+			};
+
+			leftWallCenterEntryGeojsonLayer.renderer = {
+				type: "simple",
+				symbol: {
+					type: "polygon-3d",
+					symbolLayers: [
+						{
+							type: "extrude",
+							size: 4.44,
+							material: {
+								color: "#FF0000"
+							},
+						}
+					]
+				}
+			};
+
+			topWallCenterEntryGeojsonLayer.renderer = {
+				type: "simple",
+				symbol: {
+					type: "polygon-3d",
+					symbolLayers: [
+						{
+							type: "extrude",
+							size: 0.5,
+							material: {
+								color: "#FF0000"
+							},
+						}
+					]
+				}
+			};
+
+			leftWallRightEntryGeojsonLayer.renderer = {
+				type: "simple",
+				symbol: {
+					type: "polygon-3d",
+					symbolLayers: [
+						{
+							type: "extrude",
+							size: 3.94,
+							material: {
+								color: "#FF0000"
+							},
+						}
+					]
+				}
+			};
+
+			rightWallRightEntryGeojsonLayer.renderer = {
+				type: "simple",
+				symbol: {
+					type: "polygon-3d",
+					symbolLayers: [
+						{
+							type: "extrude",
+							size: 3.94,
+							material: {
+								color: "#FF0000"
+							},
+						}
+					]
+				}
+			};
+
+			topWallRightEntryGeojsonLayer.renderer = {
+				type: "simple",
+				symbol: {
+					type: "polygon-3d",
+					symbolLayers: [
+						{
+							type: "extrude",
+							size: 0.5,
+							material: {
+								color: "#FF0000"
+							},
+						}
+					]
+				}
+			};
+
+			floorLeftGeojsonLayer.renderer = {
+				type: "simple",
+				symbol: {
+					type: "polygon-3d",
+					symbolLayers: [
+						{
+							type: "fill",
+							size: 0,
+							material: {
+								color: "#FF0000"
+							},
+						}
+					]
+				}
+			};
+
 			const map = new Map({
 				basemap: "topo-vector",
-				layers: [geojsonLayer, geojsonLayer1, geojsonLayer2] //end layers
+				layers: [geojsonLayer, geojsonLayer1,
+					geojsonLayer3, floorEntryGeojsonLayer,
+					floorLeftGeojsonLayer,
+					leftWallEntryGeojsonLayer, rightWallLeftEntryGeojsonLayer,
+					topWallLeftEntryGeojsonLayer,
+					rightWallCenterEntryGeojsonLayer,
+					leftWallCenterEntryGeojsonLayer, topWallCenterEntryGeojsonLayer,
+					leftWallRightEntryGeojsonLayer, rightWallRightEntryGeojsonLayer,
+					topWallRightEntryGeojsonLayer
+				] //end layers
 			});
 
 			const view = new SceneView({
 				container: "viewDiv",
 				map: map,
 				camera: {
-					position: [106.721010762,
-                            	10.794179897, 500],
+					position: [107.578889, 16.467669, 500],
 					heading: 0,
 					tilt: 0
 				}
@@ -141,9 +390,3 @@
 </body>
 
 </html>
-
-<!-- 1193786.78 -->
-<!-- 688171.71 -->
-
-<!-- 1193771.17 -->
-<!-- 688150.04 -->

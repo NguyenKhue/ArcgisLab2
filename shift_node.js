@@ -124,6 +124,31 @@ var gis = {
     return coordinates;
   },
 
+  Circle: function (center, radius, numCoordinates) {
+    const centerLon = center[0];
+    const centerLat = center[1];
+
+    // Độ dài của một độ kinh tuyến tại vị trí latitude
+    var oneDegreeLength = 111320 * Math.cos(centerLat * Math.PI / 180);
+
+    // Chuyển đổi bán kính từ mét sang độ
+    var radiusDegrees = radius / oneDegreeLength;
+
+    var coordinates = [];
+    var angleIncrement = 360 / numCoordinates;
+
+    for (var i = 0; i < numCoordinates; i++) {
+      var angle = i * angleIncrement;
+      var lon = centerLon + (radiusDegrees * Math.cos(angle * Math.PI / 180));
+      var lat = centerLat + (radiusDegrees * Math.sin(angle * Math.PI / 180));
+      coordinates.push([lon, lat]);
+    }
+
+    return coordinates;
+  },
+
+
+
   // dịch chuyển 1 lúc nhiều điểm với
   createCoords: function (coords, bearing, distance) {
     var newCoords = [];
@@ -228,11 +253,13 @@ var new_coords = gis.createCoords(arr, bearing, 17);
 // check result
 var initialRadius = 10;
 var radius = 6371e3; // meters
+var radiusunit = "meters";
 var circleRadius = Number(initialRadius) / 111319; // chuyển đổi bán kính sang đơn vị radians
 console.log("Curve1", circleRadius);
-var center = [106.71970882, 10.795437047];
+var center = [106.722097635, 10.794350097]
 var circleCoords = gis.getCircleCoordinates(center, initialRadius, 10);
-console.log("circle", circleCoords);
+var circleTest = gis.Circle(center,initialRadius,32)
+console.log("circle111", circleTest);
 
 var st = [106.721010762, 10.794179897,0]
 var en = [106.721209552, 10.794318368,0]
@@ -390,4 +417,4 @@ var step = 50;
 
 // số cuooisd nhập -90 hoặc 90 nha
 var Curve = gis.getParabolicCurveCoordinates(st, en, 50, step, 90);
-console.log("Curve", Curve);
+// console.log("Curve", Curve);

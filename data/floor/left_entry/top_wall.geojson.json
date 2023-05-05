@@ -1,0 +1,30 @@
+{
+    "type": "FeatureCollection",
+    "generator": "smartcity",
+    "copyright": "Smartcity",
+    "timestamp": "2021-05-27T09:28:58Z",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Building name": "Layer4 - Ban công trái cửa sổ 2",
+                "height": 0.5,
+                "width": 0.38,
+                "color": "#c7c1b8",
+                "idb": "1"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 107.57913664198,16.46765024641, 3.94],
+                        [ 107.57903919274204, 16.467776766460478, 3.94 ],
+                        [ 107.57906182256396, 16.467792795927476, 3.94 ],
+                        [  107.57915927181, 16.467666275877, 3.94]
+                    ]
+                ]
+            },
+            "id": "pp1"
+        }
+    ]
+}

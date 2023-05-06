@@ -174,20 +174,21 @@ var gis = {
   calculate3DParabolicCurve: function (
     startPoint,
     endPoint,
+    ZPoint = 0,
     height,
-    numPoints
+    numPoints = 99
   ) {
     var coordinates = [];
 
     var startX = startPoint[0];
     var startY = startPoint[1];
-    var startZ = startPoint[2];
+    var startZ = ZPoint;
     var endX = endPoint[0];
     var endY = endPoint[1];
-    var endZ = endPoint[2];
+    var endZ = ZPoint;
     var controlX = (startX + endX) / 2;
     var controlY = (startY + endY) / 2;
-    var controlZ = startZ + height;
+    var controlZ = startZ + height * 2;
 
     for (var i = 0; i <= numPoints; i++) {
       var t = i / numPoints;
@@ -235,7 +236,7 @@ var new_coords = gis.createCoords(arr, bearing, 17);
 // console.log("Curve1", circleRadius);
 var center = [106.722097635, 10.794350097];
 var circleCoords = gis.getCircleCoordinates(center, 30, 100);
-console.log("circle", circleCoords);
+// console.log("circle", circleCoords);
 
 var st = [106.721010762, 10.794179897, 0];
 var en = [106.721209552, 10.794318368, 0];
@@ -244,7 +245,12 @@ var step = 50;
 
 // số cuooisd nhập -90 hoặc 90 nha
 var Curve = gis.getParabolicCurveCoordinates(st, en, 50, step, -90);
-var test = gis.calculate3DParabolicCurve(st, en, 5, step);
+var test = gis.calculate3DParabolicCurve(
+  [106.720766493, 10.795301005, 0],
+  [106.720950524, 10.7954471, 0],
+  201,
+  99
+);
 // console.log("Curve", Curve);
 // console.log("test", test);
 var new_coords = gis.createCoords(arr, bearing - 90, 5);
@@ -321,17 +327,13 @@ function getShiftNode() {
   let bearing = gis.getBearing(start, end);
   let point = [];
   let coordinate = [];
-  console.log(coordinateXInput);
+  // console.log(coordinateXInput);
   for (let i = 0; i < coordinateXInput.length; i = i + 2) {
     if (coordinateXInput.length > 2) {
       coordinate = [
         Number(coordinateXInput[i].trim().slice(1, coordinateXInput[i].length)),
         Number(coordinateXInput[i + 1].trim().slice(0, -1)),
       ];
-      console.log(
-        Number(coordinateXInput[i].trim().slice(0, coordinateXInput[i].length))
-      );
-      console.log(Number(coordinateXInput[i + 1].trim().slice(0, -1)));
       point.push(coordinate);
     } else {
       point.push(Number(coordinateXInput[i].trim()));
@@ -365,31 +367,69 @@ function getShiftNode() {
   showNotification();
 }
 
-var start = [107.579341, 16.4677];
-var end = [107.57946100754326, 16.46778500534316];
-var bearing = gis.getBearing(start, end);
-// console.log(bearing);
-var point = [107.57946100754326, 16.46778500534316];
-var new_coord = gis.createCoord(point, bearing, 10);
+function getParabolicCoordinates() {
+  let coordinateStartInput = document
+    .getElementById("coordinateStartInput")
+    .value.trim()
+    .slice(1, -1)
+    .split(",");
+  let coordinateEndInput = document
+    .getElementById("coordinateEndInput")
+    .value.trim()
+    .slice(1, -1)
+    .split(",");
+  let coordinateZInput = document
+    .getElementById("coordinateZParaInput")
+    .value.trim();
+  let heightInput = document.getElementById("heightParaInput").value.trim();
+  let numPointsInput = document.getElementById("numPointsInput").value.trim();
+  console.log([
+    Number(coordinateStartInput[0]),
+    Number(coordinateStartInput[1]),
+  ]);
+  console.log([Number(coordinateEndInput[0]), Number(coordinateEndInput[1])]);
+  console.log(Number(coordinateZInput));
+  console.log(Number(heightInput));
+  console.log(numPointsInput);
+  if (numPointsInput == "") numPointsInput = 99;
+  let coordinates = gis.calculate3DParabolicCurve(
+    [Number(coordinateStartInput[0]), Number(coordinateStartInput[1])],
+    [Number(coordinateEndInput[0]), Number(coordinateEndInput[1])],
+    Number(coordinateZInput),
+    Number(heightInput),
+    Number(numPointsInput)
+  );
+  console.log("parabol", coordinates);
 
-var arr = [
-  [107.579341, 16.4677, 0],
-  [107.57946100754326, 16.46778500534316, 0],
-];
-var new_coords = gis.createCoords(arr, bearing - 90, 5);
-// console.log(new_coords);
-// check result
-var initialRadius = 17;
-var circleRadius = Number(initialRadius) / 111319;
-var center = [106.721748628, 10.794689836];
-var circleCoords = gis.getCircleCoordinates(center, circleRadius);
-// console.log("circle", circleCoords);
+  let textToCopy = "[";
+  coordinates.forEach((item) => {
+    textToCopy += "[" + item.join(",") + "],";
+  });
+  textToCopy = textToCopy.slice(0, -1) + "]";
 
-var st = [106.722097635, 10.794350097];
-var en = [106.72232592160728, 10.794500108138244];
-// var controlPoint = [106.721176602, 10.794182706];
-var step = 50;
+  navigator.clipboard
+    .writeText(textToCopy)
+    .then(() => console.log("Array copied to clipboard"))
+    .catch((error) =>
+      console.error("Error copying array to clipboard:", error)
+    );
+  showNotification();
+}
 
-// số cuooisd nhập -90 hoặc 90 nha
-var Curve = gis.getParabolicCurveCoordinates(st, en, 50, step, 90);
-// // console.log("Curve", Curve);
+function showFunctions() {
+  let viewDiv = document.getElementById("viewDiv");
+  let functions = document.getElementById("functions");
+  let buttonExpand = document.getElementById("buttonExpand");
+
+  if (!functions.classList.contains("active")) {
+    functions.classList.add("active");
+    viewDiv.style.width = "70%";
+    functions.style.display = "flex";
+    buttonExpand.innerHTML = "-";
+  } else {
+    viewDiv.style.width = "100%";
+    functions.style.display = "none";
+    functions.classList.remove("active");
+    buttonExpand.innerHTML = "+";
+  }
+}

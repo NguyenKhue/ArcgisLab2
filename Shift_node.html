@@ -148,6 +148,23 @@
                 <button onclick="getShiftNode()" class="button_save">Lưu kết quả vào Clipboard</button>
             </div>
         </div>
+        <div id="drawPara_function" class="function">
+            <button id="drawPara_button" class="button_function"><a href="#drawPara_content">Vẽ đường
+                    cong</a></button>
+            <div id="drawPara_content" class="content">
+                <label>Tọa độ điểm đầu: </label>
+                <input id="coordinateStartInput" type="text" />
+                <label>Tọa độ điểm cuối: </label>
+                <input id="coordinateEndInput" type="text" />
+                <label>Tọa độ Z của 2 điểm trên(Optional, Default = 0): </label>
+                <input id="coordinateZParaInput" type="text" />
+                <label>Chiều cao đỉnh(m): </label>
+                <input id="heightParaInput" type="text" />
+                <label>Số lượng điểm để vẽ đường cong (Optional, Default = 99): </label>
+                <input id="numPointsInput" type="text" />
+                <button onclick="getParabolicCoordinates()" class="button_save">Lưu kết quả vào Clipboard</button>
+            </div>
+        </div>
         <div id="notification_functions" class="function">
             <p>Đã lưu kết quả vào Clipboard</p>
         </div>

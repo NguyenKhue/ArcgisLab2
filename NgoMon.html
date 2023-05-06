@@ -44,6 +44,47 @@
 	<script src="shift_node.js"></script>
 
 	<script>
+		function saveTextToClipboard(text) {
+			const textarea = document.createElement('textarea');
+			textarea.value = text;
+			document.body.appendChild(textarea);
+			textarea.select();
+			document.execCommand('copy');
+			document.body.removeChild(textarea);
+
+			// create a toast notification element
+			const toast = document.createElement('div');
+			toast.setAttribute('id', "toast-notification");
+			toast.textContent = 'Text copied to clipboard!';
+			toast.style.position = 'fixed';
+			toast.style.bottom = '20px';
+			if (functions.classList.contains("active")) {
+				toast.style.left = '35%';
+			}
+			else toast.style.left = '50%';
+			toast.style.transform = 'translateX(-50%)';
+			toast.style.padding = '10px 20px';
+			toast.style.backgroundColor = '#333';
+			toast.style.color = '#fff';
+			toast.style.borderRadius = '5px';
+			toast.style.opacity = '0';
+			toast.style.transition = 'opacity 0.3s ease-in-out';
+
+			// add the toast element to the document
+			document.body.appendChild(toast);
+
+			// animate the toast by changing its opacity
+			setTimeout(() => {
+				toast.style.opacity = '1';
+			}, 100);
+			setTimeout(() => {
+				toast.style.opacity = '0';
+			}, 2000);
+			setTimeout(() => {
+				document.body.removeChild(toast);
+			}, 2300);
+		}
+
 		require([
 			"esri/Map",
 			"esri/views/SceneView",
@@ -402,6 +443,28 @@
 			map.add(graphicsLayer);
 
 			view.popup.defaultPopupTemplateEnabled = true;
+			view.popup.autoOpenEnabled = false;
+			var t = ""
+			view.on("click", (event) => {
+				// Get the coordinates of the click on the view
+				const lat = Math.round(event.mapPoint.latitude * 1000000000) / 1000000000;
+				const lon = Math.round(event.mapPoint.longitude * 1000000000) / 1000000000;
+
+				t = "[" + lon + ", " + lat + "]";
+				navigator.clipboard.readText()
+					.then(text => {
+						console.log('Pasted content: ', t);
+						saveTextToClipboard(t)
+					})
+					.catch(err => {
+						console.error('Failed to read clipboard contents: ', err);
+					});
+
+
+				const params = {
+					location: event.mapPoint
+				};
+			});
 		});
 	</script>
 </head>

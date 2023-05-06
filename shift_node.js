@@ -420,16 +420,19 @@ function showFunctions() {
   let viewDiv = document.getElementById("viewDiv");
   let functions = document.getElementById("functions");
   let buttonExpand = document.getElementById("buttonExpand");
+  let toast = document.getElementById("toast-notification");
 
   if (!functions.classList.contains("active")) {
     functions.classList.add("active");
     viewDiv.style.width = "70%";
     functions.style.display = "flex";
     buttonExpand.innerHTML = "-";
+    toast.style.left = "35%";
   } else {
     viewDiv.style.width = "100%";
     functions.style.display = "none";
     functions.classList.remove("active");
     buttonExpand.innerHTML = "+";
+    toast.style.left = "50%";
   }
 }

@@ -212,7 +212,7 @@ var gis = {
     var endZ = endPoint[2];
     var controlX = (startX + endX) / 2;
     var controlY = (startY + endY) / 2;
-    var controlZ = startZ + height;
+    var controlZ = startZ + height*2;
 
     for (var i = 0; i <= numPoints; i++) {
       var t = i / numPoints;
@@ -269,9 +269,9 @@ var step = 50;
 
 // số cuooisd nhập -90 hoặc 90 nha
 var Curve = gis.getParabolicCurveCoordinates(st, en, 50, step, -90);
-var test = gis.calculate3DParabolicCurve(st, en, 5, step);
+var test = gis.calculate3DParabolicCurve(st, en, 500, step);
 // console.log("Curve", Curve);
-// console.log("test", test);
+console.log("test11", test);
 var new_coords = gis.createCoords(arr, bearing - 90, 5);
 // console.log(new_coords);
 // check result

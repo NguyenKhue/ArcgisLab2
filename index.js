@@ -10,7 +10,9 @@ require([
 
   const map = new Map({
     basemap: "topo-vector",
-    layers: floorArr //end layers
+    layers: [
+      ...floorArr
+    ] //end layers
   });
 
   const view = new SceneView({

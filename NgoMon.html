@@ -6,116 +6,15 @@
 	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
 	<title>Ngọ Môn Huế 3D</title>
 
-	<!-- <style>
-		html,
-		body,
-		#viewDiv {
-			padding: 0;
-			margin: 0;
-			height: 100%;
-			width: 100%;
-		}
-
-		#back {
-			position: absolute;
-			bottom: 20px;
-		}
-
-		#back i {
-			background-image: url(app/public/img/back.svg);
-			background-repeat: no-repeat;
-			display: inline-block;
-			width: 100px;
-			height: 25px;
-			padding-left: 25px;
-			padding-top: 2px;
-			margin: 10px;
-			cursor: pointer;
-			background-size: 20px;
-		}
-	</style> -->
-
 	<link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css" />
 	<link href="Shift_node.css" rel="stylesheet" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<script src="https://js.arcgis.com/4.26/"></script>
-	<script src="shift_node.js"></script>
 
 
 	<script src="./index.js" type="module"></script>
 </head>
-
-<body>
-	<div id="viewDiv"></div>
-	<button style="
-        position: absolute;
-        background-color: #eb9967;
-        top: 70%;
-        right: 50px;
-        width: 50px;
-        height: 50px;
-		border-radius: 30px;
-		border: none;
-		cursor: pointer;
-		font-size: 25px;
-      " id="buttonExpand" onclick="showFunctions()">+</button>
-	<div id="functions" style="font-family: 'Roboto', sans-serif;">
-		<div id="drawCircle_function" class="function">
-			<button id="circle_button" class="button_function"><a href="#circle_content">Vẽ
-					hình tròn</a></button>
-			<div id="circle_content" class="content">
-				<label>Tọa độ tâm hình tròn: </label>
-				<input id="coordinateInput" type="text" />
-				<label>Tọa độ Z của hình tròn(Optional, Default = 0): </label>
-				<input id="coordinateZInput" type="text" />
-				<label>Bán kính(m): </label>
-				<input id="radiusInput" type="text" />
-				<button class="button_save" onclick="getCircleCoordinates()">Lưu kết quả vào
-					Clipboard</button>
-			</div>
-		</div>
-		<div id="shiftNode_function" class="function">
-			<button id="shiftNode_button" class="button_function"><a href="#shiftNode_content">Dịch chuyển
-					điểm</a></button>
-			<div id="shiftNode_content" class="content">
-				<p style="margin: 0 0 10px"><b>Note:</b> Điểm sẽ dịch chuyển theo hướng A -> B, và chiều xoay theo chiều
-					kim đồng hồ</p>
-				<label>Tọa độ điểm A: </label>
-				<input id="coordinateAInput" type="text" />
-				<label>Tọa độ điểm B: </label>
-				<input id="coordinateBInput" type="text" />
-				<label>Tọa độ điểm hoặc mảng các điểm(Điểm muốn dịch chuyển): </label>
-				<input id="coordinateXInput" type="text" />
-				<label>Góc xoay(Optional, Default = 0): </label>
-				<input id="angleInput" type="text" />
-				<label>Khoảng cách dịch chuyển(m): </label>
-				<input id="distanceInput" type="text" />
-				<button onclick="getShiftNode()" class="button_save">Lưu kết quả vào Clipboard</button>
-			</div>
-		</div>
-		<div id="drawPara_function" class="function">
-			<button id="drawPara_button" class="button_function"><a href="#drawPara_content">Vẽ đường
-					cong</a></button>
-			<div id="drawPara_content" class="content">
-				<label>Tọa độ điểm đầu: </label>
-				<input id="coordinateStartInput" type="text" />
-				<label>Tọa độ điểm cuối: </label>
-				<input id="coordinateEndInput" type="text" />
-				<label>Tọa độ Z của 2 điểm trên(Optional, Default = 0): </label>
-				<input id="coordinateZParaInput" type="text" />
-				<label>Chiều cao đỉnh(m): </label>
-				<input id="heightParaInput" type="text" />
-				<label>Số lượng điểm để vẽ đường cong (Optional, Default = 99): </label>
-				<input id="numPointsInput" type="text" />
-				<button onclick="getParabolicCoordinates()" class="button_save">Lưu kết quả vào Clipboard</button>
-			</div>
-		</div>
-		<div id="notification_functions" class="function">
-			<p>Đã lưu kết quả vào Clipboard</p>
-		</div>
-	</div>
-</body>
 
 </html>

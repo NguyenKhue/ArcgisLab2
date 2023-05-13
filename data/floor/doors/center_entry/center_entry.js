@@ -1,15 +1,15 @@
 export const center_entry = (Map, SceneView, GeoJSONLayer, SceneLayer,
   GraphicsLayer, Graphic, esriRequest) => {
   const leftWallCenterEntryGeojsonLayer = new GeoJSONLayer({
-    url: "./data/floor/center_entry/left_wall.geojson.json"
+    url: "./data/floor/doors/center_entry/left_wall.geojson.json"
   });
 
   const rightWallCenterEntryGeojsonLayer = new GeoJSONLayer({
-    url: "./data/floor/center_entry/right_wall.geojson.json"
+    url: "./data/floor/doors/center_entry/right_wall.geojson.json"
   });
 
   const topWallCenterEntryGeojsonLayer = new GeoJSONLayer({
-    url: "./data/floor/center_entry/top_wall.geojson.json"
+    url: "./data/floor/doors/center_entry/top_wall.geojson.json"
   });
 
   rightWallCenterEntryGeojsonLayer.renderer = {
@@ -43,8 +43,6 @@ export const center_entry = (Map, SceneView, GeoJSONLayer, SceneLayer,
       ]
     }
   };
-
-  console.log(leftWallCenterEntryGeojsonLayer)
 
   topWallCenterEntryGeojsonLayer.renderer = {
     type: "simple",

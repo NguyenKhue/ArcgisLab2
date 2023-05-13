@@ -1,15 +1,15 @@
 export const right_entry = (Map, SceneView, GeoJSONLayer, SceneLayer,
   GraphicsLayer, Graphic, esriRequest) => {
   const leftWallRightEntryGeojsonLayer = new GeoJSONLayer({
-    url: "./data/floor/right_entry/left_wall.geojson.json"
+    url: "./data/floor/doors/right_entry/left_wall.geojson.json"
   });
 
   const rightWallRightEntryGeojsonLayer = new GeoJSONLayer({
-    url: "./data/floor/right_entry/right_wall.geojson.json"
+    url: "./data/floor/doors/right_entry/right_wall.geojson.json"
   });
 
   const topWallRightEntryGeojsonLayer = new GeoJSONLayer({
-    url: "./data/floor/right_entry/top_wall.geojson.json"
+    url: "./data/floor/doors/right_entry/top_wall.geojson.json"
   });
 
   leftWallRightEntryGeojsonLayer.renderer = {

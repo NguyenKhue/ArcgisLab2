@@ -5,28 +5,28 @@ import { right_entry } from "./doors/right_entry/right_entry.js";
 export const floor = (Map, SceneView, GeoJSONLayer, SceneLayer,
   GraphicsLayer, Graphic, esriRequest) => {
   const geojsonLayer = new GeoJSONLayer({
-    url: "./data/floor/floor1.geojson.json"
+    url: "./data/floor/walls/floor1.geojson.json"
   });
 
   const geojsonLayer1 = new GeoJSONLayer({
-    url: "./data/floor/floor.right.wall.geojson.json"
+    url: "./data/floor/walls/floor.right.wall.geojson.json"
   });
 
   const geojsonLayer2 = new GeoJSONLayer({
-    url: "./data/floor/floor.geojson.json"
+    url: "./data/floor/walls/floor.geojson.json"
   });
 
   const geojsonLayer3 = new GeoJSONLayer({
-    url: "./data/floor/floor.back.geojson.json"
+    url: "./data/floor/walls/floor.back.geojson.json"
   });
 
   const floorEntryGeojsonLayer = new GeoJSONLayer({
-    url: "./data/floor/floor.entry.geojson.json"
+    url: "./data/floor/walls/floor.entry.geojson.json"
 
   });
 
   const floorLeftGeojsonLayer = new GeoJSONLayer({
-    url: "./data/floor/floor.left.geojson.json"
+    url: "./data/floor/walls/floor.left.geojson.json"
   });
 
   const centerEntry = center_entry(Map, SceneView, GeoJSONLayer, SceneLayer, GraphicsLayer, Graphic, esriRequest)

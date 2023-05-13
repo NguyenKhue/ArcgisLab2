@@ -1,6 +1,6 @@
-import { center_entry } from "./center_entry/center_entry.js";
-import { left_entry } from "./left_entry/left_entry.js";
-import { right_entry } from "./right_entry/right_entry.js";
+import { center_entry } from "./doors/center_entry/center_entry.js";
+import { left_entry } from "./doors/left_entry/left_entry.js";
+import { right_entry } from "./doors/right_entry/right_entry.js";
 
 export const floor = (Map, SceneView, GeoJSONLayer, SceneLayer,
   GraphicsLayer, Graphic, esriRequest) => {

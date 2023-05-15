@@ -7,8 +7,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Building name": "Layer4 - Ban công trái cửa sổ 2",
-                "height": 0.5,
+                "Building name": "Tường trái của Ngọ Môn",
+                "height": 4.94,
                 "color": "#c7c1b8",
                 "idb": "1"
             },
@@ -16,9 +16,8 @@
                 "type": "MultiPolygon",
                 "coordinates": [
                     [
-                        [ 107.578889, 16.467669, 0],
-                        [ 107.57889277163933, 16.467671671578106, 4.94],
-                        [107.579101, 16.467625, 0]
+                        [107.578889, 16.467669, 0],
+                        [107.578889, 16.467669, 4.94]
                     ]
                 ]
             },

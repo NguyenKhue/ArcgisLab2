@@ -25,8 +25,8 @@ export const floor = (Map, SceneView, GeoJSONLayer, SceneLayer,
 
   });
 
-  const floorLeftGeojsonLayer = new GeoJSONLayer({
-    url: "./data/floor/walls/floor.left.geojson.json"
+  const floorLeftWallGeojsonLayer = new GeoJSONLayer({
+    url: "./data/floor/walls/floor.left.wall.geojson.json"
   });
 
   const centerEntry = center_entry(Map, SceneView, GeoJSONLayer, SceneLayer, GraphicsLayer, Graphic, esriRequest)
@@ -42,7 +42,7 @@ export const floor = (Map, SceneView, GeoJSONLayer, SceneLayer,
           type: "fill",
           size: 0,
           material: {
-            color: "#FF0000"
+            color: "#8f8e8b"
           },
         }
       ]
@@ -58,7 +58,7 @@ export const floor = (Map, SceneView, GeoJSONLayer, SceneLayer,
           type: "fill",
           size: 0,
           material: {
-            color: "#FF0000"
+            color: "#8f8e8b"
           },
         }
       ]
@@ -74,7 +74,7 @@ export const floor = (Map, SceneView, GeoJSONLayer, SceneLayer,
           type: "path",
           profile: "quad",
           material: {
-            color: "#FF0000",
+            color: "#8f8e8b",
           },
           width: 3.0,
           height: 0.0,
@@ -96,7 +96,7 @@ export const floor = (Map, SceneView, GeoJSONLayer, SceneLayer,
           type: "fill",
           size: 0,
           material: {
-            color: "#FF0000"
+            color: "#8f8e8b"
           },
         }
       ]
@@ -112,14 +112,14 @@ export const floor = (Map, SceneView, GeoJSONLayer, SceneLayer,
           type: "fill",
           size: 0,
           material: {
-            color: "#FF0000"
+            color: "#8f8e8b"
           },
         }
       ]
     }
   };
 
-  floorLeftGeojsonLayer.renderer = {
+  floorLeftWallGeojsonLayer.renderer = {
     type: "simple",
     symbol: {
       type: "polygon-3d",
@@ -128,7 +128,7 @@ export const floor = (Map, SceneView, GeoJSONLayer, SceneLayer,
           type: "fill",
           size: 0,
           material: {
-            color: "#FF0000"
+            color: "#8f8e8b"
           },
         }
       ]
@@ -143,6 +143,6 @@ export const floor = (Map, SceneView, GeoJSONLayer, SceneLayer,
     geojsonLayer2,
     geojsonLayer3,
     floorEntryGeojsonLayer,
-    floorLeftGeojsonLayer
+    floorLeftWallGeojsonLayer
   ]
 }

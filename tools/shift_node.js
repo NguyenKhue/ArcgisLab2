@@ -419,20 +419,21 @@ function getParabolicCoordinates() {
 function showFunctions() {
   let viewDiv = document.getElementById("viewDiv");
   let functions = document.getElementById("functions");
-  let buttonExpand = document.getElementById("buttonExpand");
+  let buttonClickShow = document.getElementById("buttonClickShow");
   let toast = document.getElementById("toast-notification");
+  let instruction = document.getElementById("instruction");
 
   if (!functions.classList.contains("active")) {
     functions.classList.add("active");
     viewDiv.style.width = "70%";
     functions.style.display = "flex";
-    buttonExpand.innerHTML = "-";
-    toast.style.left = "35%";
+    buttonClickShow.innerHTML = "-";
+    instruction.style.left = "35%";
   } else {
     viewDiv.style.width = "100%";
     functions.style.display = "none";
     functions.classList.remove("active");
-    buttonExpand.innerHTML = "+";
-    toast.style.left = "50%";
+    buttonClickShow.innerHTML = "+";
+    instruction.style.left = "50%";
   }
 }

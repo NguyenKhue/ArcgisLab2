@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://js.arcgis.com/4.26/"></script>
     <script>
-
         function saveTextToClipboard(text) {
             const textarea = document.createElement('textarea');
             textarea.value = text;
@@ -24,8 +23,8 @@
             const toast = document.createElement('div');
             toast.textContent = 'Text copied to clipboard!';
             toast.style.position = 'fixed';
-            toast.style.bottom = '20px';
             toast.style.left = '35%';
+            toast.style.bottom = '20px';
             toast.style.transform = 'translateX(-50%)';
             toast.style.padding = '10px 20px';
             toast.style.backgroundColor = '#333';
@@ -114,7 +113,7 @@
     <div id="instruction" class="esri-widget">
         Click any location on the map to see its street address
     </div>
-    <div id="functions" style="font-family: 'Roboto', sans-serif;">
+    <div id="functions" style="font-family: 'Roboto', sans-serif;" class="active">
         <div id="drawCircle_function" class="function">
             <button id="circle_button" class="button_function"><a href="#circle_content">Vẽ
                     hình tròn</a></button>
@@ -169,6 +168,17 @@
             <p>Đã lưu kết quả vào Clipboard</p>
         </div>
     </div>
+    <div style="width: 40px;
+    height: 40px;
+    background-color: #ff8400;
+    position: absolute;
+    top: 600px;
+    border-radius: 30px;
+    right: 50px;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;" onclick="showFunctions()" id="buttonClickShow">-</div>
 
 </body>
 

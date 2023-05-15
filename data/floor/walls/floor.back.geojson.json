@@ -7,8 +7,9 @@
         {
             "type": "Feature",
             "properties": {
-                "Building name": "Landmark Plus",
-                "height": 0,
+                "Building name": "Tường phía sau của Ngộ Môn",
+                "height": 4.94,
+                "color": "#8f8e8b",
                 "idb": "1"
             },
             "geometry": {

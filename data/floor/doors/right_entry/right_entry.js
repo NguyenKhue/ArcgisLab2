@@ -21,7 +21,7 @@ export const right_entry = (Map, SceneView, GeoJSONLayer, SceneLayer,
           type: "extrude",
           size: 3.94,
           material: {
-            color: "#FF0000"
+            color: "#6e6f74"
           },
         }
       ]
@@ -37,7 +37,7 @@ export const right_entry = (Map, SceneView, GeoJSONLayer, SceneLayer,
           type: "extrude",
           size: 3.94,
           material: {
-            color: "#FF0000"
+            color: "#6e6f74"
           },
         }
       ]
@@ -53,7 +53,7 @@ export const right_entry = (Map, SceneView, GeoJSONLayer, SceneLayer,
           type: "extrude",
           size: 0.5,
           material: {
-            color: "#FF0000"
+            color: "#6e6f74"
           },
         }
       ]

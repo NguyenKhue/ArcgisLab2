@@ -1,0 +1,30 @@
+{
+    "type": "FeatureCollection",
+    "generator": "smartcity",
+    "copyright": "Smartcity",
+    "timestamp": "2021-05-27T09:28:58Z",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Building name": "Bậc 17 cầu thang bên trái, ngang 3, dọc 0.3, cao 0.22",
+                "height": 0.22,
+                "width": 3.0,
+                "color": "#838b94",
+                "idb": "1"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [107.57892671126832,16.467692606929226, 3.6],
+                        [107.5789289682228,16.4676942176748, 3.6],
+                        [107.57894584421865,16.467672574474793,3.6],
+                        [107.57894358726449,16.467670963729212, 3.6]
+                    ]
+                ]
+            },
+            "id": "pp1"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "type": "FeatureCollection",
+    "generator": "smartcity",
+    "copyright": "Smartcity",
+    "timestamp": "2021-05-27T09:28:58Z",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Building name": "Cột lan 5 tường phải",
+                "height": 1.0,
+                "width": 0.2,
+                "color": "#7a443a",
+                "idb": "1"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            107.57928433820332,
+                            16.46791316686745,
+                            4.94
+                        ],
+                        [
+                            107.57928284124765,
+                            16.467912083102902,
+                            4.94
+                        ],
+                        [
+                            107.57928171112064,
+                            16.467913518561105,
+                            4.94
+                        ],
+                        [
+                            107.57928320797761,
+                            16.46791460223605,
+                            4.94
+                        ]
+                    ]
+                ]
+            },
+            "id": "pp1"
+        }
+    ]
+}

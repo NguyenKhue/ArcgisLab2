@@ -1,0 +1,29 @@
+{
+    "type": "FeatureCollection",
+    "generator": "smartcity",
+    "copyright": "Smartcity",
+    "timestamp": "2021-05-27T09:28:58Z",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Building name": "Chân lan can tường trái",
+                "height": 0.3,
+                "color": "#838b94",
+                "idb": "1"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [107.57890747609159,16.46764519189042, 4.64],
+                        [107.57890973304545,16.46764680263598,4.64],
+                        [107.57904026255076,16.46747860353098,4.64],
+                        [107.57903800559883,16.46747699278542, 4.64]
+                    ]
+                ]
+            },
+            "id": "pp1"
+        }
+    ]
+}

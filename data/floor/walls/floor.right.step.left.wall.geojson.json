@@ -1,0 +1,30 @@
+{
+    "type": "FeatureCollection",
+    "generator": "smartcity",
+    "copyright": "Smartcity",
+    "timestamp": "2021-05-27T09:28:58Z",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Building name": "Tường trái của cầu thang bên phải Ngọ Môn",
+                "height": 4.94,
+                "color": "#723a2d",
+                "idb": "1"
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [107.579332646,16.46795031427, 0],
+                            [107.5793326462184,16.467950314271235, 4.94],
+                            [107.57928324824628,16.46791455151396,4.94]
+                        ]
+                    ]
+                ]
+            },
+            "id": "pp1"
+        }
+    ]
+}

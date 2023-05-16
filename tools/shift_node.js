@@ -42,7 +42,7 @@ var gis = {
    * @param {number} distance Distance in meters
    * @return {Array} Lon-lat coordinate.
    */
-  createCoord: function (coord, bearing, distance) {
+  createCoord: function (coord, bearing, distance, z = 0) {
     /** http://www.movable-type.co.uk/scripts/latlong.html
      * φ is latitude, λ is longitude,
      * θ is the bearing (clockwise from north),
@@ -67,7 +67,7 @@ var gis = {
     // normalise to -180..+180°
     λ2 = ((λ2 + 3 * Math.PI) % (2 * Math.PI)) - Math.PI;
 
-    return [gis.toDeg(λ2), gis.toDeg(φ2)];
+    return [gis.toDeg(λ2), gis.toDeg(φ2), z];
   },
   /**
    * All coordinates expected EPSG:4326
@@ -125,18 +125,46 @@ var gis = {
   },
 
   // dịch chuyển 1 lúc nhiều điểm với
-  createCoords: function (coords, bearing, distance) {
+  createCoords: function (coords, bearing, distance, z = 0) {
+    let zTemp;
+    if (coords[0].length === 3) {
+      zTemp = coords[0][2];
+      let newCoords = coords.map((item) => [item[0], item[1]]);
+      coords = newCoords;
+    }
     var newCoords = [];
 
     // Tính toán các tọa độ mới
-    for (var i = 0; i < coords.length; i++) {
-      var coord = coords[i];
-      var newCoord = gis.createCoord(coord, bearing, distance);
-      newCoords.push(newCoord);
-      bearing = gis.getBearing(coord, newCoord);
+    if (zTemp != undefined) {
+      for (var i = 0; i < coords.length; i++) {
+        var coord = coords[i];
+        var newCoord = gis.createCoord(coord, bearing, distance, zTemp);
+        newCoords.push(newCoord);
+        bearing = gis.getBearing(coord, newCoord);
+      }
+    } else {
+      for (var i = 0; i < coords.length; i++) {
+        var coord = coords[i];
+        var newCoord = gis.createCoord(coord, bearing, distance, z);
+        newCoords.push(newCoord);
+        bearing = gis.getBearing(coord, newCoord);
+      }
     }
 
     return newCoords;
+    // console.log(newCoords);
+    // console.log(zTemp);
+
+    // if (zTemp != undefined) {
+    //   let newCoords2 = newCoords.map((item) => [...item, zTemp]);
+    //   console.log("1");
+    //   return newCoords2;
+    // }
+    // if (z != 0) {
+    //   let newCoords2 = newCoords.map((item) => [...item, z]);
+    //   console.log("2");
+    //   return newCoords2;
+    // }
   },
 
   // tạo đường cong
@@ -217,18 +245,22 @@ var gis = {
   },
 };
 
-var start = [107.579341, 16.4677];
-var end = [107.57946100754326, 16.46778500534316];
+var start = [107.57889445272379, 16.466629930994003, 20];
+var end = [107.5803173984868, 16.467628783928475, 20];
 var bearing = gis.getBearing(start, end);
-var point = [107.57946100754326, 16.46778500534316];
-var new_coord = gis.createCoord(point, bearing, 10);
-
-var arr = [
-  [107.579341, 16.4677, 0],
-  [107.57946100754326, 16.46778500534316, 0],
+let arr = [
+  [107.57889445272379, 16.466629930994003, 20],
+  [107.5803173984868, 16.467628783928475, 20],
 ];
-var new_coords = gis.createCoords(arr, bearing, 17);
-//console.log(new_coords);
+var point = [107.579074655, 16.467072452];
+var new_coord = gis.createCoord(point, bearing + 90, 20, 20);
+// console.log(new_coord);
+
+console.log(arr);
+console.log(bearing);
+var new_coords = gis.createCoords(arr, bearing + 90, 20, 20);
+// console.log(new_coords);
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // check result
 // var initialRadius = 10;
 // var radius = 6371e3; // meters
@@ -238,8 +270,8 @@ var center = [106.722097635, 10.794350097];
 var circleCoords = gis.getCircleCoordinates(center, 30, 100);
 // console.log("circle", circleCoords);
 
-var st = [106.721010762, 10.794179897, 0];
-var en = [106.721209552, 10.794318368, 0];
+var st = [107.579074655, 16.467072452, 20];
+var en = [107.579888286, 16.467641947, 20];
 var controlPoint = [106.721176602, 10.794182706];
 var step = 50;
 
@@ -251,11 +283,7 @@ var test = gis.calculate3DParabolicCurve(
   201,
   99
 );
-// console.log("Curve", Curve);
-// console.log("test", test);
-var new_coords = gis.createCoords(arr, bearing - 90, 5);
-// console.log(new_coords);
-// check result
+
 var initialRadius = 17;
 var circleRadius = Number(initialRadius) / 111319;
 var center = [106.721748628, 10.794689836];
@@ -319,34 +347,72 @@ function getShiftNode() {
     .value.trim()
     .slice(1, -1)
     .split(",");
-  let angle = Number(document.getElementById("angleInput").value);
-  let distance = Number(document.getElementById("distanceInput").value);
+  let zInput = Number(document.getElementById("zInput").value.trim());
+  let angle = Number(document.getElementById("angleInput").value.trim());
+  let distance = Number(document.getElementById("distanceInput").value.trim());
 
   let start = [Number(coordinateAInput[0]), Number(coordinateAInput[1])];
   let end = [Number(coordinateBInput[0]), Number(coordinateBInput[1])];
   let bearing = gis.getBearing(start, end);
   let point = [];
   let coordinate = [];
-  // console.log(coordinateXInput);
-  for (let i = 0; i < coordinateXInput.length; i = i + 2) {
-    if (coordinateXInput.length > 2) {
-      coordinate = [
-        Number(coordinateXInput[i].trim().slice(1, coordinateXInput[i].length)),
-        Number(coordinateXInput[i + 1].trim().slice(0, -1)),
-      ];
-      point.push(coordinate);
-    } else {
-      point.push(Number(coordinateXInput[i].trim()));
-      point.push(Number(coordinateXInput[i + 1].trim()));
+  console.log(coordinateXInput);
+  if (coordinateXInput[1].includes("]") || coordinateXInput.length == 2) {
+    for (let i = 0; i < coordinateXInput.length; i = i + 2) {
+      if (coordinateXInput.length > 2) {
+        coordinate = [
+          Number(
+            coordinateXInput[i].trim().slice(1, coordinateXInput[i].length)
+          ),
+          Number(coordinateXInput[i + 1].trim().slice(0, -1)),
+        ];
+        point.push(coordinate);
+      } else {
+        point.push(Number(coordinateXInput[i].trim()));
+        point.push(Number(coordinateXInput[i + 1].trim()));
+      }
+    }
+  } else {
+    for (let i = 0; i < coordinateXInput.length; i = i + 3) {
+      if (coordinateXInput.length > 3) {
+        coordinate = [
+          Number(
+            coordinateXInput[i].trim().slice(1, coordinateXInput[i].length)
+          ),
+          Number(
+            coordinateXInput[i + 1]
+              .trim()
+              .slice(0, coordinateXInput[i + 1].length)
+          ),
+          Number(coordinateXInput[i + 2].trim().slice(0, -1)),
+        ];
+        point.push(coordinate);
+      } else {
+        point.push(Number(coordinateXInput[i].trim()));
+        point.push(Number(coordinateXInput[i + 1].trim()));
+        point.push(Number(coordinateXInput[i + 2].trim()));
+      }
     }
   }
+
+  // console.log("point", point);
   let new_coord = 0;
   if (coordinateXInput.length > 2) {
-    new_coord = gis.createCoords(point, bearing + angle, distance);
+    new_coord = gis.createCoords(
+      point,
+      bearing + angle,
+      distance,
+      Number(zInput)
+    );
   } else {
-    new_coord = gis.createCoord(point, bearing + angle, distance);
+    new_coord = gis.createCoord(
+      point,
+      bearing + angle,
+      distance,
+      Number(zInput)
+    );
   }
-  console.log(new_coord);
+  // console.log(new_coord);
 
   let textToCopy = "[";
   if (coordinateXInput.length > 2) {

@@ -69,7 +69,7 @@
                 container: "viewDiv",
                 map: map,
                 camera: {
-                    position: [106.71962348492775, 10.79520088294171, 300],
+                    position: [107.578889, 16.467669, 500],
                     heading: 0,
                     tilt: 75
                 }
@@ -138,8 +138,13 @@
                 <input id="coordinateAInput" type="text" />
                 <label>Tọa độ điểm B: </label>
                 <input id="coordinateBInput" type="text" />
-                <label>Tọa độ điểm hoặc mảng các điểm(Điểm muốn dịch chuyển): </label>
+                <label>Tọa độ điểm hoặc mảng các điểm(<p style="display: inline; color:red">Thứ muốn dịch chuyển</p>):
+                </label>
                 <input id="coordinateXInput" type="text" />
+                <label>Tọa độ Z(Optional, Default = 0, Chỉ điền mục này khi <p style="display: inline; color:red">Thứ
+                        muốn dịch chuyển</p> không có tọa độ Z):
+                </label>
+                <input id="zInput" type="text" />
                 <label>Góc xoay(Optional, Default = 0): </label>
                 <input id="angleInput" type="text" />
                 <label>Khoảng cách dịch chuyển(m): </label>

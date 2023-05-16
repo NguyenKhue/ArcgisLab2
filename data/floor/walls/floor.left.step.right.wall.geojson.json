@@ -7,18 +7,20 @@
         {
             "type": "Feature",
             "properties": {
-                "Building name": "Layer4 - Ban công trái cửa sổ 2",
-                "height": 0.5,
-                "color": "#c7c1b8",
+                "Building name": "Tường phải của cầu thang bên trái Ngọ Môn",
+                "height": 4.94,
+                "color": "#723a2d",
                 "idb": "1"
             },
             "geometry": {
                 "type": "MultiPolygon",
                 "coordinates": [
                     [
-                        [ 107.578889, 16.467669, 0],
-                        [ 107.57889277163933, 16.467671671578106, 4.94],
-                        [107.579101, 16.467625, 0]
+                        [
+                            [107.5789074760,16.4676451918, 0],
+                            [107.57890747609159,16.46764519189042, 4.94],
+                            [107.57895712908568,16.46768062828752, 4.94]
+                        ]
                     ]
                 ]
             },

@@ -7,7 +7,6 @@ require([
 ], function (Map, SceneView, GeoJSONLayer, SceneLayer,
   GraphicsLayer, Graphic, esriRequest) {
   const floorArr = floor(Map, SceneView, GeoJSONLayer, SceneLayer, GraphicsLayer, Graphic, esriRequest)
-  console.log(floorArr)
 
   const map = new Map({
     basemap: "topo-vector",

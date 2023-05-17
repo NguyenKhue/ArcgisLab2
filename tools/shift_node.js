@@ -67,6 +67,10 @@ var gis = {
     // normalise to -180..+180°
     λ2 = ((λ2 + 3 * Math.PI) % (2 * Math.PI)) - Math.PI;
 
+    if (coord.length == 3) {
+      let zInput = coord[2];
+      return [gis.toDeg(λ2), gis.toDeg(φ2), zInput];
+    }
     return [gis.toDeg(λ2), gis.toDeg(φ2), z];
   },
   /**
@@ -245,19 +249,19 @@ var gis = {
   },
 };
 
-var start = [107.57889445272379, 16.466629930994003, 20];
-var end = [107.5803173984868, 16.467628783928475, 20];
+var start = [107.57889445272379, 16.466629930994003];
+var end = [107.5803173984868, 16.467628783928475];
 var bearing = gis.getBearing(start, end);
 let arr = [
   [107.57889445272379, 16.466629930994003, 20],
   [107.5803173984868, 16.467628783928475, 20],
 ];
-var point = [107.579074655, 16.467072452];
-var new_coord = gis.createCoord(point, bearing + 90, 20, 20);
-// console.log(new_coord);
+var point = [107.579074655, 16.467072452, 20];
+var new_coord = gis.createCoord(point, bearing, 0.01);
+console.log("point", new_coord);
 
-console.log(arr);
-console.log(bearing);
+// console.log(arr);
+// console.log(bearing);
 var new_coords = gis.createCoords(arr, bearing + 90, 20, 20);
 // console.log(new_coords);
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -347,7 +351,7 @@ function getShiftNode() {
     .value.trim()
     .slice(1, -1)
     .split(",");
-  let zInput = Number(document.getElementById("zInput").value.trim());
+  let zInput = document.getElementById("zInput").value.trim();
   let angle = Number(document.getElementById("angleInput").value.trim());
   let distance = Number(document.getElementById("distanceInput").value.trim());
 
@@ -397,25 +401,33 @@ function getShiftNode() {
 
   // console.log("point", point);
   let new_coord = 0;
-  if (coordinateXInput.length > 2) {
-    new_coord = gis.createCoords(
-      point,
-      bearing + angle,
-      distance,
-      Number(zInput)
-    );
+  if (coordinateXInput.length > 3) {
+    if (zInput === "") {
+      new_coord = gis.createCoords(point, bearing + angle, distance);
+    } else {
+      new_coord = gis.createCoords(
+        point,
+        bearing + angle,
+        distance,
+        Number(zInput)
+      );
+    }
   } else {
-    new_coord = gis.createCoord(
-      point,
-      bearing + angle,
-      distance,
-      Number(zInput)
-    );
+    if (zInput === "") {
+      new_coord = gis.createCoord(point, bearing + angle, distance);
+    } else {
+      new_coord = gis.createCoord(
+        point,
+        bearing + angle,
+        distance,
+        Number(zInput)
+      );
+    }
   }
-  // console.log(new_coord);
+  console.log(new_coord);
 
   let textToCopy = "[";
-  if (coordinateXInput.length > 2) {
+  if (coordinateXInput.length > 3) {
     new_coord.forEach((item) => {
       textToCopy += "[" + item.join(",") + "],";
     });

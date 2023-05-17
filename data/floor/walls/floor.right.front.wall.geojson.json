@@ -1,0 +1,31 @@
+{
+    "type": "FeatureCollection",
+    "generator": "smartcity",
+    "copyright": "Smartcity",
+    "timestamp": "2021-05-27T09:28:58Z",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Building name": "Tường phía trước bên phải Ngọ Môn",
+                "height": 4.64,
+                "color": "#723a2d",
+                "idb": "1"
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [107.579341000,16.4677000004,0],
+                            [107.57934099924658,16.46769999946451,4.64],
+                            [107.5794619999435,16.467786000071776,4.64],
+                            [107.579461999,16.46778600007,0]
+                        ]
+                    ]
+                ]
+            },
+            "id": "pp1"
+        }
+    ]
+}

@@ -33,6 +33,14 @@ export const floor_walls = (Map, SceneView, GeoJSONLayer, SceneLayer,
         url: "./data/floor/walls/floor.left.step.right.wall.geojson.json"
     });
 
+    const floorRightStepLeftWall = new GeoJSONLayer({
+        url: "./data/floor/walls/floor.right.step.left.wall.geojson.json"
+    });
+
+    const floorRightStepRightWall = new GeoJSONLayer({
+        url: "./data/floor/walls/floor.right.step.right.wall.geojson.json"
+    });
+
     geojsonLayer.renderer = {
         type: "simple",
         symbol: {
@@ -58,7 +66,7 @@ export const floor_walls = (Map, SceneView, GeoJSONLayer, SceneLayer,
                     type: "fill",
                     size: 0,
                     material: {
-                        color: "#8f8e8b"
+                        color: "#723a2d"
                     },
                 }
             ]
@@ -167,6 +175,38 @@ export const floor_walls = (Map, SceneView, GeoJSONLayer, SceneLayer,
         }
     };
 
+    floorRightStepLeftWall.renderer = {
+        type: "simple",
+        symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+                {
+                    type: "fill",
+                    size: 0,
+                    material: {
+                        color: "#723a2d"
+                    },
+                }
+            ]
+        }
+    };
+
+    floorRightStepRightWall.renderer = {
+        type: "simple",
+        symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+                {
+                    type: "fill",
+                    size: 0,
+                    material: {
+                        color: "#723a2d"
+                    },
+                }
+            ]
+        }
+    };
+
     return [
         geojsonLayer,
         foorRightWall,
@@ -175,6 +215,8 @@ export const floor_walls = (Map, SceneView, GeoJSONLayer, SceneLayer,
         floorEntryWallGeojsonLayer,
         floorLeftWallGeojsonLayer,
         floorLeftStepLeftWall,
-        floorLeftStepRightWall
+        floorLeftStepRightWall,
+        floorRightStepLeftWall,
+        floorRightStepRightWall
     ]
 }

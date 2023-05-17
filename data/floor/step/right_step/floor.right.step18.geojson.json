@@ -1,0 +1,46 @@
+{
+    "type": "FeatureCollection",
+    "generator": "smartcity",
+    "copyright": "Smartcity",
+    "timestamp": "2021-05-27T09:28:58Z",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Building name": "Bậc 18 cầu thang bên phải, ngang 3, dọc 0.3, cao 0.22",
+                "height": 0.22,
+                "width": 3.0,
+                "color": "#838b94",
+                "idb": "1"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            107.57929447505398,
+                            16.467922679417587,
+                            3.825
+                        ],
+                        [
+                            107.57929222969139,
+                            16.46792105383776,
+                            3.825
+                        ],
+                        [
+                            107.57927527852868,
+                            16.467942586383682,
+                            3.825
+                        ],
+                        [
+                            107.5792775238917,
+                            16.467944211962983,
+                            3.825
+                        ]
+                    ]
+                ]
+            },
+            "id": "pp1"
+        }
+    ]
+}

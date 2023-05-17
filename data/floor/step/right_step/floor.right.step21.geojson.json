@@ -1,0 +1,46 @@
+{
+    "type": "FeatureCollection",
+    "generator": "smartcity",
+    "copyright": "Smartcity",
+    "timestamp": "2021-05-27T09:28:58Z",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Building name": "Bậc 21 cầu thang bên phải, ngang 3, dọc 0.3, cao 0.22",
+                "height": 0.22,
+                "width": 3.0,
+                "color": "#838b94",
+                "idb": "1"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            107.5792877389667,
+                            16.467917802678713,
+                            4.5
+                        ],
+                        [
+                            107.57928549360419,
+                            16.467916177098857,
+                            4.5
+                        ],
+                        [
+                            107.57926854244079,
+                            16.467937709644737,
+                            4.5
+                        ],
+                        [
+                            107.5792707878038,
+                            16.46793933522398,
+                            4.5
+                        ]
+                    ]
+                ]
+            },
+            "id": "pp1"
+        }
+    ]
+}

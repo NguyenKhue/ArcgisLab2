@@ -1,9 +1,5 @@
 export const floor_walls = (Map, SceneView, GeoJSONLayer, SceneLayer,
     GraphicsLayer, Graphic, esriRequest) => {
-    const geojsonLayer = new GeoJSONLayer({
-        url: "./data/floor/walls/floor1.geojson.json"
-    });
-
     const foorRightWall = new GeoJSONLayer({
         url: "./data/floor/walls/floor.right.wall.geojson.json"
     });
@@ -41,21 +37,9 @@ export const floor_walls = (Map, SceneView, GeoJSONLayer, SceneLayer,
         url: "./data/floor/walls/floor.left.front.wall.geojson.json"
     });
 
-    geojsonLayer.renderer = {
-        type: "simple",
-        symbol: {
-            type: "polygon-3d",
-            symbolLayers: [
-                {
-                    type: "fill",
-                    size: 0,
-                    material: {
-                        color: "#8f8e8b"
-                    },
-                }
-            ]
-        }
-    };
+    const floorRightFrontWall = new GeoJSONLayer({
+        url: "./data/floor/walls/floor.right.front.wall.geojson.json"
+    });
 
     foorRightWall.renderer = {
         type: "simple",
@@ -201,8 +185,23 @@ export const floor_walls = (Map, SceneView, GeoJSONLayer, SceneLayer,
         }
     };
 
+    floorRightFrontWall.renderer = {
+        type: "simple",
+        symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+                {
+                    type: "fill",
+                    size: 0,
+                    material: {
+                        color: "#723a2d"
+                    },
+                }
+            ]
+        }
+    };
+
     return [
-        geojsonLayer,
         foorRightWall,
         floorBackWall,
         floorEntryWallGeojsonLayer,
@@ -211,6 +210,7 @@ export const floor_walls = (Map, SceneView, GeoJSONLayer, SceneLayer,
         floorLeftStepRightWall,
         floorRightStepLeftWall,
         floorRightStepRightWall,
-        floorLeftFrontWall
+        floorLeftFrontWall,
+        floorRightFrontWall
     ]
 }

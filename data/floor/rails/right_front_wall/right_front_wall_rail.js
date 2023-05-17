@@ -1,10 +1,18 @@
-export const left_front_wall_rail = (Map, SceneView, GeoJSONLayer, SceneLayer,
+export const right_front_wall_rail = (Map, SceneView, GeoJSONLayer, SceneLayer,
     GraphicsLayer, Graphic, esriRequest) => {
-    const floorEntryWallRailRoot = new GeoJSONLayer({
-        url: "./data/floor/rails/left_front_wall/floor.left.front.wall.rail.root.geojson.json"
+    const floorRightFrontWallRailRoot = new GeoJSONLayer({
+        url: "./data/floor/rails/right_front_wall/floor.right.front.wall.rail.root.geojson.json"
     });
 
-    floorEntryWallRailRoot.renderer = {
+    const floorRightFrontWallRailColumn1 = new GeoJSONLayer({
+        url: "./data/floor/rails/right_front_wall/floor.right.front.wall.rail.column1.geojson.json"
+    });
+
+    const floorRightFrontWallRailWall = new GeoJSONLayer({
+        url: "./data/floor/rails/right_front_wall/floor.right.front.wall.rail.wall.geojson.json"
+    });
+
+    floorRightFrontWallRailRoot.renderer = {
         type: "simple",
         symbol: {
             type: "polygon-3d",
@@ -21,9 +29,42 @@ export const left_front_wall_rail = (Map, SceneView, GeoJSONLayer, SceneLayer,
     };
 
 
+    floorRightFrontWallRailColumn1.renderer = {
+        type: "simple",
+        symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+                {
+                    type: "extrude",
+                    size: 1,
+                    material: {
+                        color: "#7a443a"
+                    },
+                }
+            ]
+        }
+    };
+
+    floorRightFrontWallRailWall.renderer = {
+        type: "simple",
+        symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+                {
+                    type: "extrude",
+                    size: 0.8,
+                    material: {
+                        color: "#d8aa5e"
+                    },
+                }
+            ]
+        }
+    };
     
 
     return [
-        floorEntryWallRailRoot,
+        floorRightFrontWallRailRoot,
+        floorRightFrontWallRailColumn1,
+        floorRightFrontWallRailWall
     ]
 }

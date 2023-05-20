@@ -56,6 +56,70 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
     url: "./data/centerBuilding/columns/center.building.column14.geojson.json"
   });
 
+  const col15 = new GeoJSONLayer({
+    url: "./data/centerBuilding/columns/center.building.column15.geojson.json"
+  });
+
+  const col16 = new GeoJSONLayer({
+    url: "./data/centerBuilding/columns/center.building.column16.geojson.json"
+  });
+
+  const col17 = new GeoJSONLayer({
+    url: "./data/centerBuilding/columns/center.building.column17.geojson.json"
+  });
+
+  const col18 = new GeoJSONLayer({
+    url: "./data/centerBuilding/columns/center.building.column18.geojson.json"
+  });
+
+  const col19 = new GeoJSONLayer({
+    url: "./data/centerBuilding/columns/center.building.column19.geojson.json"
+  });
+
+  const col20 = new GeoJSONLayer({
+    url: "./data/centerBuilding/columns/center.building.column20.geojson.json"
+  });
+
+  const col21 = new GeoJSONLayer({
+    url: "./data/centerBuilding/columns/center.building.column21.geojson.json"
+  });
+
+  const col22 = new GeoJSONLayer({
+    url: "./data/centerBuilding/columns/center.building.column22.geojson.json"
+  });
+
+  const col23 = new GeoJSONLayer({
+    url: "./data/centerBuilding/columns/center.building.column23.geojson.json"
+  });
+
+  const col24 = new GeoJSONLayer({
+    url: "./data/centerBuilding/columns/center.building.column24.geojson.json"
+  });
+
+  const col25 = new GeoJSONLayer({
+    url: "./data/centerBuilding/columns/center.building.column25.geojson.json"
+  });
+
+  const col26 = new GeoJSONLayer({
+    url: "./data/centerBuilding/columns/center.building.column26.geojson.json"
+  });
+
+  const col27 = new GeoJSONLayer({
+    url: "./data/centerBuilding/columns/center.building.column27.geojson.json"
+  });
+
+  const col28 = new GeoJSONLayer({
+    url: "./data/centerBuilding/columns/center.building.column28.geojson.json"
+  });
+
+  const col29 = new GeoJSONLayer({
+    url: "./data/centerBuilding/columns/center.building.column29.geojson.json"
+  });
+
+  const col30 = new GeoJSONLayer({
+    url: "./data/centerBuilding/columns/center.building.column30.geojson.json"
+  });
+
 
 
 
@@ -293,6 +357,262 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
     }
   };
 
+  col15.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 4.84,
+          material: {
+            color: "#3B1311"
+          },
+        }
+      ]
+    }
+  };
+
+  col16.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 4.84,
+          material: {
+            color: "#3B1311"
+          },
+        }
+      ]
+    }
+  };
+
+  col17.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 4.84,
+          material: {
+            color: "#3B1311"
+          },
+        }
+      ]
+    }
+  };
+
+  col18.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 4.84,
+          material: {
+            color: "#3B1311"
+          },
+        }
+      ]
+    }
+  };
+
+  col19.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 4.84,
+          material: {
+            color: "#3B1311"
+          },
+        }
+      ]
+    }
+  };
+
+  col20.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 4.84,
+          material: {
+            color: "#3B1311"
+          },
+        }
+      ]
+    }
+  };
+
+  col21.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 4.84,
+          material: {
+            color: "#3B1311"
+          },
+        }
+      ]
+    }
+  };
+
+  col22.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 4.84,
+          material: {
+            color: "#3B1311"
+          },
+        }
+      ]
+    }
+  };
+
+  col23.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 4.84,
+          material: {
+            color: "#3B1311"
+          },
+        }
+      ]
+    }
+  };
+
+  col24.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 4.84,
+          material: {
+            color: "#3B1311"
+          },
+        }
+      ]
+    }
+  };
+
+  col25.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 4.84,
+          material: {
+            color: "#3B1311"
+          },
+        }
+      ]
+    }
+  };
+
+  col26.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 4.84,
+          material: {
+            color: "#3B1311"
+          },
+        }
+      ]
+    }
+  };
+
+  col27.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 4.84,
+          material: {
+            color: "#3B1311"
+          },
+        }
+      ]
+    }
+  };
+
+  col28.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 4.84,
+          material: {
+            color: "#3B1311"
+          },
+        }
+      ]
+    }
+  };
+
+  col29.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 4.84,
+          material: {
+            color: "#3B1311"
+          },
+        }
+      ]
+    }
+  };
+
+  col30.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 4.84,
+          material: {
+            color: "#3B1311"
+          },
+        }
+      ]
+    }
+  };
+
 
   return [
     col1,
@@ -308,6 +628,22 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
     col11,
     col12,
     col13,
-    col14
+    col14,
+    col15,
+    col16,
+    col17,
+    col18,
+    col19,
+    col20,
+    col21,
+    col22,
+    col23,
+    col24,
+    col25,
+    col26,
+    col27,
+    col28,
+    col29,
+    col30
   ]
 }

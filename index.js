@@ -26,7 +26,6 @@ require([
     Graphic,
     esriRequest
   );
-
   const centerBuildingArr = centerBuilding(
     Map,
     SceneView,

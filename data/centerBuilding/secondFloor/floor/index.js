@@ -20,7 +20,7 @@ export const floor_SF = (
           type: "extrude",
           size: 1,
           material: {
-            color: "red",
+            color: "white",
           },
         },
       ],

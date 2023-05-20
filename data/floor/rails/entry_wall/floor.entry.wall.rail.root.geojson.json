@@ -1,0 +1,31 @@
+{
+    "type": "FeatureCollection",
+    "generator": "smartcity",
+    "copyright": "Smartcity",
+    "timestamp": "2021-05-27T09:28:58Z",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Building name": "Chân lan can tường cổng chính",
+                "height": 0.3,
+                "width": 0.3,
+                "color": "#838b94",
+                "idb": "1"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [107.57910255205879,16.467625273038667,4.64],
+                        [107.57910089348248,16.467627452302665,4.64],
+                        [107.57929189503913,16.467763453372847,4.64],
+                        [107.57929355361667,16.467761274108845,4.64]
+
+                    ]
+                ]
+            },
+            "id": "pp1"
+        }
+    ]
+}

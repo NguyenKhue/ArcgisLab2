@@ -1,0 +1,29 @@
+{
+    "type": "FeatureCollection",
+    "generator": "smartcity",
+    "copyright": "Smartcity",
+    "timestamp": "2021-05-27T09:28:58Z",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Building name": "Chân lan can tường trước bên trái",
+                "height": 0.3,
+                "color": "#838b94",
+                "idb": "1"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [107.57903800559883,16.46747699278542, 4.64],
+                        [107.57903632677476,16.467479157743362,4.64],
+                        [107.57915132192775,16.467561165494594,4.64],
+                        [107.57915300075256,16.467559000536653, 4.64]
+                    ]
+                ]
+            },
+            "id": "pp1"
+        }
+    ]
+}

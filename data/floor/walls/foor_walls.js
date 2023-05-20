@@ -1,23 +1,15 @@
 export const floor_walls = (Map, SceneView, GeoJSONLayer, SceneLayer,
     GraphicsLayer, Graphic, esriRequest) => {
-    const geojsonLayer = new GeoJSONLayer({
-        url: "./data/floor/walls/floor1.geojson.json"
-    });
-
     const foorRightWall = new GeoJSONLayer({
         url: "./data/floor/walls/floor.right.wall.geojson.json"
     });
 
-    const geojsonLayer2 = new GeoJSONLayer({
-        url: "./data/floor/walls/floor.geojson.json"
-    });
-
     const floorBackWall = new GeoJSONLayer({
-        url: "./data/floor/walls/floor.back.geojson.json"
+        url: "./data/floor/walls/floor.back.wall.geojson.json"
     });
 
     const floorEntryWallGeojsonLayer = new GeoJSONLayer({
-        url: "./data/floor/walls/floor.entry.geojson.json"
+        url: "./data/floor/walls/floor.entry.wall.geojson.json"
 
     });
 
@@ -41,21 +33,13 @@ export const floor_walls = (Map, SceneView, GeoJSONLayer, SceneLayer,
         url: "./data/floor/walls/floor.right.step.right.wall.geojson.json"
     });
 
-    geojsonLayer.renderer = {
-        type: "simple",
-        symbol: {
-            type: "polygon-3d",
-            symbolLayers: [
-                {
-                    type: "fill",
-                    size: 0,
-                    material: {
-                        color: "#8f8e8b"
-                    },
-                }
-            ]
-        }
-    };
+    const floorLeftFrontWall = new GeoJSONLayer({
+        url: "./data/floor/walls/floor.left.front.wall.geojson.json"
+    });
+
+    const floorRightFrontWall = new GeoJSONLayer({
+        url: "./data/floor/walls/floor.right.front.wall.geojson.json"
+    });
 
     foorRightWall.renderer = {
         type: "simple",
@@ -72,28 +56,6 @@ export const floor_walls = (Map, SceneView, GeoJSONLayer, SceneLayer,
             ]
         }
     };
-
-    geojsonLayer2.renderer = {
-        type: "simple",
-        symbol: {
-            type: "line-3d",
-            symbolLayers: [
-                {
-                    type: "path",
-                    profile: "quad",
-                    material: {
-                        color: "#8f8e8b",
-                    },
-                    width: 3.0,
-                    height: 0.0,
-                    join: "bevel",
-                    cap: "butt",
-                    profileRotation: "heading",
-                    anchor: "bottom",
-                },
-            ],
-        },
-    }
 
     floorBackWall.renderer = {
         type: "simple",
@@ -207,16 +169,48 @@ export const floor_walls = (Map, SceneView, GeoJSONLayer, SceneLayer,
         }
     };
 
+    floorLeftFrontWall.renderer = {
+        type: "simple",
+        symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+                {
+                    type: "fill",
+                    size: 0,
+                    material: {
+                        color: "#723a2d"
+                    },
+                }
+            ]
+        }
+    };
+
+    floorRightFrontWall.renderer = {
+        type: "simple",
+        symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+                {
+                    type: "fill",
+                    size: 0,
+                    material: {
+                        color: "#723a2d"
+                    },
+                }
+            ]
+        }
+    };
+
     return [
-        geojsonLayer,
         foorRightWall,
-        geojsonLayer2,
         floorBackWall,
         floorEntryWallGeojsonLayer,
         floorLeftWallGeojsonLayer,
         floorLeftStepLeftWall,
         floorLeftStepRightWall,
         floorRightStepLeftWall,
-        floorRightStepRightWall
+        floorRightStepRightWall,
+        floorLeftFrontWall,
+        floorRightFrontWall
     ]
 }

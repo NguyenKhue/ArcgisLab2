@@ -51,7 +51,7 @@ export const center_entry = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 0.5,
+          size: 0.2,
           material: {
             color: "#6e6f74"
           },

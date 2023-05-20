@@ -105,7 +105,7 @@ var gis = {
   },
 
   // vẽ hình tròn
-  getCircleCoordinates: function (center, radius, numCoordinates) {
+  getCircleCoordinates: function (center, radius, numCoordinates, z = 0) {
     const centerLon = center[0];
     const centerLat = center[1];
 
@@ -122,7 +122,7 @@ var gis = {
       var angle = i * angleIncrement;
       var lon = centerLon + radiusDegrees * Math.cos((angle * Math.PI) / 180);
       var lat = centerLat + radiusDegrees * Math.sin((angle * Math.PI) / 180);
-      coordinates.push([lon, lat]);
+      coordinates.push([lon, lat, z]);
     }
 
     return coordinates;
@@ -258,7 +258,7 @@ let arr = [
 ];
 var point = [107.579074655, 16.467072452, 20];
 var new_coord = gis.createCoord(point, bearing, 0.01);
-console.log("point", new_coord);
+// console.log("point", new_coord);
 
 // console.log(arr);
 // console.log(bearing);
@@ -271,8 +271,8 @@ var new_coords = gis.createCoords(arr, bearing + 90, 20, 20);
 // var circleRadius = Number(initialRadius) / 111319; // chuyển đổi bán kính sang đơn vị radians
 // console.log("Curve1", circleRadius);
 var center = [106.722097635, 10.794350097];
-var circleCoords = gis.getCircleCoordinates(center, 30, 100);
-// console.log("circle", circleCoords);
+var circleCoords = gis.getCircleCoordinates(center, 30, 100, 20);
+console.log("circle", circleCoords);
 
 var st = [107.579074655, 16.467072452, 20];
 var en = [107.579888286, 16.467641947, 20];
@@ -317,7 +317,8 @@ function getCircleCoordinates() {
   let coordinates = gis.getCircleCoordinates(
     [x, y],
     Number(radiusInput),
-    numPoints
+    numPoints,
+    Number(coordinateZInput)
   );
 
   let textToCopy = "[";

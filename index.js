@@ -24,9 +24,9 @@ require([
     camera: {
       position: [107.578889, 16.467669, 500],
       heading: 0,
-      tilt: 0
-    }
+      tilt: 0,
+    },
   });
 
   view.popup.defaultPopupTemplateEnabled = true;
-})
+});

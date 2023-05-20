@@ -1,4 +1,4 @@
-export const center_building_col_1 = (Map, SceneView, GeoJSONLayer, SceneLayer,
+export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
   GraphicsLayer, Graphic, esriRequest) => {
   const col1 = new GeoJSONLayer({
     url: "./data/centerBuilding/columns/center.building.column1.geojson.json"

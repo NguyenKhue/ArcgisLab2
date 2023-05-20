@@ -1,4 +1,5 @@
 import { floor } from "./data/floor/floor.js";
+import { centerBuilding } from "./data/centerBuilding/index.js";
 require([
   "esri/Map",
   "esri/views/SceneView",
@@ -7,11 +8,13 @@ require([
 ], function (Map, SceneView, GeoJSONLayer, SceneLayer,
   GraphicsLayer, Graphic, esriRequest) {
   const floorArr = floor(Map, SceneView, GeoJSONLayer, SceneLayer, GraphicsLayer, Graphic, esriRequest)
+  const centerBuildingArr = centerBuilding(Map, SceneView, GeoJSONLayer, SceneLayer, GraphicsLayer, Graphic, esriRequest)
 
   const map = new Map({
     basemap: "topo-vector",
     layers: [
-      ...floorArr
+      ...floorArr,
+      ...centerBuildingArr
     ] //end layers
   });
 

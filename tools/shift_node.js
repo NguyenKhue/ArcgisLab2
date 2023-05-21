@@ -257,7 +257,7 @@ let arr = [
   [107.5803173984868, 16.467628783928475, 20],
 ];
 var point = [16.467625, 107.579102];
-var new_coord = gis.createCoord(point, bearing, 4);
+var new_coord = gis.createCoord(point, bearing, 4.07);
 console.log("point", new_coord);
 
 // console.log(arr);

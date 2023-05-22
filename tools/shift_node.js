@@ -249,16 +249,16 @@ var gis = {
   },
 };
 
-var start = [107.57889445272379, 16.466629930994003];
-var end = [107.5803173984868, 16.467628783928475];
+var start = [16.467625, 107.579102];
+var end = [16.467762, 107.579291];
 var bearing = gis.getBearing(start, end);
 let arr = [
   [107.57889445272379, 16.466629930994003, 20],
   [107.5803173984868, 16.467628783928475, 20],
 ];
-var point = [107.579074655, 16.467072452, 20];
-var new_coord = gis.createCoord(point, bearing, 0.01);
-// console.log("point", new_coord);
+var point = [16.467625, 107.579102];
+var new_coord = gis.createCoord(point, bearing, 4.07);
+console.log("point", new_coord);
 
 // console.log(arr);
 // console.log(bearing);
@@ -272,7 +272,7 @@ var new_coords = gis.createCoords(arr, bearing + 90, 20, 20);
 // console.log("Curve1", circleRadius);
 var center = [106.722097635, 10.794350097];
 var circleCoords = gis.getCircleCoordinates(center, 30, 100, 20);
-console.log("circle", circleCoords);
+// console.log("circle", circleCoords);
 
 var st = [107.579074655, 16.467072452, 20];
 var en = [107.579888286, 16.467641947, 20];
@@ -314,6 +314,9 @@ function getCircleCoordinates() {
   let x = Number(coordinateArray[0].slice(1, coordinateArray[0].length));
   let y = Number(coordinateArray[1].slice(0, -1));
 
+  if (coordinateArray.length === 3) {
+    coordinateZInput = coordinateArray[2].slice(0, -1);
+  }
   let coordinates = gis.getCircleCoordinates(
     [x, y],
     Number(radiusInput),

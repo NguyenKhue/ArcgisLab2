@@ -1,0 +1,167 @@
+export const column_SF = (
+  Map,
+  SceneView,
+  GeoJSONLayer,
+  SceneLayer,
+  GraphicsLayer,
+  Graphic,
+  esriRequest
+) => {
+  const columnCornerLBGeojsonLayer = new GeoJSONLayer({
+    url: "./data/centerBuilding/secondFloor/column/columnCornerLB.geojson.json",
+  });
+  const columnCornerLTGeojsonLayer = new GeoJSONLayer({
+    url: "./data/centerBuilding/secondFloor/column/columnCornerLT.geojson.json",
+  });
+  const columnCornerRBGeojsonLayer = new GeoJSONLayer({
+    url: "./data/centerBuilding/secondFloor/column/columnCornerRB.geojson.json",
+  });
+  const columnCornerRTGeojsonLayer = new GeoJSONLayer({
+    url: "./data/centerBuilding/secondFloor/column/columnCornerRT.geojson.json",
+  });
+  const columnTallLBGeojsonLayer = new GeoJSONLayer({
+    url: "./data/centerBuilding/secondFloor/column/columnTallLB.geojson.json",
+  });
+  const columnTallLTGeojsonLayer = new GeoJSONLayer({
+    url: "./data/centerBuilding/secondFloor/column/columnTallLT.geojson.json",
+  });
+  const columnTallRTGeojsonLayer = new GeoJSONLayer({
+    url: "./data/centerBuilding/secondFloor/column/columnTallRT.geojson.json",
+  });
+  const columnTallRBGeojsonLayer = new GeoJSONLayer({
+    url: "./data/centerBuilding/secondFloor/column/columnTallRB.geojson.json",
+  });
+
+
+  columnCornerLBGeojsonLayer.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 2.6,
+          material: {
+            color: "#3c0d0b",
+          },
+        },
+      ],
+    },
+  };
+  columnCornerLTGeojsonLayer.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 2.6,
+          material: {
+            color: "#3c0d0b",
+          },
+        },
+      ],
+    },
+  };
+  columnCornerRBGeojsonLayer.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 2.6,
+          material: {
+            color: "#3c0d0b",
+          },
+        },
+      ],
+    },
+  };
+  columnCornerRTGeojsonLayer.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 2.6,
+          material: {
+            color: "#3c0d0b",
+          },
+        },
+      ],
+    },
+  };
+  columnTallLBGeojsonLayer.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 3.595,
+          material: {
+            color: "#3c0d0b",
+          },
+        },
+      ],
+    },
+  };
+  columnTallLTGeojsonLayer.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 3.595,
+          material: {
+            color: "#3c0d0b",
+          },
+        },
+      ],
+    },
+  };
+  columnTallRTGeojsonLayer.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 3.595,
+          material: {
+            color: "#3c0d0b",
+          },
+        },
+      ],
+    },
+  };
+  columnTallRBGeojsonLayer.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 3.595,
+          material: {
+            color: "#3c0d0b",
+          },
+        },
+      ],
+    },
+  };
+
+  return [
+    columnCornerLBGeojsonLayer,
+    columnCornerLTGeojsonLayer,
+    columnCornerRBGeojsonLayer,
+    columnCornerRTGeojsonLayer,
+    columnTallLBGeojsonLayer,
+    columnTallLTGeojsonLayer,
+    columnTallRTGeojsonLayer,
+    columnTallRBGeojsonLayer
+  ];
+};

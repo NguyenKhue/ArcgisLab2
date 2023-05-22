@@ -144,7 +144,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.5,
           material: {
             color: "#3B1311"
           },
@@ -160,7 +160,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311"
           },
@@ -176,7 +176,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311"
           },
@@ -191,7 +191,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.5,
           material: {
             color: "#3B1311"
           },
@@ -206,7 +206,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.5,
           material: {
             color: "#3B1311"
           },
@@ -221,7 +221,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.5,
           material: {
             color: "#3B1311"
           },
@@ -236,7 +236,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.5,
           material: {
             color: "#3B1311"
           },
@@ -252,7 +252,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.5,
           material: {
             color: "#3B1311"
           },
@@ -268,7 +268,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.5,
           material: {
             color: "#3B1311"
           },
@@ -284,7 +284,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.5,
           material: {
             color: "#3B1311"
           },
@@ -300,7 +300,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.5,
           material: {
             color: "#3B1311"
           },
@@ -316,7 +316,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.5,
           material: {
             color: "#3B1311"
           },
@@ -332,7 +332,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.5,
           material: {
             color: "#3B1311"
           },
@@ -348,7 +348,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.5,
           material: {
             color: "#3B1311"
           },
@@ -364,7 +364,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.5,
           material: {
             color: "#3B1311"
           },
@@ -380,7 +380,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.5,
           material: {
             color: "#3B1311"
           },
@@ -396,7 +396,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.5,
           material: {
             color: "#3B1311"
           },
@@ -412,7 +412,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.5,
           material: {
             color: "#3B1311"
           },
@@ -428,7 +428,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.5,
           material: {
             color: "#3B1311"
           },
@@ -444,7 +444,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.5,
           material: {
             color: "#3B1311"
           },
@@ -460,7 +460,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.5,
           material: {
             color: "#3B1311"
           },
@@ -476,7 +476,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311"
           },
@@ -492,7 +492,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311"
           },
@@ -508,7 +508,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.5,
           material: {
             color: "#3B1311"
           },
@@ -524,7 +524,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.5,
           material: {
             color: "#3B1311"
           },
@@ -540,7 +540,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.5,
           material: {
             color: "#3B1311"
           },
@@ -556,7 +556,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311"
           },
@@ -572,7 +572,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311"
           },
@@ -588,7 +588,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311"
           },
@@ -604,7 +604,7 @@ export const center_building_cols = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311"
           },

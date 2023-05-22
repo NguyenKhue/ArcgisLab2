@@ -1,21 +1,57 @@
 import { floor } from "./data/floor/floor.js";
 import { centerBuilding } from "./data/centerBuilding/index.js";
+import { rightBuilding } from "./data/rightBuilding/rightBuilding.js";
+
 require([
   "esri/Map",
   "esri/views/SceneView",
   "esri/layers/GeoJSONLayer",
-  "esri/layers/SceneLayer", "esri/layers/GraphicsLayer", "esri/Graphic", "esri/request"
-], function (Map, SceneView, GeoJSONLayer, SceneLayer,
-  GraphicsLayer, Graphic, esriRequest) {
-  const floorArr = floor(Map, SceneView, GeoJSONLayer, SceneLayer, GraphicsLayer, Graphic, esriRequest)
-  const centerBuildingArr = centerBuilding(Map, SceneView, GeoJSONLayer, SceneLayer, GraphicsLayer, Graphic, esriRequest)
+  "esri/layers/SceneLayer",
+  "esri/layers/GraphicsLayer",
+  "esri/Graphic",
+  "esri/request",
+], function (
+  Map,
+  SceneView,
+  GeoJSONLayer,
+  SceneLayer,
+  GraphicsLayer,
+  Graphic,
+  esriRequest
+) {
+  const floorArr = floor(
+    Map,
+    SceneView,
+    GeoJSONLayer,
+    SceneLayer,
+    GraphicsLayer,
+    Graphic,
+    esriRequest
+  );
+
+  const centerBuildingArr = centerBuilding(
+    Map,
+    SceneView,
+    GeoJSONLayer,
+    SceneLayer,
+    GraphicsLayer,
+    Graphic,
+    esriRequest
+  );
+
+  const rightBuildingArr = rightBuilding(
+    Map,
+    SceneView,
+    GeoJSONLayer,
+    SceneLayer,
+    GraphicsLayer,
+    Graphic,
+    esriRequest
+  );
 
   const map = new Map({
     basemap: "topo-vector",
-    layers: [
-      ...floorArr,
-      ...centerBuildingArr
-    ] //end layers
+    layers: [...floorArr, ...centerBuildingArr, ...rightBuildingArr], //end layers
   });
 
   const view = new SceneView({

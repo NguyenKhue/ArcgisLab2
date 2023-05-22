@@ -1,4 +1,5 @@
 import { right_building_cols } from "./columns/column.js";
+import { right_building_floor1 } from "./floor/right.building.floor1.js";
 
 export const rightBuilding = (
   Map,
@@ -19,5 +20,18 @@ export const rightBuilding = (
     esriRequest
   );
 
-  return [...rightBuildingCols];
+  const rightBuildingFloor1 = right_building_floor1(
+    Map,
+    SceneView,
+    GeoJSONLayer,
+    SceneLayer,
+    GraphicsLayer,
+    Graphic,
+    esriRequest
+  );
+
+  return [
+    ...rightBuildingCols,
+    ...rightBuildingFloor1
+  ];
 };

@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "generator": "smartcity",
+  "copyright": "Smartcity",
+  "timestamp": "2021-05-27T09:28:58Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Cửa 2 chính diện lầu 2 gian giữa",
+        "height": 2,
+        "width": 0.852,
+        "color": "#6b1f1f",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [107.57912352199604, 16.467674856508538, 9.78],
+            [107.57912335613851, 16.46767507443485, 9.78],
+            [107.57912980998695, 16.467679591572185, 9.78],
+            [107.57912997584468, 16.467679373645666, 9.78]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}

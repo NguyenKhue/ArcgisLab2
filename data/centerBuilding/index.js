@@ -1,13 +1,12 @@
+import { center_building_cols } from "./columns/column.js";
 import { floor_SF } from "./secondFloor/floor/index.js";
-export const centerBuilding = (
-  Map,
-  SceneView,
-  GeoJSONLayer,
-  SceneLayer,
-  GraphicsLayer,
-  Graphic,
-  esriRequest
-) => {
+import { center_building_centers } from "./center/center.js";
+
+export const centerBuilding = (Map, SceneView, GeoJSONLayer, SceneLayer,
+  GraphicsLayer, Graphic, esriRequest) => {
+
+  const centerBuildingCols = center_building_cols(Map, SceneView, GeoJSONLayer, SceneLayer, GraphicsLayer, Graphic, esriRequest)
+  const centerBuildingCenters = center_building_centers(Map, SceneView, GeoJSONLayer, SceneLayer, GraphicsLayer, Graphic, esriRequest)
   const floor = floor_SF(
     Map,
     SceneView,
@@ -17,5 +16,6 @@ export const centerBuilding = (
     Graphic,
     esriRequest
   );
-  return [...floor];
-};
+  return [...floor, ...centerBuildingCols, ...centerBuildingCenters];
+
+}

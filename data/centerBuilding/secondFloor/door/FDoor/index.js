@@ -1,4 +1,4 @@
-export const door_SF = (
+export const doorF_SF = (
   Map,
   SceneView,
   GeoJSONLayer,

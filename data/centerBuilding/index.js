@@ -6,6 +6,7 @@ import { doorR_SF } from "./secondFloor/door/RDoor/index.js";
 import { doorL_SF } from "./secondFloor/door/LDoor/index.js";
 import { doorB_SF } from "./secondFloor/door/BDoor/index.js";
 import { center_building_centers_FF } from "./firstFloor/center/center.js";
+import { door_FF } from "./firstFloor/doors/door.js";
 
 export const centerBuilding = (
   Map,
@@ -26,6 +27,16 @@ export const centerBuilding = (
     esriRequest
   );
   const centerBuildingCentersFF = center_building_centers_FF(
+    Map,
+    SceneView,
+    GeoJSONLayer,
+    SceneLayer,
+    GraphicsLayer,
+    Graphic,
+    esriRequest
+  );
+
+  const doorFF = door_FF(
     Map,
     SceneView,
     GeoJSONLayer,

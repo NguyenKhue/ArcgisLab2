@@ -1,7 +1,10 @@
 import { center_building_cols_FF } from "./firstFloor/columns/column.js";
 import { floor_SF } from "./secondFloor/floor/index.js";
 import { column_SF } from "./secondFloor/column/index.js";
-import { door_SF } from "./secondFloor/door/index.js";
+import { doorF_SF } from "./secondFloor/door/FDoor/index.js";
+import { doorR_SF } from "./secondFloor/door/RDoor/index.js";
+import { doorL_SF } from "./secondFloor/door/LDoor/index.js";
+import { doorB_SF } from "./secondFloor/door/BDoor/index.js";
 import { center_building_centers_FF } from "./firstFloor/center/center.js";
 import { door_FF } from "./firstFloor/doors/door.js";
 
@@ -61,7 +64,7 @@ export const centerBuilding = (
     Graphic,
     esriRequest
   );
-  const doorSF = door_SF(
+  const doorFSF = doorF_SF(
     Map,
     SceneView,
     GeoJSONLayer,
@@ -70,6 +73,41 @@ export const centerBuilding = (
     Graphic,
     esriRequest
   );
-
-  return [...floorSF, ...columnSF, ...doorSF, ...centerBuildingColsFF, ...centerBuildingCentersFF, ...doorFF];
+  const doorRSF = doorR_SF(
+    Map,
+    SceneView,
+    GeoJSONLayer,
+    SceneLayer,
+    GraphicsLayer,
+    Graphic,
+    esriRequest
+  );
+  const doorLSF = doorL_SF(
+    Map,
+    SceneView,
+    GeoJSONLayer,
+    SceneLayer,
+    GraphicsLayer,
+    Graphic,
+    esriRequest
+  );
+  const doorBSF = doorB_SF(
+    Map,
+    SceneView,
+    GeoJSONLayer,
+    SceneLayer,
+    GraphicsLayer,
+    Graphic,
+    esriRequest
+  );
+  return [
+    ...floorSF,
+    ...columnSF,
+    ...doorFSF,
+    ...doorRSF,
+    ...doorLSF,
+    ...doorBSF,
+    ...centerBuildingColsFF,
+    ...centerBuildingCentersFF,
+  ];
 };

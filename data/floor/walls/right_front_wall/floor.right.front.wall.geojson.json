@@ -1,29 +1,29 @@
 {
-    "type": "FeatureCollection",
-    "generator": "smartcity",
-    "copyright": "Smartcity",
-    "timestamp": "2021-05-27T09:28:58Z",
-    "features": [
-        {
-            "type": "Feature",
-            "properties": {
-                "Building name": "Tường phía trước bên phải Ngọ Môn",
-                "height": 4.64,
-                "color": "#723a2d",
-                "idb": "1"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [107.579341000,16.4677000004,0],
-                        [107.5793393248084,16.46770216794541,0],
-                        [107.57946032380767,16.467788167615407,0],
-                        [107.579461999,16.46778600007,0]
-                    ]
-                ]
-            },
-            "id": "pp1"
-        }
-    ]
+  "type": "FeatureCollection",
+  "generator": "smartcity",
+  "copyright": "Smartcity",
+  "timestamp": "2021-05-27T09:28:58Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Tường phía trước bên phải Ngọ Môn",
+        "height": 4.64,
+        "color": "#723a2d",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [107.579341, 16.4677000004, 0],
+            [107.5793393248084, 16.46770216794541, 0],
+            [107.57946032380767, 16.467788167615407, 0],
+            [107.579461999, 16.46778600007, 0]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
 }

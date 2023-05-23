@@ -3,6 +3,7 @@ import { floor_SF } from "./secondFloor/floor/index.js";
 import { column_SF } from "./secondFloor/column/index.js";
 import { door_SF } from "./secondFloor/door/index.js";
 import { center_building_centers_FF } from "./firstFloor/center/center.js";
+import { door_FF } from "./firstFloor/doors/door.js";
 
 export const centerBuilding = (
   Map,
@@ -23,6 +24,16 @@ export const centerBuilding = (
     esriRequest
   );
   const centerBuildingCentersFF = center_building_centers_FF(
+    Map,
+    SceneView,
+    GeoJSONLayer,
+    SceneLayer,
+    GraphicsLayer,
+    Graphic,
+    esriRequest
+  );
+
+  const doorFF = door_FF(
     Map,
     SceneView,
     GeoJSONLayer,
@@ -59,5 +70,6 @@ export const centerBuilding = (
     Graphic,
     esriRequest
   );
-  return [...floorSF, ...columnSF, ...doorSF, ...centerBuildingColsFF, ...centerBuildingCentersFF];
+
+  return [...floorSF, ...columnSF, ...doorSF, ...centerBuildingColsFF, ...centerBuildingCentersFF, ...doorFF];
 };

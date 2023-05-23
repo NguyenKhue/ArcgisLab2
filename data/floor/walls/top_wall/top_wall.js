@@ -16,6 +16,18 @@ export const top_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
         url: "./data/floor/walls/top_wall/floor.top.wall.part4.geojson.json"
     });
 
+    const topWallPart5 = new GeoJSONLayer({
+        url: "./data/floor/walls/top_wall/floor.top.wall.part5.geojson.json"
+    });
+
+    const topWallPart6 = new GeoJSONLayer({
+        url: "./data/floor/walls/top_wall/floor.top.wall.part6.geojson.json"
+    });
+
+    const topWallPart7 = new GeoJSONLayer({
+        url: "./data/floor/walls/top_wall/floor.top.wall.part7.geojson.json"
+    });
+
 
 
     topWallPart1.renderer = {
@@ -27,7 +39,7 @@ export const top_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
                     type: "extrude",
                     size: 0.3,
                     material: {
-                        color: "#723a2d"
+                        color: "#4f332a"
                     },
                 }
             ]
@@ -43,7 +55,7 @@ export const top_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
                     type: "extrude",
                     size: 0.3,
                     material: {
-                        color: "#723a2d"
+                        color: "#4f332a"
                     },
                 }
             ]
@@ -59,7 +71,7 @@ export const top_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
                     type: "extrude",
                     size: 0.3,
                     material: {
-                        color: "#723a2d"
+                        color: "#4f332a"
                     },
                 }
             ]
@@ -75,7 +87,7 @@ export const top_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
                     type: "extrude",
                     size: 0.3,
                     material: {
-                        color: "#723a2d"
+                        color: "#4f332a"
                     },
                 }
             ]
@@ -83,10 +95,61 @@ export const top_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     };
     
 
+    topWallPart5.renderer = {
+        type: "simple", 
+        symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+                {
+                    type: "extrude",
+                    size: 0.3,
+                    material: {
+                        color: "#4f332a"
+                    },
+                }
+            ]
+        }
+    };
+
+    topWallPart6.renderer = {
+        type: "simple", 
+        symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+                {
+                    type: "extrude",
+                    size: 0.3,
+                    material: {
+                        color: "#4f332a"
+                    },
+                }
+            ]
+        }
+    };
+    
+    topWallPart7.renderer = {
+        type: "simple", 
+        symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+                {
+                    type: "extrude",
+                    size: 0.3,
+                    material: {
+                        color: "#4f332a"
+                    },
+                }
+            ]
+        }
+    };
+
     return [
         topWallPart1,
         topWallPart2,
         topWallPart3,
-        topWallPart4
+        topWallPart4,
+        topWallPart5,
+        topWallPart6,
+        topWallPart7
     ]
 }

@@ -5,7 +5,7 @@ import { doorF_SF } from "./secondFloor/door/FDoor/index.js";
 import { doorR_SF } from "./secondFloor/door/RDoor/index.js";
 import { doorL_SF } from "./secondFloor/door/LDoor/index.js";
 import { doorB_SF } from "./secondFloor/door/BDoor/index.js";
-import { center_building_centers } from "./center/center.js";
+import { center_building_centers_FF } from "./firstFloor/center/center.js";
 
 export const centerBuilding = (
   Map,

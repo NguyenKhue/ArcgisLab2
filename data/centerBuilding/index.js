@@ -1,5 +1,7 @@
 import { center_building_cols } from "./columns/column.js";
 import { floor_SF } from "./secondFloor/floor/index.js";
+import { column_SF } from "./secondFloor/column/index.js";
+import { door_SF } from "./secondFloor/door/index.js";
 import { center_building_centers } from "./center/center.js";
 
 export const centerBuilding = (
@@ -29,7 +31,7 @@ export const centerBuilding = (
     Graphic,
     esriRequest
   );
-  const floor = floor_SF(
+  const floorSF = floor_SF(
     Map,
     SceneView,
     GeoJSONLayer,
@@ -38,5 +40,23 @@ export const centerBuilding = (
     Graphic,
     esriRequest
   );
-  return [...floor, ...centerBuildingCols, ...centerBuildingCenters];
+  const columnSF = column_SF(
+    Map,
+    SceneView,
+    GeoJSONLayer,
+    SceneLayer,
+    GraphicsLayer,
+    Graphic,
+    esriRequest
+  );
+  const doorSF = door_SF(
+    Map,
+    SceneView,
+    GeoJSONLayer,
+    SceneLayer,
+    GraphicsLayer,
+    Graphic,
+    esriRequest
+  );
+  return [...floorSF, ...columnSF, ...doorSF, ...centerBuildingCols, ...centerBuildingCenters];
 };

@@ -46,7 +46,7 @@ export const column_SF = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.6,
+          size: 2.3,
           material: {
             color: "#3c0d0b",
           },
@@ -61,7 +61,7 @@ export const column_SF = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.6,
+          size: 2.3,
           material: {
             color: "#3c0d0b",
           },
@@ -76,7 +76,7 @@ export const column_SF = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.6,
+          size: 2.3,
           material: {
             color: "#3c0d0b",
           },
@@ -91,7 +91,7 @@ export const column_SF = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.6,
+          size: 2.3,
           material: {
             color: "#3c0d0b",
           },
@@ -166,7 +166,7 @@ export const column_SF = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.6,
+          size: 2.3,
           material: {
             color: "#3c0d0b",
           },
@@ -181,7 +181,7 @@ export const column_SF = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.6,
+          size: 2.3,
           material: {
             color: "#3c0d0b",
           },

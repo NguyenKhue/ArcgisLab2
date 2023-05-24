@@ -1,0 +1,30 @@
+{
+    "type": "FeatureCollection",
+    "generator": "smartcity",
+    "copyright": "Smartcity",
+    "timestamp": "2021-05-27T09:28:58Z",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Building name": "Gian phòng giữa phía trước",
+                "height": 5.0,
+                "width": 1.0,
+                "color": "#551610",
+                "idb": "1"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                   [
+                        [107.57910489199043,16.467657083302225,6.24],
+                        [107.57908425672599, 16.46768416920723, 6.24],
+                        [107.57923939157554,16.467792750109183,6.24],
+                        [107.57926002682052,16.46776566420418,6.24]
+                   ]
+                ]
+            },
+            "id": "pp1"
+        }
+    ]
+}

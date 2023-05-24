@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "generator": "smartcity",
+  "copyright": "Smartcity",
+  "timestamp": "2021-05-27T09:28:58Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Tường lan can tầng 2 bên phải phần 2",
+        "height": 0.8,
+        "color": "#d8aa5e",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [107.57908896574708, 16.467606915896322, 9.78],
+            [107.57908821322243, 16.467606379247687, 9.78],
+            [107.57907627820971, 16.467622524008, 9.78],
+            [107.57907703073435, 16.467623060656628, 9.78]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}

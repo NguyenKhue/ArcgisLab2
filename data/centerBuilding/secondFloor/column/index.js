@@ -31,6 +31,12 @@ export const column_SF = (
   const columnTallRBGeojsonLayer = new GeoJSONLayer({
     url: "./data/centerBuilding/secondFloor/column/columnTallRB.geojson.json",
   });
+  const columnExtraRGeojsonLayer = new GeoJSONLayer({
+    url: "./data/centerBuilding/secondFloor/column/columnExtraR.geojson.json",
+  });
+  const columnExtraLGeojsonLayer = new GeoJSONLayer({
+    url: "./data/centerBuilding/secondFloor/column/columnExtraL.geojson.json",
+  });
 
 
   columnCornerLBGeojsonLayer.renderer = {
@@ -153,6 +159,36 @@ export const column_SF = (
       ],
     },
   };
+  columnExtraRGeojsonLayer.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 2.6,
+          material: {
+            color: "#3c0d0b",
+          },
+        },
+      ],
+    },
+  };
+  columnExtraLGeojsonLayer.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 2.6,
+          material: {
+            color: "#3c0d0b",
+          },
+        },
+      ],
+    },
+  };
 
   return [
     columnCornerLBGeojsonLayer,
@@ -162,6 +198,8 @@ export const column_SF = (
     columnTallLBGeojsonLayer,
     columnTallLTGeojsonLayer,
     columnTallRTGeojsonLayer,
-    columnTallRBGeojsonLayer
+    columnTallRBGeojsonLayer,
+    columnExtraRGeojsonLayer,
+    columnExtraLGeojsonLayer
   ];
 };

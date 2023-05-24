@@ -1,32 +1,32 @@
-// tọa độ điểm A [107.579341000,16.4677000004,0]
-// tọa độ điểm B [107.579461999,16.46778600007,0]
-// tâm tọa độ cột 1 [107.57934897433223,16.46771778391957,0]
-// tâm tọa độ cột 2 [107.57933515286263,16.467735944457623,0]
-// tâm tọa độ cột 3 [107.5793185670972,16.467757737103177,0]
-// tâm tọa độ cột 4 [107.57930198132995,16.467779529748736,0]
-// tâm tọa độ cột 5 [107.57929368844583,16.467790426071677,0]
-// tâm tọa độ cột 6 [107.57927433838044,16.467815850824703,0]
-// tâm tọa độ cột 7 [107.57926604549479,16.46782674714764,0]
-// tâm tọa độ cột 8 [107.57927740791544,16.46783469985107,0]
-// tâm tọa độ cột 9 [107.57931528265614,16.467861208860132,0]
-// tâm tọa độ cột 10 [107.57932664507884,16.46786916156356,0]
-// tâm tọa độ cột 11 [107.579285700801,16.467823803527807,0]
-// tâm tọa độ cột 12 [107.57930505086465,16.46779837877301,0]
-// tâm tọa độ cột 13 [107.57930919730677,16.46779293061142,0]
-// tâm tọa độ cột 14 [107.57932578307332,16.467771137964558,0]
-// tâm tọa độ cột 15 [107.57936033674648,16.467725736623002,0]
-// tâm tọa độ cột 16 [107.57934651527626,16.467743897161057,0]
-// tâm tọa độ cột 17 [107.57938438999925,16.467770406170114,0]
-// tâm tọa độ cột 18 [107.57939575241664,16.467778358873545,0]
-// tâm tọa độ cột 19 [107.579409573888,16.467760198334584,0]
-// tâm tọa độ cột 20 [107.57939821147221,16.467752245630535,0]
-// tâm tọa độ cột 21 [107.57933493796583,16.467858265240288,0]
-// tâm tọa độ cột 22 [107.57932357554425,16.467850312536243,0]
-// tâm tọa độ cột 23 [107.57934568990531,16.46782125567347,0]
-// tâm tọa độ cột 24
-// tâm tọa độ cột 25 [107.5793539621422,16.46783326538887,0]
-// tâm tọa độ cột 26 [107.5793788407834,16.467800576420373,0]
-export const right_building_cols = (
+// tọa độ điểm A [107.5791530007,16.46755900053,0]
+// tọa độ điểm B [107.5790380049,16.46747699342,0]
+// tâm tọa độ cột 1 tầng 1 [107.57913219957746,16.467563218954545,0]
+// tâm tọa độ cột 2 tầng 1 [107.57911820949235,16.467581260357814,0]
+// tâm tọa độ cột 3 tầng 1 [107.57910142138829,16.467602910041617,0]
+// tâm tọa độ cột 4 tầng 1 [107.5790846332824,16.467624559725422,0]
+// tâm tọa độ cột 5 tầng 1 [107.57907903724666,16.46763177628673,0]
+// tâm tọa độ cột 6 tầng 1 [107.57905665310136,16.46766064253151,0]
+// tâm tọa độ cột 7 tầng 1 [107.57904546102795,16.467675075654338,0]
+// tâm tọa độ cột 8 tầng 1 [107.57903417315552,16.46766702592457,0]
+// tâm tọa độ cột 9 tầng 1 [107.57904536522813,16.46765259279546,0]
+// tâm tọa độ cột 10 tầng 1 [107.57906774937646,16.467623726556955,0]
+// tâm tọa độ cột 11 tầng 1 [107.57907054739408,16.46762011827619,0]
+// tâm tọa độ cột 12 tầng 1 [107.57908733549773,16.467598468591046,0]
+// tâm tọa độ cột 13 tầng 1 [107.57910692162541,16.467573210628043,0]
+// tâm tọa độ cột 14 tầng 1 [107.57912091171156,16.467555169224777,0]
+// tâm tọa độ cột 15 tầng 1 [107.57908328549725,16.467528336789858,0]
+// tâm tọa độ cột 16 tầng 1 [107.57906929540756,16.467546378193127,0]
+// tâm tọa độ cột 17 tầng 1 [107.57904970928935,16.467571636157437,0]
+// tâm tọa độ cột 18 tầng 1 [107.5790329211861,16.467593285841243,0]
+// tâm tọa độ cột 19 tầng 1 [107.57900773901882,16.46762576036054,0]
+// tâm tọa độ cột 20 tầng 1 [107.57899654691946,16.467640193489654,0]
+// tâm tọa độ cột 21 tầng 1 [107.57898525904916,16.467632143759886,0]
+// tâm tọa độ cột 22 tầng 1 [107.5789936531078,16.46762131891781,0]
+// tâm tọa độ cột 23 tầng 1 [107.57901603726613,16.467592452668406,0]
+// tâm tọa độ cột 24 tầng 1 [107.57904121943555,16.46755997814253,0]
+// tâm tọa độ cột 25 tầng 1 [107.57905800754632,16.467538328458726,0]
+// tâm tọa độ cột 26 tầng 1 [107.57907199763704,16.46752028705546,0]
+export const left_building_cols_ff = (
   Map,
   SceneView,
   GeoJSONLayer,
@@ -36,87 +36,87 @@ export const right_building_cols = (
   esriRequest
 ) => {
   const col1 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column1.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column1.geojson.json",
   });
 
   const col2 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column2.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column2.geojson.json",
   });
 
   const col3 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column3.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column3.geojson.json",
   });
 
   const col4 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column4.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column4.geojson.json",
   });
   const col5 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column5.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column5.geojson.json",
   });
 
   const col6 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column6.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column6.geojson.json",
   });
 
   const col7 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column7.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column7.geojson.json",
   });
   const col8 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column8.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column8.geojson.json",
   });
   const col9 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column9.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column9.geojson.json",
   });
   const col10 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column10.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column10.geojson.json",
   });
   const col11 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column11.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column11.geojson.json",
   });
   const col12 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column12.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column12.geojson.json",
   });
   const col13 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column13.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column13.geojson.json",
   });
   const col14 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column14.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column14.geojson.json",
   });
   const col15 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column15.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column15.geojson.json",
   });
   const col16 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column16.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column16.geojson.json",
   });
   const col17 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column17.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column17.geojson.json",
   });
   const col18 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column18.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column18.geojson.json",
   });
   const col19 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column19.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column19.geojson.json",
   });
   const col20 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column20.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column20.geojson.json",
   });
   const col21 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column21.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column21.geojson.json",
   });
   const col22 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column22.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column22.geojson.json",
   });
   const col23 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column23.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column23.geojson.json",
   });
   const col24 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column24.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column24.geojson.json",
   });
   const col25 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column25.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column25.geojson.json",
   });
   const col26 = new GeoJSONLayer({
-    url: "./data/rightBuilding/columns/right.building.column26.geojson.json",
+    url: "./data/leftBuilding/firstFloor/columns/left.building.column26.geojson.json",
   });
 
   col1.renderer = {
@@ -187,7 +187,7 @@ export const right_building_cols = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -202,7 +202,7 @@ export const right_building_cols = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -247,7 +247,7 @@ export const right_building_cols = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -262,7 +262,7 @@ export const right_building_cols = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -277,7 +277,7 @@ export const right_building_cols = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -292,7 +292,7 @@ export const right_building_cols = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -307,7 +307,7 @@ export const right_building_cols = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -352,7 +352,7 @@ export const right_building_cols = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -367,7 +367,7 @@ export const right_building_cols = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -382,7 +382,7 @@ export const right_building_cols = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -397,7 +397,7 @@ export const right_building_cols = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },

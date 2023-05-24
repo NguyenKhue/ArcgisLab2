@@ -28,6 +28,10 @@ export const top_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
         url: "./data/floor/walls/top_wall/floor.top.wall.part7.geojson.json"
     });
 
+    const topWallPart8 = new GeoJSONLayer({
+        url: "./data/floor/walls/top_wall/floor.top.wall.part8.geojson.json"
+    });
+
 
 
     topWallPart1.renderer = {
@@ -143,6 +147,22 @@ export const top_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
         }
     };
 
+    topWallPart8.renderer = {
+        type: "simple", 
+        symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+                {
+                    type: "extrude",
+                    size: 0.3,
+                    material: {
+                        color: "#4f332a"
+                    },
+                }
+            ]
+        }
+    };
+
     return [
         topWallPart1,
         topWallPart2,
@@ -150,6 +170,7 @@ export const top_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
         topWallPart4,
         topWallPart5,
         topWallPart6,
-        topWallPart7
+        topWallPart7,
+        topWallPart8
     ]
 }

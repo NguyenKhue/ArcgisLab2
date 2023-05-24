@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "generator": "smartcity",
+  "copyright": "Smartcity",
+  "timestamp": "2021-05-27T09:28:58Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Lan can lầu 2 tòa giữa",
+        "height": 0.6,
+        "width": 0.1,
+        "color": "#d8aa5e",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [107.57911961667212,16.46766393981289,9.78],
+            [107.57911906381337,16.46766466623428,9.78],
+            [107.57924745909197,16.467754531782102,9.78],
+            [107.57924801195105,16.467753805360715,9.78]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}

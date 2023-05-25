@@ -18,7 +18,9 @@ export const wall_rail = (
   const rightWallRail2 = new GeoJSONLayer({
     url: "./data/leftBuilding/secondFloor/rails/right.wall.rail.part2.geojson.json",
   });
-
+  const frontWallRail1 = new GeoJSONLayer({
+    url: "./data/leftBuilding/secondFloor/rails/front.wall.rail1.geojson.json",
+  });
   //   const frontWallRail = new GeoJSONLayer({
   //     url: "./data/leftBuilding/secondFloor/rails/front.wall.rail.geojson.json",
   //   });

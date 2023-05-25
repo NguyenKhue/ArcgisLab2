@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "generator": "smartcity",
+  "copyright": "Smartcity",
+  "timestamp": "2021-05-27T09:28:58Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Sàn nhà tầng 2 của tòa trái phần 1",
+        "height": 2.6,
+        "width": 0.5,
+        "color": "#551610",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [107.57904536522813, 16.46765259279546, 9.78],
+            [107.57910692162541, 16.467573210628043, 9.78],
+            [107.57906929540756, 16.467546378193127, 9.78],
+            [107.57900773901882, 16.46762576036054, 9.78]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}

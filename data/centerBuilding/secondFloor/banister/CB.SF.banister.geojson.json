@@ -14,7 +14,7 @@
         "idb": "1"
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "MultiPolygon",
         "coordinates": [
           [
             [107.57907100357794, 16.46762927230565, 9.78],

@@ -1,6 +1,7 @@
 import { floor } from "./data/floor/floor.js";
 import { centerBuilding } from "./data/centerBuilding/index.js";
 import { rightBuilding } from "./data/rightBuilding/rightBuilding.js";
+import { leftBuilding } from "./data/leftBuilding/leftBuilding.js";
 
 require([
   "esri/Map",
@@ -39,6 +40,16 @@ require([
     esriRequest
   );
 
+  const leftBuildingArr = leftBuilding(
+    Map,
+    SceneView,
+    GeoJSONLayer,
+    SceneLayer,
+    GraphicsLayer,
+    Graphic,
+    esriRequest
+  );
+
   const rightBuildingArr = rightBuilding(
     Map,
     SceneView,
@@ -51,7 +62,12 @@ require([
 
   const map = new Map({
     basemap: "topo-vector",
-    layers: [...floorArr, ...centerBuildingArr, ...rightBuildingArr], //end layers
+    layers: [
+      ...floorArr,
+      ...centerBuildingArr,
+      ...leftBuildingArr,
+      ...rightBuildingArr,
+    ], //end layers
   });
 
   const view = new SceneView({

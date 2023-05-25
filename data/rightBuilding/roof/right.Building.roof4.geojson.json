@@ -7,7 +7,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "Sàn nhà tầng 2 của tòa giữa",
+        "Building name": "Mái lầu 2 bên phải bên trái",
         "height": 0.05,
         "width": 0.5,
         "color": "#6e6f74",
@@ -15,7 +15,14 @@
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[]]
+        "coordinates": [
+          [
+            [107.57934313869212, 16.467701763285508, 8],
+            [107.5793454810078, 16.467737225572982, 9.78],
+            [107.57930477001689, 16.467792242676506, 9.78],
+            [107.57929463884625, 16.4677624381315, 8]
+          ]
+        ]
       },
       "id": "pp1"
     }

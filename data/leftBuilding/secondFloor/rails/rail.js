@@ -18,6 +18,27 @@ export const wall_rail = (
   const rightWallRail2 = new GeoJSONLayer({
     url: "./data/leftBuilding/secondFloor/rails/right.wall.rail.part2.geojson.json",
   });
+
+  const leftWallRail = new GeoJSONLayer({
+    url: "./data/leftBuilding/secondFloor/rails/left.wall.rail.geojson.json",
+  });
+
+  const leftWallRail2 = new GeoJSONLayer({
+    url: "./data/leftBuilding/secondFloor/rails/left.wall.rail.part2.geojson.json",
+  });
+
+  const leftWallRail3 = new GeoJSONLayer({
+    url: "./data/leftBuilding/secondFloor/rails/left.wall.rail.part3.geojson.json",
+  });
+
+  const backWallRail = new GeoJSONLayer({
+    url: "./data/leftBuilding/secondFloor/rails/back.wall.rail.geojson.json",
+  });
+
+  const backWallRail2 = new GeoJSONLayer({
+    url: "./data/leftBuilding/secondFloor/rails/back.wall.rail.part2.geojson.json",
+  });
+
   frontWallRail.renderer = {
     type: "simple",
     symbol: {

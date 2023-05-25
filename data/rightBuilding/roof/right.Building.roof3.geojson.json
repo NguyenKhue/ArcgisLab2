@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "generator": "smartcity",
+  "copyright": "Smartcity",
+  "timestamp": "2021-05-27T09:28:58Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Mái lầu 2 bên phải đằng sau",
+        "height": 0.05,
+        "width": 0.5,
+        "color": "#6e6f74",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [107.57932871361726, 16.467882504739702, 8],
+            [107.579323856392, 16.467856448632734, 9.78],
+            [107.57922820351786, 16.4677889971012, 9.78]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}

@@ -10,8 +10,11 @@ export const roof_SF = (
     const roofGeojsonLayer = new GeoJSONLayer({
       url: "./data/centerBuilding/secondFloor/roof/CB.SF.roof.geojson.json",
     });
-    const decoRoofGeojsonLayer = new GeoJSONLayer({
-        url: "./data/centerBuilding/secondFloor/roof/CB.SF.decoRoof.geojson.json",
+    const decoRoof1GeojsonLayer = new GeoJSONLayer({
+        url: "./data/centerBuilding/secondFloor/roof/CB.SF.decoRoof1.geojson.json",
+      });
+      const decoRoof2GeojsonLayer = new GeoJSONLayer({
+        url: "./data/centerBuilding/secondFloor/roof/CB.SF.decoRoof2.geojson.json",
       });
   
     roofGeojsonLayer.renderer = {
@@ -29,7 +32,7 @@ export const roof_SF = (
         ],
       },
     };
-    decoRoofGeojsonLayer.renderer = {
+    decoRoof1GeojsonLayer.renderer = {
         type: "simple",
         symbol: {
           type: "polygon-3d",
@@ -44,7 +47,22 @@ export const roof_SF = (
           ],
         },
       };
+      decoRoof2GeojsonLayer.renderer = {
+        type: "simple",
+        symbol: {
+          type: "polygon-3d",
+          symbolLayers: [
+            {
+              type: "extrude",
+              size: 0.1,
+              material: {
+                color: "#b16934",
+              },
+            },
+          ],
+        },
+      };
   
-    return [roofGeojsonLayer,decoRoofGeojsonLayer];
+    return [roofGeojsonLayer,decoRoof1GeojsonLayer,decoRoof2GeojsonLayer];
   };
   

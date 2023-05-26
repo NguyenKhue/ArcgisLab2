@@ -11,6 +11,7 @@ import { roof_SF } from "./secondFloor/roof/index.js";
 import { balcony_SF } from "./secondFloor/balcony/index.js";
 import { banister_SF } from "./secondFloor/banister/index.js";
 import { door_left_FF } from "./firstFloor/doors/left/door.js";
+import { floor_center } from "./floor/floor.js";
 
 export const centerBuilding = (
   Map,
@@ -141,6 +142,16 @@ export const centerBuilding = (
     Graphic,
     esriRequest
   );
+
+  const floorCenter = floor_center(
+    Map,
+    SceneView,
+    GeoJSONLayer,
+    SceneLayer,
+    GraphicsLayer,
+    Graphic,
+    esriRequest
+  );
   return [
     ...floorSF,
     ...columnSF,
@@ -154,6 +165,7 @@ export const centerBuilding = (
     ...doorLeftFF,
     ...roofSF,
     ...balconySF,
-    ...banisterSF
+    ...banisterSF,
+    ...floorCenter
   ];
 };

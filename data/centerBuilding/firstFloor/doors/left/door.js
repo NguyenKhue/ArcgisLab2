@@ -48,6 +48,79 @@ export const door_left_FF = (Map, SceneView, GeoJSONLayer, SceneLayer,
     url: "./data/centerBuilding/firstFloor/doors/left/center.building.doordecohori.4.geojson.json"
   });
 
+  const door5 = new GeoJSONLayer({
+    url: "./data/centerBuilding/firstFloor/doors/left/center.building.door.5.geojson.json"
+  });
+
+  const door5decovert = new GeoJSONLayer({
+    url: "./data/centerBuilding/firstFloor/doors/left/center.building.doordecovert.5.geojson.json"
+  });
+
+  const door5decohori = new GeoJSONLayer({
+    url: "./data/centerBuilding/firstFloor/doors/left/center.building.doordecohori.5.geojson.json"
+  });
+
+  const door6 = new GeoJSONLayer({
+    url: "./data/centerBuilding/firstFloor/doors/left/center.building.door.6.geojson.json"
+  });
+
+  const door6decovert = new GeoJSONLayer({
+    url: "./data/centerBuilding/firstFloor/doors/left/center.building.doordecovert.6.geojson.json"
+  });
+
+  const door6decohori = new GeoJSONLayer({
+    url: "./data/centerBuilding/firstFloor/doors/left/center.building.doordecohori.6.geojson.json"
+  });
+
+  const door7 = new GeoJSONLayer({
+    url: "./data/centerBuilding/firstFloor/doors/left/center.building.door.7.geojson.json"
+  });
+
+  const door7decovert = new GeoJSONLayer({
+    url: "./data/centerBuilding/firstFloor/doors/left/center.building.doordecovert.7.geojson.json"
+  });
+
+  const door7decohori = new GeoJSONLayer({
+    url: "./data/centerBuilding/firstFloor/doors/left/center.building.doordecohori.7.geojson.json"
+  });
+
+  const door8 = new GeoJSONLayer({
+    url: "./data/centerBuilding/firstFloor/doors/left/center.building.door.8.geojson.json"
+  });
+
+  const door8decovert = new GeoJSONLayer({
+    url: "./data/centerBuilding/firstFloor/doors/left/center.building.doordecovert.8.geojson.json"
+  });
+
+  const door8decohori = new GeoJSONLayer({
+    url: "./data/centerBuilding/firstFloor/doors/left/center.building.doordecohori.8.geojson.json"
+  });
+
+  const door9 = new GeoJSONLayer({
+    url: "./data/centerBuilding/firstFloor/doors/left/center.building.door.9.geojson.json"
+  });
+
+  const door9decovert = new GeoJSONLayer({
+    url: "./data/centerBuilding/firstFloor/doors/left/center.building.doordecovert.9.geojson.json"
+  });
+
+  const door9decohori = new GeoJSONLayer({
+    url: "./data/centerBuilding/firstFloor/doors/left/center.building.doordecohori.9.geojson.json"
+  });
+
+  const door10 = new GeoJSONLayer({
+    url: "./data/centerBuilding/firstFloor/doors/left/center.building.door.10.geojson.json"
+  });
+
+  const door10decovert = new GeoJSONLayer({
+    url: "./data/centerBuilding/firstFloor/doors/left/center.building.doordecovert.10.geojson.json"
+  });
+
+  const door10decohori = new GeoJSONLayer({
+    url: "./data/centerBuilding/firstFloor/doors/left/center.building.doordecohori.10.geojson.json"
+  });
+
+
 
   door1.renderer = {
     type: "simple",
@@ -217,6 +290,258 @@ export const door_left_FF = (Map, SceneView, GeoJSONLayer, SceneLayer,
     }
   };
 
+  door5.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [{
+        type: "extrude",
+        size: 3.54,
+        material: {
+          color: "#6b1f1f"
+        },
+      }]
+    }
+  };
+
+  door5decohori.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [{
+        type: "extrude",
+        size: 0.1,
+        material: {
+          color: "brown"
+        },
+      }]
+    }
+  };
+
+  door5decovert.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [{
+        type: "extrude",
+        size: 3.54,
+        material: {
+          color: "brown"
+        },
+      }]
+    }
+  };
+
+  door6.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [{
+        type: "extrude",
+        size: 3.54,
+        material: {
+          color: "#6b1f1f"
+        },
+      }]
+    }
+  };
+
+  door6decohori.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [{
+        type: "extrude",
+        size: 0.1,
+        material: {
+          color: "brown"
+        },
+      }]
+    }
+  };
+
+  door6decovert.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [{
+        type: "extrude",
+        size: 3.54,
+        material: {
+          color: "brown"
+        },
+      }]
+    }
+  };
+
+  door7.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [{
+        type: "extrude",
+        size: 3.54,
+        material: {
+          color: "#6b1f1f"
+        },
+      }]
+    }
+  };
+
+  door7decohori.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [{
+        type: "extrude",
+        size: 0.1,
+        material: {
+          color: "brown"
+        },
+      }]
+    }
+  };
+
+  door7decovert.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [{
+        type: "extrude",
+        size: 3.54,
+        material: {
+          color: "brown"
+        },
+      }]
+    }
+  };
+
+  door8.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [{
+        type: "extrude",
+        size: 3.54,
+        material: {
+          color: "#6b1f1f"
+        },
+      }]
+    }
+  };
+
+  door8decohori.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [{
+        type: "extrude",
+        size: 0.1,
+        material: {
+          color: "brown"
+        },
+      }]
+    }
+  };
+
+  door8decovert.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [{
+        type: "extrude",
+        size: 3.54,
+        material: {
+          color: "brown"
+        },
+      }]
+    }
+  };
+
+  door9.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [{
+        type: "extrude",
+        size: 3.54,
+        material: {
+          color: "#6b1f1f"
+        },
+      }]
+    }
+  };
+
+  door9decohori.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [{
+        type: "extrude",
+        size: 0.1,
+        material: {
+          color: "brown"
+        },
+      }]
+    }
+  };
+
+  door9decovert.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [{
+        type: "extrude",
+        size: 3.54,
+        material: {
+          color: "brown"
+        },
+      }]
+    }
+  };
+
+  door10.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [{
+        type: "extrude",
+        size: 3.54,
+        material: {
+          color: "#6b1f1f"
+        },
+      }]
+    }
+  };
+
+  door10decohori.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [{
+        type: "extrude",
+        size: 0.1,
+        material: {
+          color: "brown"
+        },
+      }]
+    }
+  };
+
+  door10decovert.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [{
+        type: "extrude",
+        size: 3.54,
+        material: {
+          color: "brown"
+        },
+      }]
+    }
+  };
+
 
 
   return [
@@ -231,6 +556,24 @@ export const door_left_FF = (Map, SceneView, GeoJSONLayer, SceneLayer,
     door3decovert,
     door4,
     door4decohori,
-    door4decovert
+    door4decovert,
+    door5,
+    door5decohori,
+    door5decovert,
+    door6,
+    door6decohori,
+    door6decovert,
+    door7,
+    door7decohori,
+    door7decovert,
+    door8,
+    door8decohori,
+    door8decovert,
+    door9,
+    door9decohori,
+    door9decovert,
+    door10,
+    door10decohori,
+    door10decovert
   ]
 }

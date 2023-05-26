@@ -18,9 +18,9 @@ export const floor_sf = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.6,
+          size: 0.05,
           material: {
-            color: "#551610",
+            color: "white",
           },
         },
       ],

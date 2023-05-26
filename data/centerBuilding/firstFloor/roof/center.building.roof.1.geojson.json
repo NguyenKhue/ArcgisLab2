@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "generator": "smartcity",
+  "copyright": "Smartcity",
+  "timestamp": "2021-05-27T09:28:58Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Viền gia cố mái phía sau lầu 1 tòa giữa",
+        "height": 0.05,
+        "width": 21.23,
+        "color": "#b16934",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [107.5791958641,16.4678337653,9.78],
+            [107.5790561064,16.46773594713,9.78],
+            [107.57903185891952,16.467741575449857,8],
+            [107.57919267506514,16.46785413265207,8]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}

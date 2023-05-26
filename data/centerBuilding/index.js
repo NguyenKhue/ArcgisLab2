@@ -10,7 +10,8 @@ import { door_FF } from "./firstFloor/doors/front/door.js";
 import { roof_SF } from "./secondFloor/roof/index.js";
 import { balcony_SF } from "./secondFloor/balcony/index.js";
 import { banister_SF } from "./secondFloor/banister/index.js";
-import { floor_center} from "./floor/floor.js";
+import { door_left_FF } from "./firstFloor/doors/left/door.js";
+import { floor_center } from "./floor/floor.js";
 
 export const centerBuilding = (
   Map,
@@ -41,6 +42,16 @@ export const centerBuilding = (
   );
 
   const doorFF = door_FF(
+    Map,
+    SceneView,
+    GeoJSONLayer,
+    SceneLayer,
+    GraphicsLayer,
+    Graphic,
+    esriRequest
+  );
+
+  const doorLeftFF = door_left_FF(
     Map,
     SceneView,
     GeoJSONLayer,
@@ -151,6 +162,7 @@ export const centerBuilding = (
     ...centerBuildingColsFF,
     ...centerBuildingCentersFF,
     ...doorFF,
+    ...doorLeftFF,
     ...roofSF,
     ...balconySF,
     ...banisterSF,

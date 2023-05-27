@@ -16,7 +16,7 @@ export const roof_back_FF = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 0.05,
+          size: 0.1,
           material: {
             color: "#ab864a",
           },
@@ -32,7 +32,7 @@ export const roof_back_FF = (Map, SceneView, GeoJSONLayer, SceneLayer,
       symbolLayers: [
         {
           type: "extrude",
-          size: 0.05,
+          size: 0.1,
           material: {
             color: "#ab864a",
           },

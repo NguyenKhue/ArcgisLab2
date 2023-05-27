@@ -7,9 +7,9 @@ export const floor_center = (
   Graphic,
   esriRequest
 ) => {
-  // const bottomFloor = new GeoJSONLayer({
-  //   url: "./data/centerBuilding/floor_bottom/floor.json",
-  // });
+  const bottomFloor = new GeoJSONLayer({
+    url: "./data/centerBuilding/floor/floor_bottom.json",
+  });
 
   const floor = new GeoJSONLayer({
     url: "./data/centerBuilding/floor/floor.json",
@@ -21,21 +21,21 @@ export const floor_center = (
 
 
 
-  // bottomFloor.renderer = {
-  //   type: "simple",
-  //   symbol: {
-  //     type: "polygon-3d",
-  //     symbolLayers: [
-  //       {
-  //         type: "extrude",
-  //         size: 0.1,
-  //         material: {
-  //           color: "#8e8e8e",
-  //         },
-  //       },
-  //     ],
-  //   },
-  // };
+  bottomFloor.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 0.1,
+          material: {
+            color: "#8e8e8e",
+          },
+        },
+      ],
+    },
+  };
 
   floor.renderer = {
     type: "simple",
@@ -71,6 +71,7 @@ export const floor_center = (
 
   return [
     floor,
-    floor_center
+    floor_center,
+    bottomFloor
   ]
 }

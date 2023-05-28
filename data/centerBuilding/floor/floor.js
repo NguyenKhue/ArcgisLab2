@@ -19,6 +19,14 @@ export const floor_center = (
     url: "./data/centerBuilding/floor/floor_center.json",
   });
 
+  const floor_step = new GeoJSONLayer({
+    url: "./data/centerBuilding/floor/floor_step.json",
+  });
+
+  const floor_step_font = new GeoJSONLayer({
+    url: "./data/centerBuilding/floor/floor_step_font.json",
+  });
+
 
 
   bottomFloor.renderer = {
@@ -53,6 +61,38 @@ export const floor_center = (
     },
   };
 
+  floor_step.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 0.25,
+          material: {
+            color: "#64646c",
+          },
+        },
+      ],
+    },
+  };
+
+  floor_step_font.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 0.4,
+          material: {
+            color: "#64646c",
+          },
+        },
+      ],
+    },
+  };
+
   floor_center.renderer = {
     type: "simple",
     symbol: {
@@ -72,6 +112,8 @@ export const floor_center = (
   return [
     floor,
     floor_center,
-    bottomFloor
+    bottomFloor,
+    floor_step,
+    floor_step_font
   ]
 }

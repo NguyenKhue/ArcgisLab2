@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "generator": "smartcity",
+  "copyright": "Smartcity",
+  "timestamp": "2021-05-27T09:28:58Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Cửa 8 phía sau tầng 2 tòa giữa",
+        "height": 1.4,
+        "width": 0.567,
+        "color": "#bb853a",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [107.579227136152532, 16.467784285791623, 10.38],
+            [107.57922730200893, 16.467784067864272, 10.38],
+            [107.579237931891171, 16.467791617052093, 10.38],
+            [107.5792377660322, 16.467791834977685, 10.38]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}

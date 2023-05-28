@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "generator": "smartcity",
+  "copyright": "Smartcity",
+  "timestamp": "2021-05-27T09:28:58Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Cửa 12 hông phải tầng 2 tòa giữa",
+        "height": 1.4,
+        "width": 0.567,
+        "color": "#bb853a",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [107.5792453804971, 16.467760313881676, 10.38],
+            [107.57924554635473, 16.467760095955217, 10.38],
+            [107.579256729097782, 16.467766918722386, 10.38],
+            [107.57925656324015, 16.467767136648845, 10.38]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}

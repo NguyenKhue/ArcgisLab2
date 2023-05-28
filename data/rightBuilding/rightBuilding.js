@@ -7,6 +7,9 @@ import { doorB_R } from "./door/BDoor/index.js";
 import { doorR_R } from "./door/RDoor/index.js";
 import { doorF_R } from "./door/FDoor/index.js";
 import { doorL_R } from "./door/LDoor/index.js";
+import { floor1_walls } from "./walls/floor1_wall.js";
+import { floor1_steps } from "./step/step.js";
+
 export const rightBuilding = (
   Map,
   SceneView,
@@ -98,6 +101,27 @@ export const rightBuilding = (
     Graphic,
     esriRequest
   );
+
+  const floor1Walls = floor1_walls(
+    Map,
+    SceneView,
+    GeoJSONLayer,
+    SceneLayer,
+    GraphicsLayer,
+    Graphic,
+    esriRequest
+  );
+
+  const floor1Steps = floor1_steps(
+    Map,
+    SceneView,
+    GeoJSONLayer,
+    SceneLayer,
+    GraphicsLayer,
+    Graphic,
+    esriRequest
+  );
+
   return [
     ...rightBuildingCols,
     ...rightBuildingFloor1,
@@ -108,5 +132,7 @@ export const rightBuilding = (
     ...doorRR,
     ...doorFR,
     ...doorLR,
+    ...floor1Walls,
+    ...floor1Steps
   ];
 };

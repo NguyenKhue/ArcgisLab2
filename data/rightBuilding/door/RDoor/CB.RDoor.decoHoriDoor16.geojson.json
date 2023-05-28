@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "generator": "smartcity",
+  "copyright": "Smartcity",
+  "timestamp": "2021-05-27T09:28:58Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Thanh lề ngang gia cố cửa 16 hông phải tầng 2 tòa giữa",
+        "height": 0.04,
+        "width": 0.567,
+        "color": "#701a1d",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [107.57926799747344, 16.467773469532638, 11.74],
+            [107.5792678316145, 16.46777368745817, 11.74],
+            [107.57926063541441, 16.46776865074476, 11.74],
+            [107.57926080127073, 16.467768432817355, 11.74]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}

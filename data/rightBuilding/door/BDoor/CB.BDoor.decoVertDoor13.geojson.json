@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "generator": "smartcity",
+  "copyright": "Smartcity",
+  "timestamp": "2021-05-27T09:28:58Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Thanh lề dọc gia cố cửa 13 phía sau tầng 2 tòa giữa",
+        "height": 1.4,
+        "width": 0.02,
+        "color": "#701a1d",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [107.5792406301797, 16.46779417362209, 10.38],
+            [107.57924079603734, 16.46779395569562, 10.38],
+            [107.57924117478461, 16.46779422078575, 10.38],
+            [107.57924100892697, 16.467794438712215, 10.38]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}

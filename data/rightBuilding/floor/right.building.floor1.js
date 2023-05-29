@@ -14,8 +14,13 @@ export const right_building_floor1 = (
   const floor = new GeoJSONLayer({
     url: "./data/rightBuilding/floor/right.building.floor.geojson.json",
   });
+
   const secondFloor = new GeoJSONLayer({
     url: "./data/rightBuilding/floor/right.building.secondfloor.geojson.json",
+  });
+
+  const tileFloor = new GeoJSONLayer({
+    url: "./data/rightBuilding/floor/right.building.tile.floor.geojson.json",
   });
 
   bottomFloor.renderer = {
@@ -49,6 +54,7 @@ export const right_building_floor1 = (
       ],
     },
   };
+
   secondFloor.renderer = {
     type: "simple",
     symbol: {
@@ -64,5 +70,22 @@ export const right_building_floor1 = (
       ],
     },
   };
-  return [bottomFloor, floor, secondFloor];
+
+  tileFloor.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 0.01,
+          material: {
+            color: "#8f6f57",
+          },
+        },
+      ],
+    },
+  };
+
+  return [bottomFloor, floor, secondFloor, tileFloor];
 };

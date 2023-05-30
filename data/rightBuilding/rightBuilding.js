@@ -3,6 +3,7 @@ import { right_building_floor1 } from "./floor/right.building.floor1.js";
 import { right_building_cols2 } from "./secondFloor/columns/index.js";
 import { wall_rail } from "./rails/rail.js";
 import { roof_RB } from "./roof/index.js";
+import { roof_SF } from "./secondFloor/roof/index.js";
 import { doorB_R } from "./door/BDoor/index.js";
 import { doorR_R } from "./door/RDoor/index.js";
 import { doorF_R } from "./door/FDoor/index.js";
@@ -122,6 +123,16 @@ export const rightBuilding = (
     esriRequest
   );
 
+  const roofSF = roof_SF(
+    Map,
+    SceneView,
+    GeoJSONLayer,
+    SceneLayer,
+    GraphicsLayer,
+    Graphic,
+    esriRequest
+  );
+
   return [
     ...rightBuildingCols,
     ...rightBuildingFloor1,
@@ -132,7 +143,8 @@ export const rightBuilding = (
     ...doorRR,
     ...doorFR,
     ...doorLR,
+    ...roofSF,
     ...floor1Walls,
-    ...floor1Steps
+    ...floor1Steps,
   ];
 };

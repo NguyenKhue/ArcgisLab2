@@ -1,0 +1,23 @@
+{
+  "type": "FeatureCollection",
+  "generator": "smartcity",
+  "copyright": "Smartcity",
+  "timestamp": "2021-05-27T09:28:58Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Viền gia cố mái lầu 2 tòa giữa",
+        "height": 0.3,
+        "width": 0.15,
+        "color": "#b16934",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": []
+      },
+      "id": "pp1"
+    }
+  ]
+}

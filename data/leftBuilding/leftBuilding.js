@@ -6,6 +6,7 @@ import { underwall } from "./secondFloor/building/wall/UWall/underwall.js";
 import { overwall } from "./secondFloor/building/wall/OWall/overwall.js";
 import { deco } from "./secondFloor/building/wall/deco/deco.js";
 import { roof_sf } from "./secondFloor/roof/roof.js";
+import { left_building_floor1 } from "./floor/left.building.floor1.js";
 
 export const leftBuilding = (
   Map,
@@ -96,7 +97,19 @@ export const leftBuilding = (
     esriRequest
   );
 
+  const leftBuildingFloor1 = left_building_floor1(
+    Map,
+    SceneView,
+    GeoJSONLayer,
+    SceneLayer,
+    GraphicsLayer,
+    Graphic,
+    esriRequest
+  );
+
+
   return [
+    ...leftBuildingFloor1,
     ...leftBuildingColsFF,
     ...leftBuildingColsSF,
     ...floorSF,

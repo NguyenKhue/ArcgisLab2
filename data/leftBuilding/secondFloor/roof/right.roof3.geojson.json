@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "generator": "smartcity",
+  "copyright": "Smartcity",
+  "timestamp": "2021-05-27T09:28:58Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Mái lầu 2 toàn trái bên trái",
+        "height": 0.05,
+        "width": 0.5,
+        "color": "#6e6f74",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [107.57906805535673, 16.46753827522246, 9.78],
+            [107.57906170979452, 16.46749690189182, 8],
+            [107.5789561463922, 16.46763303481585, 8],
+            [107.57899810491097, 16.467628482234428, 9.78]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}

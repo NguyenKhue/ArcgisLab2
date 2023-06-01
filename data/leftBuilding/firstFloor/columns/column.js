@@ -4,12 +4,12 @@
 // tâm tọa độ cột 2 tầng 1 [107.57911820949235,16.467581260357814,0]
 // tâm tọa độ cột 3 tầng 1 [107.57910142138829,16.467602910041617,0]
 // tâm tọa độ cột 4 tầng 1 [107.5790846332824,16.467624559725422,0]
-// tâm tọa độ cột 5 tầng 1 [107.57907903724666,16.46763177628673,0]
-// tâm tọa độ cột 6 tầng 1 [107.57905665310136,16.46766064253151,0]
+// tâm tọa độ cột 5 tầng 1 [107.57907344121092,16.467638992848144,0]
+// tâm tọa độ cột 6 tầng 1 [107.5790552540923,16.467662446671874,0]
 // tâm tọa độ cột 7 tầng 1 [107.57904546102795,16.467675075654338,0]
 // tâm tọa độ cột 8 tầng 1 [107.57903417315552,16.46766702592457,0]
-// tâm tọa độ cột 9 tầng 1 [107.57904536522813,16.46765259279546,0]
-// tâm tọa độ cột 10 tầng 1 [107.57906774937646,16.467623726556955,0]
+// tâm tọa độ cột 9 tầng 1 [107.57904396621906,16.46765439693583,0]
+// tâm tọa độ cột 10 tầng 1 [107.57906215334094,16.46763094311833,0]
 // tâm tọa độ cột 11 tầng 1 [107.57907054739408,16.46762011827619,0]
 // tâm tọa độ cột 12 tầng 1 [107.57908733549773,16.467598468591046,0]
 // tâm tọa độ cột 13 tầng 1 [107.57910692162541,16.467573210628043,0]
@@ -18,10 +18,10 @@
 // tâm tọa độ cột 16 tầng 1 [107.57906929540756,16.467546378193127,0]
 // tâm tọa độ cột 17 tầng 1 [107.57904970928935,16.467571636157437,0]
 // tâm tọa độ cột 18 tầng 1 [107.5790329211861,16.467593285841243,0]
-// tâm tọa độ cột 19 tầng 1 [107.57900773901882,16.46762576036054,0]
+// tâm tọa độ cột 19 tầng 1 [107.57900634000995,16.467627564500905,0]
 // tâm tọa độ cột 20 tầng 1 [107.57899654691946,16.467640193489654,0]
 // tâm tọa độ cột 21 tầng 1 [107.57898525904916,16.467632143759886,0]
-// tâm tọa độ cột 22 tầng 1 [107.5789936531078,16.46762131891781,0]
+// tâm tọa độ cột 22 tầng 1 [107.57899505214039,16.467619514771133,0]
 // tâm tọa độ cột 23 tầng 1 [107.57901603726613,16.467592452668406,0]
 // tâm tọa độ cột 24 tầng 1 [107.57904121943555,16.46755997814253,0]
 // tâm tọa độ cột 25 tầng 1 [107.57905800754632,16.467538328458726,0]
@@ -126,7 +126,7 @@ export const left_building_cols_ff = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -142,7 +142,7 @@ export const left_building_cols_ff = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -157,7 +157,7 @@ export const left_building_cols_ff = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -172,7 +172,7 @@ export const left_building_cols_ff = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -217,7 +217,7 @@ export const left_building_cols_ff = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -232,7 +232,7 @@ export const left_building_cols_ff = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -322,7 +322,7 @@ export const left_building_cols_ff = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -337,7 +337,7 @@ export const left_building_cols_ff = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -412,7 +412,7 @@ export const left_building_cols_ff = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -427,7 +427,7 @@ export const left_building_cols_ff = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -442,7 +442,7 @@ export const left_building_cols_ff = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -457,7 +457,7 @@ export const left_building_cols_ff = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -472,7 +472,7 @@ export const left_building_cols_ff = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -487,7 +487,7 @@ export const left_building_cols_ff = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },
@@ -502,7 +502,7 @@ export const left_building_cols_ff = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 4.84,
+          size: 3.54,
           material: {
             color: "#3B1311",
           },

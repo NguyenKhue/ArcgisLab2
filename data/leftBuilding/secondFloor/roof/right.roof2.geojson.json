@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "generator": "smartcity",
+  "copyright": "Smartcity",
+  "timestamp": "2021-05-27T09:28:58Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Mái lầu 2 toà trái bên phải",
+        "height": 0.05,
+        "width": 0.5,
+        "color": "#6e6f74",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [107.57907045833285, 16.467630029231874, 9.78],
+            [107.57911220999617, 16.467624142324567, 8],
+            [107.57915851423483, 16.467565936164235, 8],
+            [107.57911676258404, 16.467571823071545, 9.78]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}

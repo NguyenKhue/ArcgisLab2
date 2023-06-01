@@ -11,6 +11,22 @@ export const floor_sf = (
     url: "./data/leftBuilding/secondFloor/floor/floor.geojson.json",
   });
 
+  const floorGeojsonLayer2 = new GeoJSONLayer({
+    url: "./data/leftBuilding/secondFloor/floor/floor.part2.geojson.json",
+  });
+
+  const floorGeojsonLayer3 = new GeoJSONLayer({
+    url: "./data/leftBuilding/secondFloor/floor/floor.part3.geojson.json",
+  });
+
+  const floorGeojsonLayer4 = new GeoJSONLayer({
+    url: "./data/leftBuilding/secondFloor/floor/floor.part4.geojson.json",
+  });
+
+  const floorGeojsonLayer5 = new GeoJSONLayer({
+    url: "./data/leftBuilding/secondFloor/floor/floor.part5.geojson.json",
+  });
+
   floorGeojsonLayer.renderer = {
     type: "simple",
     symbol: {
@@ -27,5 +43,75 @@ export const floor_sf = (
     },
   };
 
-  return [floorGeojsonLayer];
+  floorGeojsonLayer2.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 0.05,
+          material: {
+            color: "white",
+          },
+        },
+      ],
+    },
+  };
+
+  floorGeojsonLayer3.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 0.05,
+          material: {
+            color: "white",
+          },
+        },
+      ],
+    },
+  };
+
+  floorGeojsonLayer4.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 0.05,
+          material: {
+            color: "white",
+          },
+        },
+      ],
+    },
+  };
+
+  floorGeojsonLayer5.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 0.05,
+          material: {
+            color: "white",
+          },
+        },
+      ],
+    },
+  };
+
+  return [
+    floorGeojsonLayer,
+    floorGeojsonLayer2,
+    floorGeojsonLayer3,
+    floorGeojsonLayer4,
+    floorGeojsonLayer5,
+  ];
 };

@@ -11,6 +11,10 @@ export const wall_rail = (
     url: "./data/leftBuilding/secondFloor/rails/front.wall.rail.geojson.json",
   });
 
+  const frontEntryWallRail = new GeoJSONLayer({
+    url: "./data/leftBuilding/secondFloor/rails/front.entry.wall.rail.geojson.json",
+  });
+
   const rightWallRail = new GeoJSONLayer({
     url: "./data/leftBuilding/secondFloor/rails/right.wall.rail.geojson.json",
   });
@@ -40,6 +44,22 @@ export const wall_rail = (
   });
 
   frontWallRail.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 0.6,
+          material: {
+            color: "#d8aa5e",
+          },
+        },
+      ],
+    },
+  };
+
+  frontEntryWallRail.renderer = {
     type: "simple",
     symbol: {
       type: "polygon-3d",
@@ -169,6 +189,7 @@ export const wall_rail = (
 
   return [
     frontWallRail,
+    frontEntryWallRail,
     rightWallRail,
     rightWallRail2,
     leftWallRail,

@@ -192,8 +192,8 @@ export const centerBuilding = (
     ...doorRSF,
     ...doorLSF,
     ...doorBSF,
-    ...centerBuildingColsFF,
-    ...centerBuildingCentersFF,
+    // ...centerBuildingColsFF,
+    // ...centerBuildingCentersFF,
     ...doorFF,
     ...doorLeftFF,
     ...roofSF,
@@ -202,6 +202,6 @@ export const centerBuilding = (
     ...floorCenter,
     ...doorBackFF,
     ...doorRightFF,
-    ...roofBackFF
+    ...roofBackFF,
   ];
 };

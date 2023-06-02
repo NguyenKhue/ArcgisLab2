@@ -28,6 +28,9 @@ export const roof_SF = (
   const decoRoof3GeojsonLayer = new GeoJSONLayer({
     url: "./data/rightBuilding/secondFloor/roof/RB.SF.decoRoof3.geojson.json",
   });
+  const decoRoof4GeojsonLayer = new GeoJSONLayer({
+    url: "./data/rightBuilding/secondFloor/roof/RB.SF.decoRoof4.geojson.json",
+  });
 
   roofGeojsonLayer.renderer = {
     type: "simple",
@@ -111,7 +114,7 @@ export const roof_SF = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 0.1,
+          size: 0.3,
           material: {
             color: "#b16934",
           },
@@ -134,6 +137,21 @@ export const roof_SF = (
       ],
     },
   };
+  decoRoof4GeojsonLayer.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 0.3,
+          material: {
+            color: "#b16934",
+          },
+        },
+      ],
+    },
+  };
 
   return [
     roofGeojsonLayer,
@@ -141,5 +159,7 @@ export const roof_SF = (
     roof3GeojsonLayer,
     roof4GeojsonLayer,
     decoRoof1GeojsonLayer,
+    decoRoof2GeojsonLayer,
+    decoRoof4GeojsonLayer
   ];
 };

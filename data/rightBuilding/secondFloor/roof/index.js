@@ -160,6 +160,7 @@ export const roof_SF = (
     roof4GeojsonLayer,
     decoRoof1GeojsonLayer,
     decoRoof2GeojsonLayer,
+    decoRoof3GeojsonLayer,
     decoRoof4GeojsonLayer
   ];
 };

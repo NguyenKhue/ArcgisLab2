@@ -99,7 +99,7 @@ export const roof_SF = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 0.05,
+          size: 0.3,
           material: {
             color: "#b16934",
           },

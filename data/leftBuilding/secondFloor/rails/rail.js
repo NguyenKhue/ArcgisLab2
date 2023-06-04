@@ -52,7 +52,7 @@ export const wall_rail = (
           type: "extrude",
           size: 0.6,
           material: {
-            color: "#d8aa5e",
+            color: "#8a5724",
           },
         },
       ],
@@ -68,7 +68,7 @@ export const wall_rail = (
           type: "extrude",
           size: 0.6,
           material: {
-            color: "#d8aa5e",
+            color: "#8a5724",
           },
         },
       ],
@@ -84,7 +84,7 @@ export const wall_rail = (
           type: "extrude",
           size: 0.6,
           material: {
-            color: "#d8aa5e",
+            color: "#8a5724",
           },
         },
       ],
@@ -100,7 +100,7 @@ export const wall_rail = (
           type: "extrude",
           size: 0.6,
           material: {
-            color: "#d8aa5e",
+            color: "#8a5724",
           },
         },
       ],
@@ -116,7 +116,7 @@ export const wall_rail = (
           type: "extrude",
           size: 0.6,
           material: {
-            color: "#d8aa5e",
+            color: "#8a5724",
           },
         },
       ],
@@ -132,7 +132,7 @@ export const wall_rail = (
           type: "extrude",
           size: 0.6,
           material: {
-            color: "#d8aa5e",
+            color: "#8a5724",
           },
         },
       ],
@@ -148,7 +148,7 @@ export const wall_rail = (
           type: "extrude",
           size: 0.6,
           material: {
-            color: "#d8aa5e",
+            color: "#8a5724",
           },
         },
       ],
@@ -164,7 +164,7 @@ export const wall_rail = (
           type: "extrude",
           size: 0.6,
           material: {
-            color: "#d8aa5e",
+            color: "#8a5724",
           },
         },
       ],
@@ -180,7 +180,7 @@ export const wall_rail = (
           type: "extrude",
           size: 0.6,
           material: {
-            color: "#d8aa5e",
+            color: "#8a5724",
           },
         },
       ],

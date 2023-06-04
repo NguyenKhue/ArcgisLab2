@@ -20,7 +20,7 @@ export const banister_SF = (
             type: "extrude",
             size: 0.6,
             material: {
-              color: "#d8aa5e",
+              color: "#8a5724",
             },
           },
         ],

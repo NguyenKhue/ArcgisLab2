@@ -47,7 +47,7 @@ export const roof_RB = (
           type: "extrude",
           size: 0.05,
           material: {
-            color: "#ab864a",
+            color: "#576a36",
           },
         },
       ],
@@ -62,7 +62,7 @@ export const roof_RB = (
           type: "extrude",
           size: 0.05,
           material: {
-            color: "#ab864a",
+            color: "#576a36",
           },
         },
       ],
@@ -77,7 +77,7 @@ export const roof_RB = (
           type: "extrude",
           size: 0.05,
           material: {
-            color: "#ab864a",
+            color: "#576a36",
           },
         },
       ],
@@ -92,7 +92,7 @@ export const roof_RB = (
           type: "extrude",
           size: 0.05,
           material: {
-            color: "#ab864a",
+            color: "#576a36",
           },
         },
       ],
@@ -107,7 +107,7 @@ export const roof_RB = (
           type: "extrude",
           size: 0.05,
           material: {
-            color: "#ab864a",
+            color: "#576a36",
           },
         },
       ],

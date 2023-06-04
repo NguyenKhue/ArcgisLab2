@@ -316,21 +316,6 @@ export const doorL_R = (
       ],
     },
   };
-  door10GeojsonLayer.renderer = {
-    type: "simple",
-    symbol: {
-      type: "polygon-3d",
-      symbolLayers: [
-        {
-          type: "extrude",
-          size: 1.4,
-          material: {
-            color: "#bb853a",
-          },
-        },
-      ],
-    },
-  };
   decoHoriDoor1GeojsonLayer.renderer = {
     type: "simple",
     symbol: {
@@ -883,7 +868,6 @@ export const doorL_R = (
     door7GeojsonLayer,
     door8GeojsonLayer,
     door9GeojsonLayer,
-    door10GeojsonLayer,
     decoHoriDoor1GeojsonLayer,
     decoHoriDoor2GeojsonLayer,
     decoHoriDoor3GeojsonLayer,

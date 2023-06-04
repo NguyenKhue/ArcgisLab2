@@ -84,7 +84,7 @@ export const back_wall_rail = (Map, SceneView, GeoJSONLayer, SceneLayer,
                     type: "extrude",
                     size: 0.8,
                     material: {
-                        color: "#d8aa5e"
+                        color: "#ab5c2f"
                     },
                 }
             ]
@@ -100,7 +100,7 @@ export const back_wall_rail = (Map, SceneView, GeoJSONLayer, SceneLayer,
                     type: "extrude",
                     size: 0.8,
                     material: {
-                        color: "#d8aa5e"
+                        color: "#52565e"    
                     },
                 }
             ]
@@ -116,7 +116,7 @@ export const back_wall_rail = (Map, SceneView, GeoJSONLayer, SceneLayer,
                     type: "extrude",
                     size: 0.8,
                     material: {
-                        color: "#d8aa5e"
+                        color: "#ab5c2f"
                     },
                 }
             ]

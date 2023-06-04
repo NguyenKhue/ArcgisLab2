@@ -35,48 +35,7 @@ export const doorB_R = (
   const door8GeojsonLayer = new GeoJSONLayer({
     url: "./data/rightBuilding/door/BDoor/CB.BDoor.door8.geojson.json",
   });
-  const door9GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/door/BDoor/CB.BDoor.door9.geojson.json",
-  });
-  const door10GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/door/BDoor/CB.BDoor.door10.geojson.json",
-  });
-  const door11GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/door/BDoor/CB.BDoor.door11.geojson.json",
-  });
-  const door12GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/door/BDoor/CB.BDoor.door12.geojson.json",
-  });
-  const door13GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/door/BDoor/CB.BDoor.door13.geojson.json",
-  });
-  const door14GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/door/BDoor/CB.BDoor.door14.geojson.json",
-  });
-  const door15GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/door/BDoor/CB.BDoor.door15.geojson.json",
-  });
-  const door16GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/door/BDoor/CB.BDoor.door16.geojson.json",
-  });
-  const door17GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/door/BDoor/CB.BDoor.door17.geojson.json",
-  });
-  const door18GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/door/BDoor/CB.BDoor.door18.geojson.json",
-  });
-  const door19GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/door/BDoor/CB.BDoor.door19.geojson.json",
-  });
-  const door20GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/door/BDoor/CB.BDoor.door20.geojson.json",
-  });
-  const door21GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/door/BDoor/CB.BDoor.door21.geojson.json",
-  });
-  const door22GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/door/BDoor/CB.BDoor.door22.geojson.json",
-  });
+
   const decoHoriDoor1GeojsonLayer = new GeoJSONLayer({
     url: "./data/rightBuilding/door/BDoor/CB.BDoor.decoHoriDoor1.geojson.json",
   });
@@ -118,24 +77,6 @@ export const doorB_R = (
   });
   const decoHoriDoor14GeojsonLayer = new GeoJSONLayer({
     url: "./data/rightBuilding/door/BDoor/CB.BDoor.decoHoriDoor14.geojson.json",
-  });
-  const decoHoriDoor15GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/door/BDoor/CB.BDoor.decoHoriDoor15.geojson.json",
-  });
-  const decoHoriDoor16GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/door/BDoor/CB.BDoor.decoHoriDoor16.geojson.json",
-  });
-  const decoHoriDoor17GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/door/BDoor/CB.BDoor.decoHoriDoor17.geojson.json",
-  });
-  const decoHoriDoor18GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/door/BDoor/CB.BDoor.decoHoriDoor18.geojson.json",
-  });
-  const decoHoriDoor19GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/door/BDoor/CB.BDoor.decoHoriDoor19.geojson.json",
-  });
-  const decoHoriDoor20GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/door/BDoor/CB.BDoor.decoHoriDoor20.geojson.json",
   });
   const decoHoriDoor21GeojsonLayer = new GeoJSONLayer({
     url: "./data/rightBuilding/door/BDoor/CB.BDoor.decoHoriDoor21.geojson.json",
@@ -277,7 +218,7 @@ export const doorB_R = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 1.4,
+          size: 1.3,
           material: {
             color: "#bb853a",
           },
@@ -345,216 +286,7 @@ export const doorB_R = (
       ],
     },
   };
-  door9GeojsonLayer.renderer = {
-    type: "simple",
-    symbol: {
-      type: "polygon-3d",
-      symbolLayers: [
-        {
-          type: "extrude",
-          size: 1.4,
-          material: {
-            color: "#bb853a",
-          },
-        },
-      ],
-    },
-  };
-  door10GeojsonLayer.renderer = {
-    type: "simple",
-    symbol: {
-      type: "polygon-3d",
-      symbolLayers: [
-        {
-          type: "extrude",
-          size: 1.4,
-          material: {
-            color: "#bb853a",
-          },
-        },
-      ],
-    },
-  };
-  door11GeojsonLayer.renderer = {
-    type: "simple",
-    symbol: {
-      type: "polygon-3d",
-      symbolLayers: [
-        {
-          type: "extrude",
-          size: 1.4,
-          material: {
-            color: "#bb853a",
-          },
-        },
-      ],
-    },
-  };
-  door12GeojsonLayer.renderer = {
-    type: "simple",
-    symbol: {
-      type: "polygon-3d",
-      symbolLayers: [
-        {
-          type: "extrude",
-          size: 1.4,
-          material: {
-            color: "#bb853a",
-          },
-        },
-      ],
-    },
-  };
-  door13GeojsonLayer.renderer = {
-    type: "simple",
-    symbol: {
-      type: "polygon-3d",
-      symbolLayers: [
-        {
-          type: "extrude",
-          size: 1.4,
-          material: {
-            color: "#bb853a",
-          },
-        },
-      ],
-    },
-  };
-  door14GeojsonLayer.renderer = {
-    type: "simple",
-    symbol: {
-      type: "polygon-3d",
-      symbolLayers: [
-        {
-          type: "extrude",
-          size: 1.4,
-          material: {
-            color: "#bb853a",
-          },
-        },
-      ],
-    },
-  };
-  door15GeojsonLayer.renderer = {
-    type: "simple",
-    symbol: {
-      type: "polygon-3d",
-      symbolLayers: [
-        {
-          type: "extrude",
-          size: 1.4,
-          material: {
-            color: "#bb853a",
-          },
-        },
-      ],
-    },
-  };
-  door16GeojsonLayer.renderer = {
-    type: "simple",
-    symbol: {
-      type: "polygon-3d",
-      symbolLayers: [
-        {
-          type: "extrude",
-          size: 1.4,
-          material: {
-            color: "#bb853a",
-          },
-        },
-      ],
-    },
-  };
-  door17GeojsonLayer.renderer = {
-    type: "simple",
-    symbol: {
-      type: "polygon-3d",
-      symbolLayers: [
-        {
-          type: "extrude",
-          size: 1.4,
-          material: {
-            color: "#bb853a",
-          },
-        },
-      ],
-    },
-  };
-  door18GeojsonLayer.renderer = {
-    type: "simple",
-    symbol: {
-      type: "polygon-3d",
-      symbolLayers: [
-        {
-          type: "extrude",
-          size: 1.4,
-          material: {
-            color: "#bb853a",
-          },
-        },
-      ],
-    },
-  };
-  door19GeojsonLayer.renderer = {
-    type: "simple",
-    symbol: {
-      type: "polygon-3d",
-      symbolLayers: [
-        {
-          type: "extrude",
-          size: 1.4,
-          material: {
-            color: "#bb853a",
-          },
-        },
-      ],
-    },
-  };
-  door20GeojsonLayer.renderer = {
-    type: "simple",
-    symbol: {
-      type: "polygon-3d",
-      symbolLayers: [
-        {
-          type: "extrude",
-          size: 1.4,
-          material: {
-            color: "#bb853a",
-          },
-        },
-      ],
-    },
-  };
-  door21GeojsonLayer.renderer = {
-    type: "simple",
-    symbol: {
-      type: "polygon-3d",
-      symbolLayers: [
-        {
-          type: "extrude",
-          size: 1.4,
-          material: {
-            color: "#bb853a",
-          },
-        },
-      ],
-    },
-  };
-  door22GeojsonLayer.renderer = {
-    type: "simple",
-    symbol: {
-      type: "polygon-3d",
-      symbolLayers: [
-        {
-          type: "extrude",
-          size: 1.4,
-          material: {
-            color: "#bb853a",
-          },
-        },
-      ],
-    },
-  };
+
   decoHoriDoor1GeojsonLayer.renderer = {
     type: "simple",
     symbol: {
@@ -892,7 +624,7 @@ export const doorB_R = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 1.4,
+          size: 1.3,
           material: {
             color: "#701a1d",
           },
@@ -907,7 +639,7 @@ export const doorB_R = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 1.4,
+          size: 1.3,
           material: {
             color: "#701a1d",
           },
@@ -1005,6 +737,96 @@ export const doorB_R = (
       ],
     },
   };
+  decoVertDoor15GeojsonLayer.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 0.04,
+          material: {
+            color: "#701a1d",
+          },
+        },
+      ],
+    },
+  };
+  decoVertDoor16GeojsonLayer.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 0.04,
+          material: {
+            color: "#701a1d",
+          },
+        },
+      ],
+    },
+  };
+  decoVertDoor17GeojsonLayer.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 0.04,
+          material: {
+            color: "#701a1d",
+          },
+        },
+      ],
+    },
+  };
+  decoVertDoor18GeojsonLayer.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 0.04,
+          material: {
+            color: "#701a1d",
+          },
+        },
+      ],
+    },
+  };
+  decoVertDoor19GeojsonLayer.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 0.04,
+          material: {
+            color: "#701a1d",
+          },
+        },
+      ],
+    },
+  };
+  decoVertDoor20GeojsonLayer.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 0.04,
+          material: {
+            color: "#701a1d",
+          },
+        },
+      ],
+    },
+  };
   decoVertDoor21GeojsonLayer.renderer = {
     type: "simple",
     symbol: {
@@ -1012,7 +834,7 @@ export const doorB_R = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 1.4,
+          size: 1.3,
           material: {
             color: "#701a1d",
           },
@@ -1027,7 +849,7 @@ export const doorB_R = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 1.4,
+          size: 1.3,
           material: {
             color: "#701a1d",
           },
@@ -1077,7 +899,12 @@ export const doorB_R = (
     decoVertDoor12GeojsonLayer,
     decoVertDoor13GeojsonLayer,
     decoVertDoor14GeojsonLayer,
-
+    decoVertDoor15GeojsonLayer,
+    decoVertDoor16GeojsonLayer,
+    decoVertDoor17GeojsonLayer,
+    decoVertDoor18GeojsonLayer,
+    decoVertDoor19GeojsonLayer,
+    decoVertDoor20GeojsonLayer,
     decoVertDoor21GeojsonLayer,
     decoVertDoor22GeojsonLayer,
   ];

@@ -56,7 +56,7 @@ export const right_building_cols2 = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.3,
+          size: 2.1,
           material: {
             color: "#3B1311",
           },
@@ -71,7 +71,7 @@ export const right_building_cols2 = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.3,
+          size: 2.1,
           material: {
             color: "#3B1311",
           },
@@ -86,7 +86,7 @@ export const right_building_cols2 = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.3,
+          size: 2.1,
           material: {
             color: "#3B1311",
           },
@@ -101,7 +101,7 @@ export const right_building_cols2 = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.3,
+          size: 1.9,
           material: {
             color: "#3B1311",
           },
@@ -146,7 +146,7 @@ export const right_building_cols2 = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.3,
+          size: 1.9,
           material: {
             color: "#3B1311",
           },
@@ -176,7 +176,7 @@ export const right_building_cols2 = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.3,
+          size: 2.1,
           material: {
             color: "#3B1311",
           },
@@ -236,7 +236,7 @@ export const right_building_cols2 = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.3,
+          size: 2.1,
           material: {
             color: "#3B1311",
           },

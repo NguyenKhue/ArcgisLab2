@@ -87,5 +87,10 @@ export const right_building_floor1 = (
     },
   };
 
-  return [bottomFloor, floor, secondFloor, tileFloor];
+  return [
+    bottomFloor, 
+    floor, 
+    // secondFloor, 
+    tileFloor
+  ];
 };

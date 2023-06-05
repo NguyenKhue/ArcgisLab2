@@ -112,11 +112,11 @@ export const leftBuilding = (
     ...leftBuildingFloor1,
     ...leftBuildingColsFF,
     ...leftBuildingColsSF,
-    ...floorSF,
-    ...wallRail,
-    ...underWall,
-    ...overWall,
-    ...decoWall,
-    ...roofSF,
+    // ...floorSF,
+    // ...wallRail,
+    // ...underWall,
+    // ...overWall,
+    // ...decoWall,
+    // ...roofSF,
   ];
 };

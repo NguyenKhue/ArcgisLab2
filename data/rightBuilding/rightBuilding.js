@@ -144,7 +144,7 @@ export const rightBuilding = (
     // ...doorFR,
     // ...doorLR,
     // ...roofSF,
-    // ...floor1Walls,
-    // ...floor1Steps,
+    ...floor1Walls,
+    ...floor1Steps,
   ];
 };

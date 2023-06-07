@@ -196,7 +196,7 @@ export const centerBuilding = (
     // ...doorLSF,
     // ...doorBSF,
     ...centerBuildingColsFF,
-    // ...doorFF,
+    ...doorFF,
     // ...doorLeftFF,
     // ...roofSF,
     // ...balconySF,

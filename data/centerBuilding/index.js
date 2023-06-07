@@ -5,7 +5,6 @@ import { doorF_SF } from "./secondFloor/door/FDoor/index.js";
 import { doorR_SF } from "./secondFloor/door/RDoor/index.js";
 import { doorL_SF } from "./secondFloor/door/LDoor/index.js";
 import { doorB_SF } from "./secondFloor/door/BDoor/index.js";
-import { center_building_centers_FF } from "./firstFloor/center/center.js";
 import { door_FF } from "./firstFloor/doors/front/door.js";
 import { roof_SF } from "./secondFloor/roof/index.js";
 import { balcony_SF } from "./secondFloor/balcony/index.js";
@@ -15,6 +14,7 @@ import { floor_center } from "./floor/floor.js";
 import { door_back_FF } from "./firstFloor/doors/back/door.js";
 import { door_right_FF } from "./firstFloor/doors/right/door.js";
 import { roof_back_FF } from "./firstFloor/roof/roof.js";
+import { floor1_steps } from "./firstFloor/step/step.js";
 
 export const centerBuilding = (
   Map,
@@ -26,15 +26,6 @@ export const centerBuilding = (
   esriRequest
 ) => {
   const centerBuildingColsFF = center_building_cols_FF(
-    Map,
-    SceneView,
-    GeoJSONLayer,
-    SceneLayer,
-    GraphicsLayer,
-    Graphic,
-    esriRequest
-  );
-  const centerBuildingCentersFF = center_building_centers_FF(
     Map,
     SceneView,
     GeoJSONLayer,
@@ -185,7 +176,19 @@ export const centerBuilding = (
     Graphic,
     esriRequest
   );
+
+  const floor1Steps = floor1_steps(
+    Map,
+    SceneView,
+    GeoJSONLayer,
+    SceneLayer,
+    GraphicsLayer,
+    Graphic,
+    esriRequest
+  );
+
   return [
+    // ...floor1Steps,
     ...floorSF,
     ...columnSF,
     ...doorFSF,
@@ -193,15 +196,14 @@ export const centerBuilding = (
     ...doorLSF,
     ...doorBSF,
     // ...centerBuildingColsFF,
-    // ...centerBuildingCentersFF,
-    ...doorFF,
-    ...doorLeftFF,
+    // ...doorFF,
+    // ...doorLeftFF,
     ...roofSF,
     ...balconySF,
     ...banisterSF,
-    ...floorCenter,
-    ...doorBackFF,
-    ...doorRightFF,
-    ...roofBackFF,
+    // ...floorCenter,
+    // ...doorBackFF,
+    // ...doorRightFF,
+    // ...roofBackFF,
   ];
 };

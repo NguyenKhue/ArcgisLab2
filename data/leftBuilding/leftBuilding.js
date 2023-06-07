@@ -7,6 +7,8 @@ import { overwall } from "./secondFloor/building/wall/OWall/overwall.js";
 import { deco } from "./secondFloor/building/wall/deco/deco.js";
 import { roof_SF } from "./secondFloor/roof/index.js";
 import { left_building_floor1 } from "./floor/left.building.floor1.js";
+import { floor1_steps } from "./firstFloor/step/step.js";
+import { floor1_walls } from "./firstFloor/walls/floor1_wall.js";
 
 export const leftBuilding = (
   Map,
@@ -107,8 +109,30 @@ export const leftBuilding = (
     esriRequest
   );
 
+  const floor1Steps = floor1_steps(
+    Map,
+    SceneView,
+    GeoJSONLayer,
+    SceneLayer,
+    GraphicsLayer,
+    Graphic,
+    esriRequest
+  );
+
+  const floor1Walls = floor1_walls(
+    Map,
+    SceneView,
+    GeoJSONLayer,
+    SceneLayer,
+    GraphicsLayer,
+    Graphic,
+    esriRequest
+  );
+
 
   return [
+    // ...floor1Walls,
+    // ...floor1Steps,
     // ...leftBuildingFloor1,
     // ...leftBuildingColsFF,
     ...leftBuildingColsSF,

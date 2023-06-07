@@ -41,7 +41,7 @@ export const roof_SF = (
               type: "extrude",
               size: 0.3,
               material: {
-                color: "#b16934",
+                color: "#815434",
               },
             },
           ],
@@ -56,7 +56,7 @@ export const roof_SF = (
               type: "extrude",
               size: 0.1,
               material: {
-                color: "#b16934",
+                color: "#815434",
               },
             },
           ],

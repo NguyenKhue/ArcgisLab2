@@ -138,7 +138,7 @@ export const rightBuilding = (
     // ...rightBuildingFloor1,
     ...rightBuildingCols2,
     ...wallRail,
-    // ...roofRB,
+    ...roofRB,
     ...doorBR,
     ...doorRR,
     ...doorFR,

@@ -11,6 +11,14 @@ export const left_building_floor1 = (
     url: "./data/leftBuilding/floor/left.building.bottom.floor.geojson.json",
   });
 
+  const floor  = new  GeoJSONLayer({
+    url: "./data/leftBuilding/floor/left.building.floor.geojson.json",
+  });
+
+  const tileFloor = new GeoJSONLayer({
+    url: "./data/leftBuilding/floor/left.building.tile.floor.geojson.json",
+  });
+
 
   bottomFloor.renderer = {
     type: "simple",
@@ -28,8 +36,41 @@ export const left_building_floor1 = (
     },
   };
 
+  floor.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 1.2,
+          material: {
+            color: "#64646c",
+          },
+        },
+      ],
+    },
+  };
+
+  tileFloor.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 0.01,
+          material: {
+            color: "#8f6f57",
+          },
+        },
+      ],
+    },
+  };
 
   return [
     bottomFloor,
+    floor,
+    tileFloor
   ];
 };

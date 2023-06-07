@@ -7,7 +7,7 @@
         {
             "type": "Feature",
             "properties": {
-                "Building name": "Bậc 1 cầu thang bên phải, dọc 0.25, cao 0.2",
+                "Building name": "Bậc 1 cầu thang bên trái tòa phải, dọc 0.25, cao 0.2",
                 "height": 0.2,
                 "width": 2.3,
                 "color": "#838b94",

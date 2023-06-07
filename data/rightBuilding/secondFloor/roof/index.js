@@ -41,7 +41,7 @@ export const roof_SF = (
           type: "extrude",
           size: 0.05,
           material: {
-            color: "#ab864a",
+            color: "#576a36",
           },
         },
       ],
@@ -56,7 +56,7 @@ export const roof_SF = (
           type: "extrude",
           size: 0.05,
           material: {
-            color: "#ab864a",
+            color: "#576a36",
           },
         },
       ],
@@ -71,7 +71,7 @@ export const roof_SF = (
           type: "extrude",
           size: 0.05,
           material: {
-            color: "#ab864a",
+            color: "#576a36",
           },
         },
       ],
@@ -86,7 +86,7 @@ export const roof_SF = (
           type: "extrude",
           size: 0.05,
           material: {
-            color: "#ab864a",
+            color: "#576a36",
           },
         },
       ],
@@ -101,7 +101,7 @@ export const roof_SF = (
           type: "extrude",
           size: 0.3,
           material: {
-            color: "#b16934",
+            color: "#815434",
           },
         },
       ],
@@ -116,7 +116,7 @@ export const roof_SF = (
           type: "extrude",
           size: 0.3,
           material: {
-            color: "#b16934",
+            color: "#815434",
           },
         },
       ],
@@ -131,7 +131,7 @@ export const roof_SF = (
           type: "extrude",
           size: 0.3,
           material: {
-            color: "#b16934",
+            color: "#815434",
           },
         },
       ],
@@ -146,7 +146,7 @@ export const roof_SF = (
           type: "extrude",
           size: 0.3,
           material: {
-            color: "#b16934",
+            color: "#815434",
           },
         },
       ],

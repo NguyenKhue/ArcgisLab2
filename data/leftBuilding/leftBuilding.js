@@ -131,10 +131,10 @@ export const leftBuilding = (
 
 
   return [
-    // ...floor1Walls,
-    // ...floor1Steps,
-    // ...leftBuildingFloor1,
-    // ...leftBuildingColsFF,
+    ...floor1Walls,
+    ...floor1Steps,
+    ...leftBuildingFloor1,
+    ...leftBuildingColsFF,
     ...leftBuildingColsSF,
     ...floorSF,
     ...wallRail,

@@ -188,22 +188,22 @@ export const centerBuilding = (
   );
 
   return [
-    // ...floor1Steps,
+    ...floor1Steps,
     ...floorSF,
     ...columnSF,
     ...doorFSF,
     ...doorRSF,
     ...doorLSF,
     ...doorBSF,
-    // ...centerBuildingColsFF,
-    // ...doorFF,
-    // ...doorLeftFF,
+    ...centerBuildingColsFF,
+    ...doorFF,
+    ...doorLeftFF,
     ...roofSF,
     ...balconySF,
     ...banisterSF,
-    // ...floorCenter,
-    // ...doorBackFF,
-    // ...doorRightFF,
-    // ...roofBackFF,
+    ...floorCenter,
+    ...doorBackFF,
+    ...doorRightFF,
+    ...roofBackFF,
   ];
 };

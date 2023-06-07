@@ -154,13 +154,13 @@ export const roof_SF = (
   };
 
   return [
-    // roofGeojsonLayer,
+    roofGeojsonLayer,
     roof2GeojsonLayer,
-    // roof3GeojsonLayer,
-    // roof4GeojsonLayer,
-    // decoRoof1GeojsonLayer,
-    // decoRoof2GeojsonLayer,
-    // decoRoof3GeojsonLayer,
-    // decoRoof4GeojsonLayer
+    roof3GeojsonLayer,
+    roof4GeojsonLayer,
+    decoRoof1GeojsonLayer,
+    decoRoof2GeojsonLayer,
+    decoRoof3GeojsonLayer,
+    decoRoof4GeojsonLayer
   ];
 };

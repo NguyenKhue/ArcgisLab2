@@ -134,17 +134,17 @@ export const rightBuilding = (
   );
 
   return [
-    ...rightBuildingCols,
-    ...rightBuildingFloor1,
+    // ...rightBuildingCols,
+    // ...rightBuildingFloor1,
     ...rightBuildingCols2,
     ...wallRail,
-    ...roofRB,
+    // ...roofRB,
     ...doorBR,
     ...doorRR,
     ...doorFR,
     ...doorLR,
     ...roofSF,
-    ...floor1Walls,
-    ...floor1Steps,
+    // ...floor1Walls,
+    // ...floor1Steps,
   ];
 };

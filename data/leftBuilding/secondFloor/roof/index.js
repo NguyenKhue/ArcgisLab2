@@ -8,28 +8,28 @@ export const roof_SF = (
   esriRequest
 ) => {
   const roofGeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/roof/RB.SF.roof.geojson.json",
+    url: "./data/leftBuilding/secondFloor/roof/LB.SF.roof.geojson.json",
   });
   const roof2GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/roof/RB.SF.roof2.geojson.json",
+    url: "./data/leftBuilding/secondFloor/roof/LB.SF.roof2.geojson.json",
   });
   const roof3GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/roof/RB.SF.roof3.geojson.json",
+    url: "./data/leftBuilding/secondFloor/roof/LB.SF.roof3.geojson.json",
   });
   const roof4GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/roof/RB.SF.roof4.geojson.json",
+    url: "./data/leftBuilding/secondFloor/roof/LB.SF.roof4.geojson.json",
   });
   const decoRoof1GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/roof/RB.SF.decoRoof1.geojson.json",
+    url: "./data/leftBuilding/secondFloor/roof/LB.SF.decoRoof1.geojson.json",
   });
   const decoRoof2GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/roof/RB.SF.decoRoof2.geojson.json",
+    url: "./data/leftBuilding/secondFloor/roof/LB.SF.decoRoof2.geojson.json",
   });
   const decoRoof3GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/roof/RB.SF.decoRoof3.geojson.json",
+    url: "./data/leftBuilding/secondFloor/roof/LB.SF.decoRoof3.geojson.json",
   });
   const decoRoof4GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/roof/RB.SF.decoRoof4.geojson.json",
+    url: "./data/leftBuilding/secondFloor/roof/LB.SF.decoRoof4.geojson.json",
   });
 
   roofGeojsonLayer.renderer = {

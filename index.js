@@ -64,9 +64,9 @@ require([
     basemap: "topo-vector",
     layers: [
       ...floorArr,
-      // ...centerBuildingArr,
+      ...centerBuildingArr,
       ...leftBuildingArr,
-      // ...rightBuildingArr,
+      ...rightBuildingArr,
     ], //end layers
   });
 

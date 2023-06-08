@@ -7,10 +7,10 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "Mái lầu 2 tòa giữa",
+        "Building name": "Mái nhà phần 1 tầng 2 tòa trái",
         "height": 0.05,
-        "width": 0.5,
-        "color": "#6e6f74",
+        "width": 6.5,
+        "color": "#576a36",
         "idb": "1"
       },
       "geometry": {

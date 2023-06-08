@@ -2,7 +2,8 @@ import { left_building_cols_ff } from "./firstFloor/columns/column.js";
 import { left_building_cols_sf } from "./secondFloor/columns/column.js";
 import { floor_sf } from "./secondFloor/floor/floor.js";
 import { wall_rail } from "./secondFloor/rails/rail.js";
-import { roof_sf } from "./secondFloor/roof/roof.js";
+import { roof_FF } from "./firstFloor/roof/roof.js";
+import { roof_SF } from "./secondFloor/roof/index.js";
 import { left_building_floor1 } from "./floor/left.building.floor1.js";
 import { floor1_steps } from "./firstFloor/step/step.js";
 import { floor1_walls } from "./firstFloor/walls/floor1_wall.js";
@@ -100,7 +101,17 @@ export const leftBuilding = (
     esriRequest
   );
 
-  const roofSF = roof_sf(
+  const roofFF = roof_FF(
+    Map,
+    SceneView,
+    GeoJSONLayer,
+    SceneLayer,
+    GraphicsLayer,
+    Graphic,
+    esriRequest
+  );
+
+  const roofSF = roof_SF(
     Map,
     SceneView,
     GeoJSONLayer,
@@ -152,6 +163,7 @@ export const leftBuilding = (
     ...doorFR,
     ...doorLR,
     ...doorRR,
+    ...roofFF,
     ...roofSF,
   ];
 };

@@ -7,7 +7,11 @@
     {
       "type": "Feature",
       "properties": {
+<<<<<<< HEAD:data/leftBuilding/secondFloor/doors/RDoor/CB.RDoor.decoHoriDoor1.geojson.json
         "Building name": "Thanh lề ngang 5 gia cố bên trên tầng 2 tòa trái 5",
+=======
+        "Building name": "Thanh lề ngang gia cố bên trên tầng 2 tòa trái 5",
+>>>>>>> 9b2a839264476844ca1bf9c3e1e05bfa2dd93a84:data/leftBuilding/secondFloor/building/wall/deco/overdeco/over.deco.hori5.geojson.json
         "height": 0.04,
         "width": 0.567,
         "color": "#701a1d",

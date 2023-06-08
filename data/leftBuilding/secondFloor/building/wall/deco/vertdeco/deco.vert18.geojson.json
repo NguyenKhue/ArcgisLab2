@@ -1,0 +1,23 @@
+{
+  "type": "FeatureCollection",
+  "generator": "smartcity",
+  "copyright": "Smartcity",
+  "timestamp": "2021-05-27T09:28:58Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Thanh lề dọc 37 gia cố tầng 2 tòa trái 6",
+        "height": 1.4,
+        "width": 0.567,
+        "color": "#701a1d",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[]]
+      },
+      "id": "pp1"
+    }
+  ]
+}

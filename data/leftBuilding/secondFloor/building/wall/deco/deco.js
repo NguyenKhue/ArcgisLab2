@@ -350,7 +350,7 @@ export const deco = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 1.4,
+          size: 1.3,
           material: {
             color: "#701a1d",
           },
@@ -366,7 +366,7 @@ export const deco = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 1.4,
+          size: 1.3,
           material: {
             color: "#701a1d",
           },
@@ -382,7 +382,7 @@ export const deco = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 1.4,
+          size: 1.3,
           material: {
             color: "#701a1d",
           },
@@ -398,7 +398,7 @@ export const deco = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 1.4,
+          size: 1.3,
           material: {
             color: "#701a1d",
           },
@@ -414,7 +414,7 @@ export const deco = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 1.4,
+          size: 1.3,
           material: {
             color: "#701a1d",
           },
@@ -430,7 +430,7 @@ export const deco = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 1.4,
+          size: 1.3,
           material: {
             color: "#701a1d",
           },
@@ -446,7 +446,7 @@ export const deco = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 1.4,
+          size: 1.3,
           material: {
             color: "#701a1d",
           },
@@ -462,7 +462,7 @@ export const deco = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 1.4,
+          size: 1.3,
           material: {
             color: "#701a1d",
           },
@@ -478,7 +478,7 @@ export const deco = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 1.4,
+          size: 1.3,
           material: {
             color: "#701a1d",
           },

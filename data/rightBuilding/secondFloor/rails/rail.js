@@ -8,31 +8,31 @@ export const wall_rail = (
   esriRequest
 ) => {
   const frontWallRail = new GeoJSONLayer({
-    url: "./data/rightBuilding/rails/front.wall.rail.geojson.json",
+    url: "./data/rightBuilding/secondFloor/rails/front.wall.rail.geojson.json",
   });
   const rightWallRail = new GeoJSONLayer({
-    url: "./data/rightBuilding/rails/right.wall.rail.geojson.json",
+    url: "./data/rightBuilding/secondFloor/rails/right.wall.rail.geojson.json",
   });
   const rightWallRail2 = new GeoJSONLayer({
-    url: "./data/rightBuilding/rails/right.wall.rail2.geojson.json",
+    url: "./data/rightBuilding/secondFloor/rails/right.wall.rail2.geojson.json",
   });
   const rightWallRail3 = new GeoJSONLayer({
-    url: "./data/rightBuilding/rails/right.wall.rail3.geojson.json",
+    url: "./data/rightBuilding/secondFloor/rails/right.wall.rail3.geojson.json",
   });
   const backWallRail = new GeoJSONLayer({
-    url: "./data/rightBuilding/rails/back.wall.rail.geojson.json",
+    url: "./data/rightBuilding/secondFloor/rails/back.wall.rail.geojson.json",
   });
   const backWallRail2 = new GeoJSONLayer({
-    url: "./data/rightBuilding/rails/back.wall.rail2.geojson.json",
+    url: "./data/rightBuilding/secondFloor/rails/back.wall.rail2.geojson.json",
   });
   const leftWallRail1 = new GeoJSONLayer({
-    url: "./data/rightBuilding/rails/left.wall.rail1.geojson.json",
+    url: "./data/rightBuilding/secondFloor/rails/left.wall.rail1.geojson.json",
   });
   const leftWallRail = new GeoJSONLayer({
-    url: "./data/rightBuilding/rails/left.wall.rail.geojson.json",
+    url: "./data/rightBuilding/secondFloor/rails/left.wall.rail.geojson.json",
   });
   const leftWallRail2 = new GeoJSONLayer({
-    url: "./data/rightBuilding/rails/left.wall.rail2.geojson.json",
+    url: "./data/rightBuilding/secondFloor/rails/left.wall.rail2.geojson.json",
   });
   rightWallRail.renderer = {
     type: "simple",

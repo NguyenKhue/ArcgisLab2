@@ -35,9 +35,7 @@ export const roof_RB = (
   const roofGeojsonLayer4 = new GeoJSONLayer({
     url: "./data/rightBuilding/firstFloor/roof/right.Building.roof4.geojson.json",
   });
-  const roofGeojsonLayer5 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/roof/right.Building.roof5.geojson.json",
-  });
+  
   roofGeojsonLayer.renderer = {
     type: "simple",
     symbol: {
@@ -98,42 +96,11 @@ export const roof_RB = (
       ],
     },
   };
-  roofGeojsonLayer5.renderer = {
-    type: "simple",
-    symbol: {
-      type: "polygon-3d",
-      symbolLayers: [
-        {
-          type: "extrude",
-          size: 0.05,
-          material: {
-            color: "#576a36",
-          },
-        },
-      ],
-    },
-  };
-  // decoRoofGeojsonLayer.renderer = {
-  //     type: "simple",
-  //     symbol: {
-  //       type: "polygon-3d",
-  //       symbolLayers: [
-  //         {
-  //           type: "extrude",
-  //           size: 0.3,
-  //           material: {
-  //             color: "#b16934",
-  //           },
-  //         },
-  //       ],
-  //     },
-  //   };
 
   return [
     roofGeojsonLayer,
     roofGeojsonLayer2,
     roofGeojsonLayer3,
     roofGeojsonLayer4,
-    roofGeojsonLayer5,
   ];
 };

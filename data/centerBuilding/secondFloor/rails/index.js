@@ -1,4 +1,4 @@
-export const banister_SF = (
+export const rails_SF = (
     Map,
     SceneView,
     GeoJSONLayer,
@@ -7,11 +7,11 @@ export const banister_SF = (
     Graphic,
     esriRequest
   ) => {
-    const banisterGeojsonLayer = new GeoJSONLayer({
-      url: "./data/centerBuilding/secondFloor/banister/CB.SF.banister.geojson.json",
+    const railsGeojsonLayer = new GeoJSONLayer({
+      url: "./data/centerBuilding/secondFloor/rails/CB.SF.rails.geojson.json",
     });
   
-    banisterGeojsonLayer.renderer = {
+    railsGeojsonLayer.renderer = {
       type: "simple",
       symbol: {
         type: "polygon-3d",
@@ -27,6 +27,6 @@ export const banister_SF = (
       },
     };
   
-    return [banisterGeojsonLayer];
+    return [railsGeojsonLayer];
   };
   

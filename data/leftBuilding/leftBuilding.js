@@ -9,6 +9,7 @@ import { roof_sf } from "./secondFloor/roof/roof.js";
 import { left_building_floor1 } from "./floor/left.building.floor1.js";
 import { floor1_steps } from "./firstFloor/step/step.js";
 import { floor1_walls } from "./firstFloor/walls/floor1_wall.js";
+import { doorB_R } from "./secondFloor/doors/BDoor/index.js";
 
 export const leftBuilding = (
   Map,
@@ -50,6 +51,16 @@ export const leftBuilding = (
   );
 
   const wallRail = wall_rail(
+    Map,
+    SceneView,
+    GeoJSONLayer,
+    SceneLayer,
+    GraphicsLayer,
+    Graphic,
+    esriRequest
+  );
+
+  const doorBR = doorB_R(
     Map,
     SceneView,
     GeoJSONLayer,
@@ -137,6 +148,7 @@ export const leftBuilding = (
     ...leftBuildingColsSF,
     ...floorSF,
     ...wallRail,
+    ...doorBR,
     ...underWall,
     ...overWall,
     ...decoWall,

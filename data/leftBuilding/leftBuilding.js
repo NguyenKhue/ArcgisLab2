@@ -129,18 +129,17 @@ export const leftBuilding = (
     esriRequest
   );
 
-
   return [
     ...floor1Walls,
     ...floor1Steps,
     ...leftBuildingFloor1,
     ...leftBuildingColsFF,
     ...leftBuildingColsSF,
-    // ...floorSF,
-    // ...wallRail,
-    // ...underWall,
-    // ...overWall,
-    // ...decoWall,
-    // ...roofSF,
+    ...floorSF,
+    ...wallRail,
+    ...underWall,
+    ...overWall,
+    ...decoWall,
+    ...roofSF,
   ];
 };

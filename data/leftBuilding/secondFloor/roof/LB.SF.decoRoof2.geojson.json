@@ -7,10 +7,10 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "Rồng bay phượng múa lầu 2 tòa giữa",
-        "height": 0.05,
-        "width": 0.5,
-        "color": "#6e6f74",
+        "Building name": "Viền gia cố mái phần 2 lầu 2 tòa trái",
+        "height": 0.3,
+        "width": 0.2,
+        "color": "#815434",
         "idb": "1"
       },
       "geometry": {

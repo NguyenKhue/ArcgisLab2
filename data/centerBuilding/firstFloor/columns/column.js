@@ -463,7 +463,7 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
       symbolLayers: [
         {
           type: "extrude",
-          size: 3.5,
+          size: 3.4,
           material: {
             color: "#3B1311"
           },
@@ -527,7 +527,7 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
       symbolLayers: [
         {
           type: "extrude",
-          size: 3.5,
+          size: 3.4,
           material: {
             color: "#3B1311"
           },
@@ -543,7 +543,7 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
       symbolLayers: [
         {
           type: "extrude",
-          size: 3.5,
+          size: 3.4,
           material: {
             color: "#3B1311"
           },

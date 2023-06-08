@@ -77,7 +77,7 @@ export const left_building_cols_sf = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.6,
+          size: 2.1,
           material: {
             color: "#3B1311",
           },
@@ -93,7 +93,7 @@ export const left_building_cols_sf = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.6,
+          size: 2.1,
           material: {
             color: "#3B1311",
           },
@@ -108,7 +108,7 @@ export const left_building_cols_sf = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.6,
+          size: 2.1,
           material: {
             color: "#3B1311",
           },
@@ -123,7 +123,7 @@ export const left_building_cols_sf = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.6,
+          size: 1.9,
           material: {
             color: "#3B1311",
           },
@@ -138,7 +138,7 @@ export const left_building_cols_sf = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.6,
+          size: 2.1,
           material: {
             color: "#3B1311",
           },
@@ -153,7 +153,7 @@ export const left_building_cols_sf = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.6,
+          size: 2.1,
           material: {
             color: "#3B1311",
           },
@@ -168,7 +168,7 @@ export const left_building_cols_sf = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.6,
+          size: 1.9,
           material: {
             color: "#3B1311",
           },
@@ -183,7 +183,7 @@ export const left_building_cols_sf = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.6,
+          size: 2.1,
           material: {
             color: "#3B1311",
           },
@@ -198,7 +198,7 @@ export const left_building_cols_sf = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.6,
+          size: 2.1,
           material: {
             color: "#3B1311",
           },
@@ -213,7 +213,7 @@ export const left_building_cols_sf = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.6,
+          size: 2.1,
           material: {
             color: "#3B1311",
           },
@@ -228,7 +228,7 @@ export const left_building_cols_sf = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.6,
+          size: 2.1,
           material: {
             color: "#3B1311",
           },
@@ -243,7 +243,7 @@ export const left_building_cols_sf = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.6,
+          size: 2.1,
           material: {
             color: "#3B1311",
           },
@@ -258,7 +258,7 @@ export const left_building_cols_sf = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 2.6,
+          size: 2.1,
           material: {
             color: "#3B1311",
           },

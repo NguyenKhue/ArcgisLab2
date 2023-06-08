@@ -8,7 +8,7 @@ export const roof_RB = (
   esriRequest
 ) => {
   const roofGeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/roof/right.Building.roof.geojson.json",
+    url: "./data/rightBuilding/firstFloor/roof/right.Building.roof.geojson.json",
   });
 
   roofGeojsonLayer.renderer = {
@@ -27,16 +27,16 @@ export const roof_RB = (
     },
   };
   const roofGeojsonLayer2 = new GeoJSONLayer({
-    url: "./data/rightBuilding/roof/right.Building.roof2.geojson.json",
+    url: "./data/rightBuilding/firstFloor/roof/right.Building.roof2.geojson.json",
   });
   const roofGeojsonLayer3 = new GeoJSONLayer({
-    url: "./data/rightBuilding/roof/right.Building.roof3.geojson.json",
+    url: "./data/rightBuilding/firstFloor/roof/right.Building.roof3.geojson.json",
   });
   const roofGeojsonLayer4 = new GeoJSONLayer({
-    url: "./data/rightBuilding/roof/right.Building.roof4.geojson.json",
+    url: "./data/rightBuilding/firstFloor/roof/right.Building.roof4.geojson.json",
   });
   const roofGeojsonLayer5 = new GeoJSONLayer({
-    url: "./data/rightBuilding/roof/right.Building.roof5.geojson.json",
+    url: "./data/rightBuilding/firstFloor/roof/right.Building.roof5.geojson.json",
   });
   roofGeojsonLayer.renderer = {
     type: "simple",

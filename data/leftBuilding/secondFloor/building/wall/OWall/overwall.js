@@ -66,7 +66,7 @@ export const overwall = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 1.4,
+          size: 1.3,
           material: {
             color: "#bb853a",
           },
@@ -82,7 +82,7 @@ export const overwall = (
       symbolLayers: [
         {
           type: "extrude",
-          size: 1.4,
+          size: 1.3,
           material: {
             color: "#bb853a",
           },

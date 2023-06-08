@@ -116,7 +116,7 @@ export const doorB_R = (
           type: "extrude",
           size: 1.4,
           material: {
-            color: "#bb853a",
+            color: "#701a1d",
           },
         },
       ],
@@ -131,7 +131,7 @@ export const doorB_R = (
           type: "extrude",
           size: 1.4,
           material: {
-            color: "#bb853a",
+            color: "#701a1d",
           },
         },
       ],
@@ -146,7 +146,7 @@ export const doorB_R = (
           type: "extrude",
           size: 1.4,
           material: {
-            color: "#bb853a",
+            color: "#701a1d",
           },
         },
       ],

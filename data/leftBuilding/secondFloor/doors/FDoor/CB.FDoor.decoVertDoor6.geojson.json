@@ -7,11 +7,7 @@
     {
       "type": "Feature",
       "properties": {
-<<<<<<< HEAD:data/leftBuilding/secondFloor/doors/FDoor/CB.FDoor.decoVertDoor6.geojson.json
         "Building name": "Thanh lề dọc 13 gia cố tầng 2 tòa trái",
-=======
-        "Building name": "Thanh lề dọc 37 gia cố tầng 2 tòa trái 2",
->>>>>>> 9b2a839264476844ca1bf9c3e1e05bfa2dd93a84:data/leftBuilding/secondFloor/building/wall/deco/vertdeco/deco.vert13.geojson.json
         "height": 1.4,
         "width": 0.567,
         "color": "#701a1d",

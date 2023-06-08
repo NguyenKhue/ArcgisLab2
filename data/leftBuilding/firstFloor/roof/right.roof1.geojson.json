@@ -7,9 +7,9 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "Mái lầu 2 toàn trái ở giữa",
-        "height": 0.05,
-        "width": 0.5,
+        "Building name": "Mái lầu 1 toà trái ở giữa",
+        "height": 1.78,
+        "width": 15,
         "color": "#576a36",
         "idb": "1"
       },

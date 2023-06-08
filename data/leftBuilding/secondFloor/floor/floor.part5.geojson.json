@@ -7,10 +7,9 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "Sàn nhà tầng 2 của tòa trái phần 2",
-        "height": 2.6,
-        "width": 0.5,
-        "color": "#551610",
+        "Building name": "Sàn nhà tầng 2 của tòa trái phần 5",
+        "height": 0.05,
+        "color": "#fff",
         "idb": "1"
       },
       "geometry": {

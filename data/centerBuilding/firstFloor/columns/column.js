@@ -1,127 +1,131 @@
-export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer,
-  GraphicsLayer, Graphic, esriRequest) => {
+export const center_building_cols_FF = (
+  Map,
+  SceneView,
+  GeoJSONLayer,
+  SceneLayer,
+  GraphicsLayer,
+  Graphic,
+  esriRequest
+) => {
   const col1 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column1.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column1.geojson.json",
   });
 
   const col2 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column2.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column2.geojson.json",
   });
 
   const col3 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column3.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column3.geojson.json",
   });
 
   const col4 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column4.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column4.geojson.json",
   });
 
   const col5 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column5.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column5.geojson.json",
   });
 
   const col6 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column6.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column6.geojson.json",
   });
 
   const col7 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column7.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column7.geojson.json",
   });
 
   const col8 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column8.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column8.geojson.json",
   });
 
   const col9 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column9.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column9.geojson.json",
   });
 
   const col10 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column10.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column10.geojson.json",
   });
 
   const col11 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column11.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column11.geojson.json",
   });
 
   const col12 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column12.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column12.geojson.json",
   });
 
   const col13 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column13.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column13.geojson.json",
   });
 
   const col14 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column14.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column14.geojson.json",
   });
 
   const col15 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column15.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column15.geojson.json",
   });
 
   const col16 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column16.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column16.geojson.json",
   });
 
   const col17 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column17.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column17.geojson.json",
   });
 
   const col18 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column18.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column18.geojson.json",
   });
 
   const col19 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column19.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column19.geojson.json",
   });
 
   const col20 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column20.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column20.geojson.json",
   });
 
   const col21 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column21.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column21.geojson.json",
   });
 
   const col22 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column22.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column22.geojson.json",
   });
 
   const col23 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column23.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column23.geojson.json",
   });
 
   const col24 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column24.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column24.geojson.json",
   });
 
   const col25 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column25.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column25.geojson.json",
   });
 
   const col26 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column26.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column26.geojson.json",
   });
 
   const col27 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column27.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column27.geojson.json",
   });
 
   const col28 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column28.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column28.geojson.json",
   });
 
   const col29 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column29.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column29.geojson.json",
   });
 
   const col30 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/columns/center.building.column30.geojson.json"
+    url: "./data/centerBuilding/firstFloor/columns/center.building.column30.geojson.json",
   });
-
-
-
 
   // Tọa độ tâm cột 1 [107.57911311595728,16.467646250012113,4.94]
   // Tọa độ tâm cột 2 [107.57910349621433, 16.467658889743966, 6.24]
@@ -149,11 +153,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.5,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col2.renderer = {
@@ -165,11 +169,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.54,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col3.renderer = {
@@ -181,11 +185,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.54,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
   col4.renderer = {
     type: "simple",
@@ -196,11 +200,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.5,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
   col5.renderer = {
     type: "simple",
@@ -211,11 +215,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.5,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
   col6.renderer = {
     type: "simple",
@@ -226,11 +230,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.5,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
   col7.renderer = {
     type: "simple",
@@ -241,11 +245,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.5,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col8.renderer = {
@@ -257,11 +261,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.5,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col9.renderer = {
@@ -273,11 +277,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.5,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col10.renderer = {
@@ -289,11 +293,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.5,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col11.renderer = {
@@ -305,11 +309,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.5,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col12.renderer = {
@@ -321,11 +325,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.5,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col13.renderer = {
@@ -337,11 +341,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.5,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col14.renderer = {
@@ -353,11 +357,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.5,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col15.renderer = {
@@ -369,11 +373,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.5,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col16.renderer = {
@@ -385,11 +389,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.5,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col17.renderer = {
@@ -401,11 +405,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.5,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col18.renderer = {
@@ -417,11 +421,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.5,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col19.renderer = {
@@ -433,11 +437,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.5,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col20.renderer = {
@@ -449,11 +453,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.5,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col21.renderer = {
@@ -463,13 +467,13 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
       symbolLayers: [
         {
           type: "extrude",
-          size: 3.5,
+          size: 3.4,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col22.renderer = {
@@ -481,11 +485,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.54,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col23.renderer = {
@@ -497,11 +501,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.54,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col24.renderer = {
@@ -513,11 +517,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.5,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col25.renderer = {
@@ -527,13 +531,13 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
       symbolLayers: [
         {
           type: "extrude",
-          size: 3.5,
+          size: 3.4,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col26.renderer = {
@@ -543,13 +547,13 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
       symbolLayers: [
         {
           type: "extrude",
-          size: 3.5,
+          size: 3.4,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col27.renderer = {
@@ -561,11 +565,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.54,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col28.renderer = {
@@ -577,11 +581,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.54,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col29.renderer = {
@@ -593,11 +597,11 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.54,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
 
   col30.renderer = {
@@ -609,13 +613,12 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
           type: "extrude",
           size: 3.54,
           material: {
-            color: "#3B1311"
+            color: "#3B1311",
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   };
-
 
   return [
     col1,
@@ -647,6 +650,6 @@ export const center_building_cols_FF = (Map, SceneView, GeoJSONLayer, SceneLayer
     col27,
     col28,
     col29,
-    col30
-  ]
-}
+    col30,
+  ];
+};

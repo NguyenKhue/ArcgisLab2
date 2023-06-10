@@ -10,7 +10,7 @@ import { roof_SF } from "./secondFloor/roof/index.js";
 import { balcony_SF } from "./secondFloor/balcony/index.js";
 import { rails_SF } from "./secondFloor/rails/index.js";
 import { door_left_FF } from "./firstFloor/doors/left/door.js";
-import { floor_center } from "./floor/floor.js";
+import { floor_center } from "./firstFloor/floor/floor.js";
 import { door_back_FF } from "./firstFloor/doors/back/door.js";
 import { door_right_FF } from "./firstFloor/doors/right/door.js";
 import { roof_back_FF } from "./firstFloor/roof/roof.js";

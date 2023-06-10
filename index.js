@@ -1,4 +1,4 @@
-import { floor } from "./data/floor/floor.js";
+import { foundation } from "./data/foundation/foundation.js";
 import { centerBuilding } from "./data/centerBuilding/index.js";
 import { rightBuilding } from "./data/rightBuilding/rightBuilding.js";
 import { leftBuilding } from "./data/leftBuilding/leftBuilding.js";
@@ -20,7 +20,7 @@ require([
   Graphic,
   esriRequest
 ) {
-  const floorArr = floor(
+  const foundationArr = foundation(
     Map,
     SceneView,
     GeoJSONLayer,
@@ -63,7 +63,7 @@ require([
   const map = new Map({
     basemap: "topo-vector",
     layers: [
-      ...floorArr,
+      ...foundationArr,
       ...centerBuildingArr,
       ...leftBuildingArr,
       ...rightBuildingArr,

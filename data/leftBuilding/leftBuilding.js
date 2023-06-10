@@ -4,7 +4,7 @@ import { floor_sf } from "./secondFloor/floor/floor.js";
 import { wall_rail } from "./secondFloor/rails/rail.js";
 import { roof_FF } from "./firstFloor/roof/roof.js";
 import { roof_SF } from "./secondFloor/roof/index.js";
-import { left_building_floor1 } from "./floor/left.building.floor1.js";
+import { left_building_floor1 } from "./firstFloor/floor/left.building.floor1.js";
 import { floor1_steps } from "./firstFloor/step/step.js";
 import { floor1_walls } from "./firstFloor/walls/floor1_wall.js";
 import { doorB_R } from "./secondFloor/doors/BDoor/index.js";

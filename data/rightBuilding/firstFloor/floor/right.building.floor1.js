@@ -8,19 +8,19 @@ export const right_building_floor1 = (
   esriRequest
 ) => {
   const bottomFloor = new GeoJSONLayer({
-    url: "./data/rightBuilding/floor/right.building.bottom.floor.geojson.json",
+    url: "./data/rightBuilding/firstFloor/floor/right.building.bottom.floor.geojson.json",
   });
 
   const floor = new GeoJSONLayer({
-    url: "./data/rightBuilding/floor/right.building.floor.geojson.json",
+    url: "./data/rightBuilding/firstFloor/floor/right.building.floor.geojson.json",
   });
 
   const secondFloor = new GeoJSONLayer({
-    url: "./data/rightBuilding/floor/right.building.secondfloor.geojson.json",
+    url: "./data/rightBuilding/firstFloor/floor/right.building.secondfloor.geojson.json",
   });
 
   const tileFloor = new GeoJSONLayer({
-    url: "./data/rightBuilding/floor/right.building.tile.floor.geojson.json",
+    url: "./data/rightBuilding/firstFloor/floor/right.building.tile.floor.geojson.json",
   });
 
   bottomFloor.renderer = {

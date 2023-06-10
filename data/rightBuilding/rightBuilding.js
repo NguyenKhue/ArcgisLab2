@@ -1,5 +1,5 @@
 import { right_building_cols } from "./firstFloor/columns/column.js";
-import { right_building_floor1 } from "./floor/right.building.floor1.js";
+import { right_building_floor1 } from "./firstFloor/floor/right.building.floor1.js";
 import { right_building_cols2 } from "./secondFloor/columns/index.js";
 import { wall_rail } from "./secondFloor/rails/rail.js";
 import { roof_RB } from "./firstFloor/roof/index.js";

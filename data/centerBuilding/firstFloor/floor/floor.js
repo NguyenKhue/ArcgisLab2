@@ -1,4 +1,4 @@
-export const left_building_floor1 = (
+export const floor_center = (
   Map,
   SceneView,
   GeoJSONLayer,
@@ -8,15 +8,15 @@ export const left_building_floor1 = (
   esriRequest
 ) => {
   const bottomFloor = new GeoJSONLayer({
-    url: "./data/leftBuilding/floor/left.building.bottom.floor.geojson.json",
+    url: "./data/centerBuilding/firstFloor/floor/floor_bottom.json",
   });
 
-  const floor  = new  GeoJSONLayer({
-    url: "./data/leftBuilding/floor/left.building.floor.geojson.json",
+  const floor = new GeoJSONLayer({
+    url: "./data/centerBuilding/firstFloor/floor/floor.json",
   });
 
-  const tileFloor = new GeoJSONLayer({
-    url: "./data/leftBuilding/floor/left.building.tile.floor.geojson.json",
+  const floor_center = new GeoJSONLayer({
+    url: "./data/centerBuilding/firstFloor/floor/floor_center.json",
   });
 
 
@@ -52,14 +52,14 @@ export const left_building_floor1 = (
     },
   };
 
-  tileFloor.renderer = {
+  floor_center.renderer = {
     type: "simple",
     symbol: {
       type: "polygon-3d",
       symbolLayers: [
         {
           type: "extrude",
-          size: 0.01,
+          size: 1.2,
           material: {
             color: "#8f6f57",
           },
@@ -69,8 +69,8 @@ export const left_building_floor1 = (
   };
 
   return [
-    bottomFloor,
     floor,
-    tileFloor
-  ];
-};
+    floor_center,
+    bottomFloor,
+  ]
+}

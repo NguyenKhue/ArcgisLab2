@@ -8,9 +8,9 @@ import { doorB_SF } from "./secondFloor/door/BDoor/index.js";
 import { door_FF } from "./firstFloor/doors/front/door.js";
 import { roof_SF } from "./secondFloor/roof/index.js";
 import { balcony_SF } from "./secondFloor/balcony/index.js";
-import { banister_SF } from "./secondFloor/banister/index.js";
+import { rails_SF } from "./secondFloor/rails/index.js";
 import { door_left_FF } from "./firstFloor/doors/left/door.js";
-import { floor_center } from "./floor/floor.js";
+import { floor_center } from "./firstFloor/floor/floor.js";
 import { door_back_FF } from "./firstFloor/doors/back/door.js";
 import { door_right_FF } from "./firstFloor/doors/right/door.js";
 import { roof_back_FF } from "./firstFloor/roof/roof.js";
@@ -157,7 +157,7 @@ export const centerBuilding = (
     Graphic,
     esriRequest
   );
-  const banisterSF = banister_SF(
+  const railsSF = rails_SF(
     Map,
     SceneView,
     GeoJSONLayer,
@@ -189,21 +189,21 @@ export const centerBuilding = (
 
   return [
     ...floor1Steps,
-    // ...floorSF,
+    ...floorSF,
     ...columnSF,
-    // ...doorFSF,
-    // ...doorRSF,
-    // ...doorLSF,
-    // ...doorBSF,
+    ...doorFSF,
+    ...doorRSF,
+    ...doorLSF,
+    ...doorBSF,
     ...centerBuildingColsFF,
     ...doorFF,
-    // ...doorLeftFF,
-    // ...roofSF,
-    // ...balconySF,
-    // ...banisterSF,
+    ...doorLeftFF,
+    ...roofSF,
+    ...balconySF,
+    ...railsSF,
     ...floorCenter,
-    // ...doorBackFF,
-    // ...doorRightFF,
-    // ...roofBackFF,
+    ...doorBackFF,
+    ...doorRightFF,
+    ...roofBackFF,
   ];
 };

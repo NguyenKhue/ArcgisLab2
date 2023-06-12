@@ -19,9 +19,6 @@ export const right_building_cols2 = (
   const col4 = new GeoJSONLayer({
     url: "./data/rightBuilding/secondFloor/columns/right.building.column4.geojson.json",
   });
-  const col5 = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/columns/right.building.column5.geojson.json",
-  });
   const col6 = new GeoJSONLayer({
     url: "./data/rightBuilding/secondFloor/columns/right.building.column6.geojson.json",
   });
@@ -102,21 +99,6 @@ export const right_building_cols2 = (
         {
           type: "extrude",
           size: 1.9,
-          material: {
-            color: "#3B1311",
-          },
-        },
-      ],
-    },
-  };
-  col5.renderer = {
-    type: "simple",
-    symbol: {
-      type: "polygon-3d",
-      symbolLayers: [
-        {
-          type: "extrude",
-          size: 2.3,
           material: {
             color: "#3B1311",
           },
@@ -264,7 +246,6 @@ export const right_building_cols2 = (
     col2,
     col3,
     col4,
-    col5,
     col6,
     col7,
     col8,

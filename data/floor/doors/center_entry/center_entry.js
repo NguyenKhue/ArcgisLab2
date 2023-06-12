@@ -1,7 +1,7 @@
 export const center_entry = (Map, SceneView, GeoJSONLayer, SceneLayer,
   GraphicsLayer, Graphic, esriRequest) => {
   const leftWallCenterEntryGeojsonLayer = new GeoJSONLayer({
-    url: "./data/floor/doors/center_entry/left_wall.geojson.json"
+    url: "http://localhost:3001/api/prism/path?path=ngomon/data/foundation/doors/center_entry/left_wall.geojson.json"
   });
 
   const rightWallCenterEntryGeojsonLayer = new GeoJSONLayer({

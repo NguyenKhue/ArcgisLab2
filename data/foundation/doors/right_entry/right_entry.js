@@ -1,15 +1,19 @@
 export const right_entry = (Map, SceneView, GeoJSONLayer, SceneLayer,
   GraphicsLayer, Graphic, esriRequest) => {
+
+  const baseURL = "http://localhost:3001/api/prism/path?path="
+  const parentPath = "ngomon/"
+
   const leftWallRightEntryGeojsonLayer = new GeoJSONLayer({
-    url: "http://localhost:3001/api/prism/path?path=ngomon/data/foundation/doors/right_entry/left_wall.geojson.json"
+    url: baseURL + parentPath + "data/foundation/doors/right_entry/left_wall.geojson.json"
   });
 
   const rightWallRightEntryGeojsonLayer = new GeoJSONLayer({
-    url: "http://localhost:3001/api/prism/path?path=ngomon/data/foundation/doors/right_entry/right_wall.geojson.json"
+    url: baseURL + parentPath + "data/foundation/doors/right_entry/right_wall.geojson.json"
   });
 
   const topWallRightEntryGeojsonLayer = new GeoJSONLayer({
-    url: "http://localhost:3001/api/prism/path?path=ngomon/data/foundation/doors/right_entry/top_wall.geojson.json"
+    url: baseURL + parentPath + "data/foundation/doors/right_entry/top_wall.geojson.json"
   });
 
   leftWallRightEntryGeojsonLayer.renderer = {
@@ -65,3 +69,7 @@ export const right_entry = (Map, SceneView, GeoJSONLayer, SceneLayer,
     topWallRightEntryGeojsonLayer
   ]
 }
+
+// ngomon/data/foundation/doors/right_entry/left_wall.geojson.json
+// ngomon/data/foundation/doors/right_entry/right_wall.geojson.json
+// ngomon/data/foundation/doors/right_entry/top_wall.geojson.json

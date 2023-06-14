@@ -1,15 +1,19 @@
 export const gate_right_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     GraphicsLayer, Graphic, esriRequest) => {
+
+    const baseURL = "http://localhost:3001/api/bodyComplex/path?path="
+    const parentPath = "ngomon/"
+
     const GateRightWall = new GeoJSONLayer({
-        url: "http://localhost:3001/api/bodyComplex/path?path=ngomon/data/foundation/doors/gate_right/gate_right.json"
+        url: baseURL + parentPath + "data/foundation/doors/gate_right/gate_right.json"
     });
 
     const GateRightDoor = new GeoJSONLayer({
-        url: "http://localhost:3001/api/bodyComplex/path?path=ngomon/data/foundation/doors/gate_right/gate_right_door.json"
+        url: baseURL + parentPath + "data/foundation/doors/gate_right/gate_right_door.json"
     });
 
     const GateRightTopDoor = new GeoJSONLayer({
-        url: "http://localhost:3001/api/bodyComplex/path?path=ngomon/data/foundation/doors/gate_right/gate_right_door_top.json"
+        url: baseURL + parentPath + "data/foundation/doors/gate_right/gate_right_door_top.json"
     });
 
 
@@ -67,3 +71,7 @@ export const gate_right_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
         GateRightTopDoor
     ]
 }
+
+// ngomon/data/foundation/doors/gate_right/gate_right_door.json
+// ngomon/data/foundation/doors/gate_right/gate_right.json
+// ngomon/data/foundation/doors/gate_right/gate_right_door_top.json

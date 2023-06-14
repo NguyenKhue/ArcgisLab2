@@ -5,11 +5,11 @@ export const center_entry = (Map, SceneView, GeoJSONLayer, SceneLayer,
   });
 
   const rightWallCenterEntryGeojsonLayer = new GeoJSONLayer({
-    url: "./data/foundation/doors/center_entry/right_wall.geojson.json"
+    url: "http://localhost:3001/api/prism/path?path=ngomon/data/foundation/doors/center_entry/right_wall.geojson.json"
   });
 
   const topWallCenterEntryGeojsonLayer = new GeoJSONLayer({
-    url: "./data/foundation/doors/center_entry/top_wall.geojson.json"
+    url: "http://localhost:3001/api/prism/path?path=ngomon/data/foundation/doors/center_entry/top_wall.geojson.json"
   });
 
   rightWallCenterEntryGeojsonLayer.renderer = {

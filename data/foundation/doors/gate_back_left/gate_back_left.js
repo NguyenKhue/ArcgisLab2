@@ -1,20 +1,20 @@
 export const gate_back_left_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     GraphicsLayer, Graphic, esriRequest) => {
     const GateLefWall = new GeoJSONLayer({
-        url: "./data/foundation/doors/gate_back_left/gate_back_left.json"
+        url: "http://localhost:3001/api/bodyComplex/path?path=ngomon/data/foundation/doors/gate_back_left/gate_back_left.json"
     });
 
     const GateLeftDoor = new GeoJSONLayer({
-        url: "./data/foundation/doors/gate_back_left/gate_back_left_door.json"
+        url: "http://localhost:3001/api/bodyComplex/path?path=ngomon/data/foundation/doors/gate_back_left/gate_back_left_door.json"
     });
 
     const GateLeftTopDoor = new GeoJSONLayer({
-        url: "./data/foundation/doors/gate_back_left/gate_back_left_door_top.json"
+        url: "http://localhost:3001/api/bodyComplex/path?path=ngomon/data/foundation/doors/gate_back_left/gate_back_left_door_top.json"
     });
 
 
     GateLefWall.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -30,7 +30,7 @@ export const gate_back_left_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     };
 
     GateLeftDoor.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -44,9 +44,9 @@ export const gate_back_left_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
             ]
         }
     };
-    
+
     GateLeftTopDoor.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [

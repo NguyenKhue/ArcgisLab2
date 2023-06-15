@@ -7,8 +7,17 @@ export const floor_SF = (
   Graphic,
   esriRequest
 ) => {
+
+  const prismBaseURL = "http://localhost:3001/api/prism/path?path="
+  const bodyCompBaseURL = "http://localhost:3001/api/bodyComplex/path?path="
+  const parentPath = "ngomon/"
+
   const floorGeojsonLayer = new GeoJSONLayer({
-    url: "./data/centerBuilding/secondFloor/floor/floor.geojson.json",
+    url: prismBaseURL + parentPath + "data/centerBuilding/secondFloor/floor/floor.geojson.json",
+  });
+
+  const floorPart2 = new GeoJSONLayer({
+    url: bodyCompBaseURL + parentPath + "data/centerBuilding/secondFloor/floor/floor.part2.geojson.json",
   });
 
   floorGeojsonLayer.renderer = {
@@ -27,5 +36,25 @@ export const floor_SF = (
     },
   };
 
-  return [floorGeojsonLayer];
+  floorPart2.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: 0.01,
+          material: {
+            color: "#5d2423",
+          },
+        },
+      ],
+    },
+  };
+
+  return [floorGeojsonLayer, floorPart2];
 };
+
+
+// ngomon/data/centerBuilding/secondFloor/floor/floor.geojson.json
+// ngomon/data/centerBuilding/secondFloor/floor/floor.part2.geojson.json

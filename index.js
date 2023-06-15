@@ -63,8 +63,8 @@ require([
   const map = new Map({
     basemap: "topo-vector",
     layers: [
-      ...foundationArr,
-      // ...centerBuildingArr,
+      // ...foundationArr,
+      ...centerBuildingArr,
       // ...leftBuildingArr,
       // ...rightBuildingArr,
     ], //end layers

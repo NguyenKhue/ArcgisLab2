@@ -65,8 +65,8 @@ require([
     layers: [
       // ...foundationArr,
       // ...centerBuildingArr,
-      ...leftBuildingArr,
-      // ...rightBuildingArr,
+      // ...leftBuildingArr,
+      ...rightBuildingArr,
     ], //end layers
   });
 

@@ -1,7 +1,7 @@
 export const entry_wall_rail = (Map, SceneView, GeoJSONLayer, SceneLayer,
     GraphicsLayer, Graphic, esriRequest) => {
 
-    const baseURL = "http://localhost:3001/api/prism/path?path="
+    const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
     const parentPath = "ngomon/"
 
     const floorEntryWallRailRoot = new GeoJSONLayer({

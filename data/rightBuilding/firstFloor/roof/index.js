@@ -8,7 +8,7 @@ export const roof_RB = (
   esriRequest
 ) => {
 
-  const baseURL = "http://localhost:3001/api/prism/path?path="
+  const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
   const parentPath = "ngomon/"
 
   const roofGeojsonLayer = new GeoJSONLayer({

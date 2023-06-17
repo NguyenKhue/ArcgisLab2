@@ -8,7 +8,7 @@ export const roof_SF = (
   esriRequest
 ) => {
 
-  const baseURL = "http://localhost:3001/api/bodyComplex/path?path="
+  const baseURL = "https://gis-historical-relic-management.vercel.app/api/bodyComplex/path?path="
   const parentPath = "ngomon/"
 
   const roofGeojsonLayer = new GeoJSONLayer({

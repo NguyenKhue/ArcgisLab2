@@ -73,6 +73,6 @@ export const right_front_wall_rail = (Map, SceneView, GeoJSONLayer, SceneLayer,
     ]
 }
 
-// ngomon/data/foundation/rails/right_front_wall/floor.right.front.wall.rail.column1.geojson.json
-// ngomon/data/foundation/rails/right_front_wall/floor.right.front.wall.rail.root.geojson.json
-// ngomon/data/foundation/rails/right_front_wall/floor.right.front.wall.rail.wall.geojson.json
+"ngomon/data/foundation/rails/right_front_wall/floor.right.front.wall.rail.column1.geojson.json",
+"ngomon/data/foundation/rails/right_front_wall/floor.right.front.wall.rail.root.geojson.json",
+"ngomon/data/foundation/rails/right_front_wall/floor.right.front.wall.rail.wall.geojson.json"

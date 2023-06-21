@@ -70,6 +70,6 @@ export const left_entry = (Map, SceneView, GeoJSONLayer, SceneLayer,
   ]
 }
 
-// ngomon/data/foundation/doors/left_entry/left_wall.geojson.json
-// ngomon/data/foundation/doors/left_entry/top_wall.geojson.json
-// ngomon/data/foundation/doors/left_entry/right_wall.geojson.json
+"ngomon/data/foundation/doors/left_entry/left_wall.geojson.json",
+"ngomon/data/foundation/doors/left_entry/top_wall.geojson.json",
+"ngomon/data/foundation/doors/left_entry/right_wall.geojson.json"

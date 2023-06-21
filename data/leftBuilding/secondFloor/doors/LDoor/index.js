@@ -151,10 +151,10 @@ export const doorL_R = (
 };
 
 
-// ngomon/data/leftBuilding/secondFloor/doors/LDoor/CB.LDoor.decoHoriDoor2.geojson.json
-// ngomon/data/leftBuilding/secondFloor/doors/LDoor/CB.LDoor.door1.geojson.json
-// ngomon/data/leftBuilding/secondFloor/doors/LDoor/CB.LDoor.decoVertDoor2.geojson.json
-// ngomon/data/leftBuilding/secondFloor/doors/LDoor/CB.LDoor.decoHoriDoor1.geojson.json
-// ngomon/data/leftBuilding/secondFloor/doors/LDoor/CB.LDoor.decoVertDoor1.geojson.json
-// ngomon/data/leftBuilding/secondFloor/doors/LDoor/CB.LDoor.decoVertDoor3.geojson.json
-// ngomon/data/leftBuilding/secondFloor/doors/LDoor/CB.LDoor.door2.geojson.json
+// "ngomon/data/leftBuilding/secondFloor/doors/LDoor/CB.LDoor.decoHoriDoor2.geojson.json",
+// "ngomon/data/leftBuilding/secondFloor/doors/LDoor/CB.LDoor.door1.geojson.json",
+// "ngomon/data/leftBuilding/secondFloor/doors/LDoor/CB.LDoor.decoVertDoor2.geojson.json",
+// "ngomon/data/leftBuilding/secondFloor/doors/LDoor/CB.LDoor.decoHoriDoor1.geojson.json",
+// "ngomon/data/leftBuilding/secondFloor/doors/LDoor/CB.LDoor.decoVertDoor1.geojson.json",
+// "ngomon/data/leftBuilding/secondFloor/doors/LDoor/CB.LDoor.decoVertDoor3.geojson.json",
+// "ngomon/data/leftBuilding/secondFloor/doors/LDoor/CB.LDoor.door2.geojson.json"

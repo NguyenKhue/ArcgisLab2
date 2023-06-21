@@ -56,5 +56,5 @@ export const left_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     ]
 }
 
-// ngomon/data/foundation/walls/left_wall/floor.left.wall.part2.geojson.json
-// ngomon/data/foundation/walls/left_wall/floor.left.wall.part1.geojson.json
+    // "ngomon/data/foundation/walls/left_wall/floor.left.wall.part2.geojson.json",
+    // "ngomon/data/foundation/walls/left_wall/floor.left.wall.part1.geojson.json"

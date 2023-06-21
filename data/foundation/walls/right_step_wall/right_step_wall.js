@@ -56,5 +56,5 @@ export const right_step_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     ]
 }
 
-// ngomon/data/foundation/walls/right_step_wall/floor.right.step.left.wall.geojson.json
-// ngomon/data/foundation/walls/right_step_wall/floor.right.step.right.wall.geojson.json
+// "ngomon/data/foundation/walls/right_step_wall/floor.right.step.left.wall.geojson.json",
+// "ngomon/data/foundation/walls/right_step_wall/floor.right.step.right.wall.geojson.json"

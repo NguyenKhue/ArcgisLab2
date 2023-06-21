@@ -111,7 +111,7 @@ export const roof_RB = (
 
 
 
-// ngomon/data/rightBuilding/firstFloor/roof/right.Building.roof.geojson.json
-// ngomon/data/rightBuilding/firstFloor/roof/right.Building.roof2.geojson.json
-// ngomon/data/rightBuilding/firstFloor/roof/right.Building.roof4.geojson.json
-// ngomon/data/rightBuilding/firstFloor/roof/right.Building.roof3.geojson.json
+// "ngomon/data/rightBuilding/firstFloor/roof/right.Building.roof.geojson.json"
+// "ngomon/data/rightBuilding/firstFloor/roof/right.Building.roof2.geojson.json",
+// "ngomon/data/rightBuilding/firstFloor/roof/right.Building.roof4.geojson.json",
+// "ngomon/data/rightBuilding/firstFloor/roof/right.Building.roof3.geojson.json"

@@ -100,7 +100,7 @@ export const right_building_floor1 = (
 };
 
 
-// ngomon/data/rightBuilding/firstFloor/floor/right.building.tile.floor.geojson.json
-// ngomon/data/rightBuilding/firstFloor/floor/right.building.bottom.floor.geojson.json
-// ngomon/data/rightBuilding/firstFloor/floor/right.building.floor.geojson.json
-// ngomon/data/rightBuilding/firstFloor/floor/right.building.secondfloor.geojson.json
+// "ngomon/data/rightBuilding/firstFloor/floor/right.building.tile.floor.geojson.json"
+// "ngomon/data/rightBuilding/firstFloor/floor/right.building.bottom.floor.geojson.json",
+// "ngomon/data/rightBuilding/firstFloor/floor/right.building.floor.geojson.json",
+// "ngomon/data/rightBuilding/firstFloor/floor/right.building.secondfloor.geojson.json"

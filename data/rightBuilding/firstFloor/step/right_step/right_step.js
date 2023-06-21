@@ -141,9 +141,9 @@ export const right_step = (
   ];
 };
 
-// ngomon/data/rightBuilding/firstFloor/step/right_step/floor1.right.step1.geojson.json
-// ngomon/data/rightBuilding/firstFloor/step/right_step/floor1.right.step2.geojson.json
-// ngomon/data/rightBuilding/firstFloor/step/right_step/floor1.right.step6.geojson.json
-// ngomon/data/rightBuilding/firstFloor/step/right_step/floor1.right.step5.geojson.json
-// ngomon/data/rightBuilding/firstFloor/step/right_step/floor1.right.step4.geojson.json
-// ngomon/data/rightBuilding/firstFloor/step/right_step/floor1.right.step3.geojson.json
+// "ngomon/data/rightBuilding/firstFloor/step/right_step/floor1.right.step1.geojson.json",
+// "ngomon/data/rightBuilding/firstFloor/step/right_step/floor1.right.step2.geojson.json",
+// "ngomon/data/rightBuilding/firstFloor/step/right_step/floor1.right.step6.geojson.json",
+// "ngomon/data/rightBuilding/firstFloor/step/right_step/floor1.right.step5.geojson.json",
+// "ngomon/data/rightBuilding/firstFloor/step/right_step/floor1.right.step4.geojson.json",
+// "ngomon/data/rightBuilding/firstFloor/step/right_step/floor1.right.step3.geojson.json"

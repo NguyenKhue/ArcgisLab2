@@ -95,7 +95,7 @@ export const roof_FF = (
 };
 
 
-// ngomon/data/leftBuilding/firstFloor/roof/right.roof1.geojson.json
-// ngomon/data/leftBuilding/firstFloor/roof/right.roof3.geojson.json
-// ngomon/data/leftBuilding/firstFloor/roof/right.roof4.geojson.json
-// ngomon/data/leftBuilding/firstFloor/roof/right.roof2.geojson.json
+// "ngomon/data/leftBuilding/firstFloor/roof/right.roof1.geojson.json",
+// "ngomon/data/leftBuilding/firstFloor/roof/right.roof3.geojson.json",
+// "ngomon/data/leftBuilding/firstFloor/roof/right.roof4.geojson.json",
+// "ngomon/data/leftBuilding/firstFloor/roof/right.roof2.geojson.json"

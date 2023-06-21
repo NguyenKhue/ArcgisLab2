@@ -79,6 +79,6 @@ export const left_building_floor1 = (
   ];
 };
 
-// ngomon/data/leftBuilding/firstFloor/floor/left.building.floor.geojson.json
-// ngomon/data/leftBuilding/firstFloor/floor/left.building.bottom.floor.geojson.json
-// ngomon/data/leftBuilding/firstFloor/floor/left.building.tile.floor.geojson.json
+// "ngomon/data/leftBuilding/firstFloor/floor/left.building.floor.geojson.json",
+// "ngomon/data/leftBuilding/firstFloor/floor/left.building.bottom.floor.geojson.json"
+// "ngomon/data/leftBuilding/firstFloor/floor/left.building.tile.floor.geojson.json"

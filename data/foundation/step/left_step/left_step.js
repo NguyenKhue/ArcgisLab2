@@ -479,25 +479,25 @@ export const left_step = (Map, SceneView, GeoJSONLayer, SceneLayer,
   ]
 }
 
-// ngomon/data/foundation/step/left_step/floor.left.step1.geojson.json
-// ngomon/data/foundation/step/left_step/floor.left.step14.geojson.json
-// ngomon/data/foundation/step/left_step/floor.left.step10.geojson.json
-// ngomon/data/foundation/step/left_step/floor.left.step15.geojson.json
-// ngomon/data/foundation/step/left_step/floor.left.step12.geojson.json
-// ngomon/data/foundation/step/left_step/floor.left.step11.geojson.json
-// ngomon/data/foundation/step/left_step/floor.left.step13.geojson.json
-// ngomon/data/foundation/step/left_step/floor.left.step19.geojson.json
-// ngomon/data/foundation/step/left_step/floor.left.step18.geojson.json
-// ngomon/data/foundation/step/left_step/floor.left.step16.geojson.json
-// ngomon/data/foundation/step/left_step/floor.left.step17.geojson.json
-// ngomon/data/foundation/step/left_step/floor.left.step20.geojson.json
-// ngomon/data/foundation/step/left_step/floor.left.step2.geojson.json
-// ngomon/data/foundation/step/left_step/floor.left.step21.geojson.json
-// ngomon/data/foundation/step/left_step/floor.left.step3.geojson.json
-// ngomon/data/foundation/step/left_step/floor.left.step22.geojson.json
-// ngomon/data/foundation/step/left_step/floor.left.step5.geojson.json
-// ngomon/data/foundation/step/left_step/floor.left.step6.geojson.json
-// ngomon/data/foundation/step/left_step/floor.left.step7.geojson.json
-// ngomon/data/foundation/step/left_step/floor.left.step4.geojson.json
-// ngomon/data/foundation/step/left_step/floor.left.step8.geojson.json
-// ngomon/data/foundation/step/left_step/floor.left.step9.geojson.json
+// "ngomon/data/foundation/step/left_step/floor.left.step1.geojson.json",
+// "ngomon/data/foundation/step/left_step/floor.left.step14.geojson.json",
+// "ngomon/data/foundation/step/left_step/floor.left.step10.geojson.json",
+// "ngomon/data/foundation/step/left_step/floor.left.step15.geojson.json",
+// "ngomon/data/foundation/step/left_step/floor.left.step12.geojson.json",
+// "ngomon/data/foundation/step/left_step/floor.left.step11.geojson.json",
+// "ngomon/data/foundation/step/left_step/floor.left.step13.geojson.json",
+// "ngomon/data/foundation/step/left_step/floor.left.step19.geojson.json",
+// "ngomon/data/foundation/step/left_step/floor.left.step18.geojson.json",
+// "ngomon/data/foundation/step/left_step/floor.left.step16.geojson.json",
+// "ngomon/data/foundation/step/left_step/floor.left.step17.geojson.json",
+// "ngomon/data/foundation/step/left_step/floor.left.step20.geojson.json",
+// "ngomon/data/foundation/step/left_step/floor.left.step2.geojson.json",
+// "ngomon/data/foundation/step/left_step/floor.left.step21.geojson.json",
+// "ngomon/data/foundation/step/left_step/floor.left.step3.geojson.json",
+// "ngomon/data/foundation/step/left_step/floor.left.step22.geojson.json",
+// "ngomon/data/foundation/step/left_step/floor.left.step5.geojson.json",
+// "ngomon/data/foundation/step/left_step/floor.left.step6.geojson.json",
+// "ngomon/data/foundation/step/left_step/floor.left.step7.geojson.json",
+// "ngomon/data/foundation/step/left_step/floor.left.step4.geojson.json",
+// "ngomon/data/foundation/step/left_step/floor.left.step8.geojson.json",
+// "ngomon/data/foundation/step/left_step/floor.left.step9.geojson.json"

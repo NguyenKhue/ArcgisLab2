@@ -117,8 +117,8 @@ export const back_step = (Map, SceneView, GeoJSONLayer, SceneLayer,
     ]
 }
 
-// ngomon/data/centerBuilding/firstFloor/step/back_step/floor1.back.step1.geojson.json
-// ngomon/data/centerBuilding/firstFloor/step/back_step/floor1.back.step2.geojson.json
-// ngomon/data/centerBuilding/firstFloor/step/back_step/floor1.back.step4.geojson.json
-// ngomon/data/centerBuilding/firstFloor/step/back_step/floor1.back.step3.geojson.json
-// ngomon/data/centerBuilding/firstFloor/step/back_step/floor1.back.step5.geojson.json
+// "ngomon/data/centerBuilding/firstFloor/step/back_step/floor1.back.step1.geojson.json",
+// "ngomon/data/centerBuilding/firstFloor/step/back_step/floor1.back.step2.geojson.json",
+// "ngomon/data/centerBuilding/firstFloor/step/back_step/floor1.back.step4.geojson.json",
+// "ngomon/data/centerBuilding/firstFloor/step/back_step/floor1.back.step3.geojson.json",
+// "ngomon/data/centerBuilding/firstFloor/step/back_step/floor1.back.step5.geojson.json"

@@ -121,8 +121,8 @@ export const floor_sf = (
 };
 
 
-// ngomon/data/leftBuilding/secondFloor/floor/floor.part3.geojson.json
-// ngomon/data/leftBuilding/secondFloor/floor/floor.geojson.json
-// ngomon/data/leftBuilding/secondFloor/floor/floor.part2.geojson.json
-// ngomon/data/leftBuilding/secondFloor/floor/floor.part4.geojson.json
-// ngomon/data/leftBuilding/secondFloor/floor/floor.part5.geojson.json
+// "ngomon/data/leftBuilding/secondFloor/floor/floor.part3.geojson.json",
+// "ngomon/data/leftBuilding/secondFloor/floor/floor.geojson.json",
+// "ngomon/data/leftBuilding/secondFloor/floor/floor.part2.geojson.json",
+// "ngomon/data/leftBuilding/secondFloor/floor/floor.part4.geojson.json",
+// "ngomon/data/leftBuilding/secondFloor/floor/floor.part5.geojson.json"

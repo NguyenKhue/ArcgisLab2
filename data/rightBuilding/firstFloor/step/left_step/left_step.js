@@ -142,9 +142,9 @@ export const left_step = (
 };
 
 
-// ngomon/data/rightBuilding/firstFloor/step/left_step/floor1.left.step2.geojson.json
-// ngomon/data/rightBuilding/firstFloor/step/left_step/floor1.left.step1.geojson.json
-// ngomon/data/rightBuilding/firstFloor/step/left_step/floor1.left.step5.geojson.json
-// ngomon/data/rightBuilding/firstFloor/step/left_step/floor1.left.step4.geojson.json
-// ngomon/data/rightBuilding/firstFloor/step/left_step/floor1.left.step3.geojson.json
-// ngomon/data/rightBuilding/firstFloor/step/left_step/floor1.left.step6.geojson.json
+// "ngomon/data/rightBuilding/firstFloor/step/left_step/floor1.left.step2.geojson.json",
+// "ngomon/data/rightBuilding/firstFloor/step/left_step/floor1.left.step1.geojson.json",
+// "ngomon/data/rightBuilding/firstFloor/step/left_step/floor1.left.step5.geojson.json",
+// "ngomon/data/rightBuilding/firstFloor/step/left_step/floor1.left.step4.geojson.json",
+// "ngomon/data/rightBuilding/firstFloor/step/left_step/floor1.left.step3.geojson.json",
+// "ngomon/data/rightBuilding/firstFloor/step/left_step/floor1.left.step6.geojson.json"

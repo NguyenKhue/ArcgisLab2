@@ -52,5 +52,5 @@ export const gate_right_rail = (Map, SceneView, GeoJSONLayer, SceneLayer,
     ]
 }
 
-// ngomon/data/foundation/rails/gate_right/floor.gate.right.rail.root.geojson.json
-// ngomon/data/foundation/rails/gate_right/floor.gate.right.rail.wall.geojson.json
+// "ngomon/data/foundation/rails/gate_right/floor.gate.right.rail.root.geojson.json",
+// "ngomon/data/foundation/rails/gate_right/floor.gate.right.rail.wall.geojson.json"

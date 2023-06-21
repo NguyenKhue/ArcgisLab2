@@ -187,12 +187,12 @@ export const wall_rail = (
 };
 
 
-// ngomon/data/rightBuilding/secondFloor/rails/right.wall.rail.geojson.json
-// ngomon/data/rightBuilding/secondFloor/rails/left.wall.rail1.geojson.json
-// ngomon/data/rightBuilding/secondFloor/rails/left.wall.rail.geojson.json
-// ngomon/data/rightBuilding/secondFloor/rails/back.wall.rail.geojson.json
-// ngomon/data/rightBuilding/secondFloor/rails/left.wall.rail2.geojson.json
-// ngomon/data/rightBuilding/secondFloor/rails/front.wall.rail.geojson.json
-// ngomon/data/rightBuilding/secondFloor/rails/back.wall.rail2.geojson.json
-// ngomon/data/rightBuilding/secondFloor/rails/right.wall.rail2.geojson.json
-// ngomon/data/rightBuilding/secondFloor/rails/right.wall.rail3.geojson.json
+// "ngomon/data/rightBuilding/secondFloor/rails/right.wall.rail.geojson.json",
+// "ngomon/data/rightBuilding/secondFloor/rails/left.wall.rail1.geojson.json",
+// "ngomon/data/rightBuilding/secondFloor/rails/left.wall.rail.geojson.json",
+// "ngomon/data/rightBuilding/secondFloor/rails/back.wall.rail.geojson.json",
+// "ngomon/data/rightBuilding/secondFloor/rails/left.wall.rail2.geojson.json",
+// "ngomon/data/rightBuilding/secondFloor/rails/front.wall.rail.geojson.json",
+// "ngomon/data/rightBuilding/secondFloor/rails/back.wall.rail2.geojson.json",
+// "ngomon/data/rightBuilding/secondFloor/rails/right.wall.rail2.geojson.json",
+// "ngomon/data/rightBuilding/secondFloor/rails/right.wall.rail3.geojson.json"

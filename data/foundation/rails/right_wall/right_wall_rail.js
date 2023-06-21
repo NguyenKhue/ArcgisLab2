@@ -204,12 +204,12 @@ export const right_wall_rail = (Map, SceneView, GeoJSONLayer, SceneLayer,
 }
 
 
-// ngomon/data/foundation/rails/right_wall/floor.right.wall.rail.column1.geojson.json
-// ngomon/data/foundation/rails/right_wall/floor.right.wall.rail.column3.geojson.json
-// ngomon/data/foundation/rails/right_wall/floor.right.wall.rail.root.geojson.json
-// ngomon/data/foundation/rails/right_wall/floor.right.wall.rail.column4.geojson.json
-// ngomon/data/foundation/rails/right_wall/floor.right.wall.rail.column2.geojson.json
-// ngomon/data/foundation/rails/right_wall/floor.right.wall.rail.column5.geojson.json
-// ngomon/data/foundation/rails/right_wall/floor.right.wall.rail.wall3.geojson.json
-// ngomon/data/foundation/rails/right_wall/floor.right.wall.rail.wall1.geojson.json
-// ngomon/data/foundation/rails/right_wall/floor.right.wall.rail.wall2.geojson.json
+// "ngomon/data/foundation/rails/right_wall/floor.right.wall.rail.column1.geojson.json",
+// "ngomon/data/foundation/rails/right_wall/floor.right.wall.rail.column3.geojson.json",
+// "ngomon/data/foundation/rails/right_wall/floor.right.wall.rail.root.geojson.json",
+// "ngomon/data/foundation/rails/right_wall/floor.right.wall.rail.column4.geojson.json",
+// "ngomon/data/foundation/rails/right_wall/floor.right.wall.rail.column2.geojson.json",
+// "ngomon/data/foundation/rails/right_wall/floor.right.wall.rail.column5.geojson.json",
+// "ngomon/data/foundation/rails/right_wall/floor.right.wall.rail.wall3.geojson.json",
+// "ngomon/data/foundation/rails/right_wall/floor.right.wall.rail.wall1.geojson.json",
+// "ngomon/data/foundation/rails/right_wall/floor.right.wall.rail.wall2.geojson.json"

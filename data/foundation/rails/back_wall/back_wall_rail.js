@@ -138,9 +138,9 @@ export const back_wall_rail = (Map, SceneView, GeoJSONLayer, SceneLayer,
 }
 
 
-// ngomon/data/foundation/rails/back_wall/floor.back.wall.rail.root.geojson.json
-// ngomon/data/foundation/rails/back_wall/floor.back.wall.rail.wall2.geojson.json
-// ngomon/data/foundation/rails/back_wall/floor.back.wall.rail.column1.geojson.json
-// ngomon/data/foundation/rails/back_wall/floor.back.wall.rail.column2.geojson.json
-// ngomon/data/foundation/rails/back_wall/floor.back.wall.rail.wall3.geojson.json
-// ngomon/data/foundation/rails/back_wall/floor.back.wall.rail.wall1.geojson.json
+// "ngomon/data/foundation/rails/back_wall/floor.back.wall.rail.root.geojson.json",
+// "ngomon/data/foundation/rails/back_wall/floor.back.wall.rail.wall2.geojson.json",
+// "ngomon/data/foundation/rails/back_wall/floor.back.wall.rail.column1.geojson.json",
+// "ngomon/data/foundation/rails/back_wall/floor.back.wall.rail.column2.geojson.json",
+// "ngomon/data/foundation/rails/back_wall/floor.back.wall.rail.wall3.geojson.json",
+// "ngomon/data/foundation/rails/back_wall/floor.back.wall.rail.wall1.geojson.json"

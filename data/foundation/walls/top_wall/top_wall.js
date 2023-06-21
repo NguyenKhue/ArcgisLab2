@@ -179,11 +179,11 @@ export const top_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     ]
 }
 
-// ngomon/data/foundation/walls/top_wall/floor.top.wall.part1.geojson.json
-// ngomon/data/foundation/walls/top_wall/floor.top.wall.part7.geojson.json
-// ngomon/data/foundation/walls/top_wall/floor.top.wall.part6.geojson.json
-// ngomon/data/foundation/walls/top_wall/floor.top.wall.part5.geojson.json
-// ngomon/data/foundation/walls/top_wall/floor.top.wall.part3.geojson.json
-// ngomon/data/foundation/walls/top_wall/floor.top.wall.part2.geojson.json
-// ngomon/data/foundation/walls/top_wall/floor.top.wall.part4.geojson.json
-// ngomon/data/foundation/walls/top_wall/floor.top.wall.part8.geojson.json
+// "ngomon/data/foundation/walls/top_wall/floor.top.wall.part1.geojson.json",
+// "ngomon/data/foundation/walls/top_wall/floor.top.wall.part7.geojson.json",
+// "ngomon/data/foundation/walls/top_wall/floor.top.wall.part6.geojson.json",
+// "ngomon/data/foundation/walls/top_wall/floor.top.wall.part5.geojson.json",
+// "ngomon/data/foundation/walls/top_wall/floor.top.wall.part3.geojson.json",
+// "ngomon/data/foundation/walls/top_wall/floor.top.wall.part2.geojson.json",
+// "ngomon/data/foundation/walls/top_wall/floor.top.wall.part4.geojson.json",
+// "ngomon/data/foundation/walls/top_wall/floor.top.wall.part8.geojson.json"

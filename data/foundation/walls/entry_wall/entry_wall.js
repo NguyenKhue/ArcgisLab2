@@ -145,9 +145,9 @@ export const entry_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     ]
 }
 
-// ngomon/data/foundation/walls/entry_wall/floor.entry.wall.part1.geojson.json
-// ngomon/data/foundation/walls/entry_wall/floor.entry.wall.part5.geojson.json
-// ngomon/data/foundation/walls/entry_wall/floor.entry.wall.part2.geojson.json
-// ngomon/data/foundation/walls/entry_wall/floor.entry.wall.part6.geojson.json
-// ngomon/data/foundation/walls/entry_wall/floor.entry.wall.part4.geojson.json
-// ngomon/data/foundation/walls/entry_wall/floor.entry.wall.part3.geojson.json
+// "ngomon/data/foundation/walls/entry_wall/floor.entry.wall.part1.geojson.json",
+// "ngomon/data/foundation/walls/entry_wall/floor.entry.wall.part5.geojson.json",
+// "ngomon/data/foundation/walls/entry_wall/floor.entry.wall.part2.geojson.json",
+// "ngomon/data/foundation/walls/entry_wall/floor.entry.wall.part6.geojson.json",
+// "ngomon/data/foundation/walls/entry_wall/floor.entry.wall.part4.geojson.json",
+// "ngomon/data/foundation/walls/entry_wall/floor.entry.wall.part3.geojson.json"

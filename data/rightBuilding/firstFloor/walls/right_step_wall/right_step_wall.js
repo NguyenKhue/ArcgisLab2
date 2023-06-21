@@ -55,5 +55,5 @@ export const right_step_wall = (
 };
 
 
-// ngomon/data/rightBuilding/firstFloor/walls/right_step_wall/right.step.left.wall.geojson.json
-// ngomon/data/rightBuilding/firstFloor/walls/right_step_wall/right.step.right.wall.geojson.json
+// "ngomon/data/rightBuilding/firstFloor/walls/right_step_wall/right.step.left.wall.geojson.json",
+// "ngomon/data/rightBuilding/firstFloor/walls/right_step_wall/right.step.right.wall.geojson.json"

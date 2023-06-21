@@ -80,6 +80,6 @@ export const floor_center = (
   ]
 }
 
-// ngomon/data/centerBuilding/firstFloor/floor/floor_bottom.json
-// ngomon/data/centerBuilding/firstFloor/floor/floor_center.json
-// ngomon/data/centerBuilding/firstFloor/floor/floor.json
+// "ngomon/data/centerBuilding/firstFloor/floor/floor_bottom.json"
+// "ngomon/data/centerBuilding/firstFloor/floor/floor_center.json",
+// "ngomon/data/centerBuilding/firstFloor/floor/floor.json"

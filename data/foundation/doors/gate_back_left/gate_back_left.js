@@ -72,6 +72,6 @@ export const gate_back_left_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     ]
 }
 
-// ngomon/data/foundation/doors/gate_back_left/gate_back_left_door_top.json
-// ngomon/data/foundation/doors/gate_back_left/gate_back_left_door.json
-// ngomon/data/foundation/doors/gate_back_left/gate_back_left.json
+// "ngomon/data/foundation/doors/gate_back_left/gate_back_left_door_top.json",
+// "ngomon/data/foundation/doors/gate_back_left/gate_back_left_door.json",
+// "ngomon/data/foundation/doors/gate_back_left/gate_back_left.json"

@@ -209,13 +209,13 @@ export const column_SF = (
 };
 
 
-// ngomon/data/centerBuilding/secondFloor/column/columnCornerLT.geojson.json
-// ngomon/data/centerBuilding/secondFloor/column/columnCornerLB.geojson.json
-// ngomon/data/centerBuilding/secondFloor/column/columnCornerRB.geojson.json
-// ngomon/data/centerBuilding/secondFloor/column/columnTallLB.geojson.json
-// ngomon/data/centerBuilding/secondFloor/column/columnExtraL.geojson.json
-// ngomon/data/centerBuilding/secondFloor/column/columnCornerRT.geojson.json
-// ngomon/data/centerBuilding/secondFloor/column/columnTallRT.geojson.json
-// ngomon/data/centerBuilding/secondFloor/column/columnTallLT.geojson.json
-// ngomon/data/centerBuilding/secondFloor/column/columnExtraR.geojson.json
-// ngomon/data/centerBuilding/secondFloor/column/columnTallRB.geojson.json
+"ngomon/data/centerBuilding/secondFloor/column/columnCornerLT.geojson.json",
+"ngomon/data/centerBuilding/secondFloor/column/columnCornerLB.geojson.json",
+"ngomon/data/centerBuilding/secondFloor/column/columnCornerRB.geojson.json",
+"ngomon/data/centerBuilding/secondFloor/column/columnTallLB.geojson.json",
+"ngomon/data/centerBuilding/secondFloor/column/columnExtraL.geojson.json",
+"ngomon/data/centerBuilding/secondFloor/column/columnCornerRT.geojson.json",
+"ngomon/data/centerBuilding/secondFloor/column/columnTallRT.geojson.json",
+"ngomon/data/centerBuilding/secondFloor/column/columnTallLT.geojson.json",
+"ngomon/data/centerBuilding/secondFloor/column/columnExtraR.geojson.json",
+"ngomon/data/centerBuilding/secondFloor/column/columnTallRB.geojson.json"

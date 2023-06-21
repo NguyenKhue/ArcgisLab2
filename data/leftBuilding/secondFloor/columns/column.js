@@ -289,16 +289,16 @@ export const left_building_cols_sf = (
 };
 
 
-// ngomon/data/leftBuilding/secondFloor/columns/left.building.column1.geojson.json
-// ngomon/data/leftBuilding/secondFloor/columns/left.building.column12.geojson.json
-// ngomon/data/leftBuilding/secondFloor/columns/left.building.column11.geojson.json
-// ngomon/data/leftBuilding/secondFloor/columns/left.building.column10.geojson.json
-// ngomon/data/leftBuilding/secondFloor/columns/left.building.column5.geojson.json
-// ngomon/data/leftBuilding/secondFloor/columns/left.building.column2.geojson.json
-// ngomon/data/leftBuilding/secondFloor/columns/left.building.column4.geojson.json
-// ngomon/data/leftBuilding/secondFloor/columns/left.building.column13.geojson.json
-// ngomon/data/leftBuilding/secondFloor/columns/left.building.column3.geojson.json
-// ngomon/data/leftBuilding/secondFloor/columns/left.building.column6.geojson.json
-// ngomon/data/leftBuilding/secondFloor/columns/left.building.column7.geojson.json
-// ngomon/data/leftBuilding/secondFloor/columns/left.building.column8.geojson.json
-// ngomon/data/leftBuilding/secondFloor/columns/left.building.column9.geojson.json
+// "ngomon/data/leftBuilding/secondFloor/columns/left.building.column1.geojson.json",
+// "ngomon/data/leftBuilding/secondFloor/columns/left.building.column12.geojson.json",
+// "ngomon/data/leftBuilding/secondFloor/columns/left.building.column11.geojson.json",
+// "ngomon/data/leftBuilding/secondFloor/columns/left.building.column10.geojson.json",
+// "ngomon/data/leftBuilding/secondFloor/columns/left.building.column5.geojson.json",
+// "ngomon/data/leftBuilding/secondFloor/columns/left.building.column2.geojson.json",
+// "ngomon/data/leftBuilding/secondFloor/columns/left.building.column4.geojson.json",
+// "ngomon/data/leftBuilding/secondFloor/columns/left.building.column13.geojson.json",
+// "ngomon/data/leftBuilding/secondFloor/columns/left.building.column3.geojson.json",
+// "ngomon/data/leftBuilding/secondFloor/columns/left.building.column6.geojson.json",
+// "ngomon/data/leftBuilding/secondFloor/columns/left.building.column7.geojson.json",
+// "ngomon/data/leftBuilding/secondFloor/columns/left.building.column8.geojson.json",
+// "ngomon/data/leftBuilding/secondFloor/columns/left.building.column9.geojson.json"

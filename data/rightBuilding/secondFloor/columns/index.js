@@ -263,16 +263,16 @@ export const right_building_cols2 = (
 };
 
 
-// ngomon/data/rightBuilding/secondFloor/columns/right.building.column11.geojson.json
-// ngomon/data/rightBuilding/secondFloor/columns/right.building.column1.geojson.json
-// ngomon/data/rightBuilding/secondFloor/columns/right.building.column12.geojson.json
-// ngomon/data/rightBuilding/secondFloor/columns/right.building.column13.geojson.json
-// ngomon/data/rightBuilding/secondFloor/columns/right.building.column14.geojson.json
-// ngomon/data/rightBuilding/secondFloor/columns/right.building.column10.geojson.json
-// ngomon/data/rightBuilding/secondFloor/columns/right.building.column8.geojson.json
-// ngomon/data/rightBuilding/secondFloor/columns/right.building.column4.geojson.json
-// ngomon/data/rightBuilding/secondFloor/columns/right.building.column6.geojson.json
-// ngomon/data/rightBuilding/secondFloor/columns/right.building.column2.geojson.json
-// ngomon/data/rightBuilding/secondFloor/columns/right.building.column9.geojson.json
-// ngomon/data/rightBuilding/secondFloor/columns/right.building.column3.geojson.json
-// ngomon/data/rightBuilding/secondFloor/columns/right.building.column7.geojson.json
+// "ngomon/data/rightBuilding/secondFloor/columns/right.building.column11.geojson.json",
+// "ngomon/data/rightBuilding/secondFloor/columns/right.building.column1.geojson.json",
+// "ngomon/data/rightBuilding/secondFloor/columns/right.building.column12.geojson.json",
+// "ngomon/data/rightBuilding/secondFloor/columns/right.building.column13.geojson.json",
+// "ngomon/data/rightBuilding/secondFloor/columns/right.building.column14.geojson.json",
+// "ngomon/data/rightBuilding/secondFloor/columns/right.building.column10.geojson.json",
+// "ngomon/data/rightBuilding/secondFloor/columns/right.building.column8.geojson.json",
+// "ngomon/data/rightBuilding/secondFloor/columns/right.building.column4.geojson.json",
+// "ngomon/data/rightBuilding/secondFloor/columns/right.building.column6.geojson.json",
+// "ngomon/data/rightBuilding/secondFloor/columns/right.building.column2.geojson.json",
+// "ngomon/data/rightBuilding/secondFloor/columns/right.building.column9.geojson.json",
+// "ngomon/data/rightBuilding/secondFloor/columns/right.building.column3.geojson.json",
+// "ngomon/data/rightBuilding/secondFloor/columns/right.building.column7.geojson.json"

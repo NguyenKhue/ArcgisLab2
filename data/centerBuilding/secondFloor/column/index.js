@@ -8,7 +8,7 @@ export const column_SF = (
   esriRequest
 ) => {
 
-  const baseURL = "https://gis-historical-relic.onrender.com/api/cylinder/path?path="
+  const baseURL = "http://localhost:3001/api/cylinder/path?path="
   const parentPath = "ngomon/"
 
   const columnCornerLBGeojsonLayer = new GeoJSONLayer({

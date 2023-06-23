@@ -36,7 +36,7 @@ export const right_building_cols = (
   esriRequest
 ) => {
 
-  const baseURL = "https://gis-historical-relic.onrender.com/api/cylinder/path?path="
+  const baseURL = "http://localhost:3001/api/cylinder/path?path="
   const parentPath = "ngomon/"
 
   const col1 = new GeoJSONLayer({

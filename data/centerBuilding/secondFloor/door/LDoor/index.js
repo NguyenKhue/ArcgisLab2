@@ -8,7 +8,7 @@ export const doorL_SF = (
   esriRequest
 ) => {
 
-  const baseURL = "https://gis-historical-relic.onrender.com/api/prism/path?path="
+  const baseURL = "http://localhost:3001/api/prism/path?path="
   const parentPath = "ngomon/"
 
   const baseGeojsonLayer = new GeoJSONLayer({

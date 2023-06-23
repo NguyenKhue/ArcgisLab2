@@ -8,8 +8,8 @@ export const floor_SF = (
   esriRequest
 ) => {
 
-  const prismBaseURL = "https://gis-historical-relic.onrender.com/api/prism/path?path="
-  const bodyCompBaseURL = "https://gis-historical-relic.onrender.com/api/bodyComplex/path?path="
+  const prismBaseURL = "http://localhost:3001/api/prism/path?path="
+  const bodyCompBaseURL = "http://localhost:3001/api/bodyComplex/path?path="
   const parentPath = "ngomon/"
 
   const floorGeojsonLayer = new GeoJSONLayer({
